@@ -1,0 +1,18 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+Logout 
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='signin.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+	<a href="{{url_for('deypay')	}}"><img src="{{ url_for('static', filename='deytalytics-smile-logo.png') }}" height='150'></a>
+	<p>Thanks very much for using Deypay. See you again soon.</p>
+    </div> <!-- /container -->
+{% endblock %}

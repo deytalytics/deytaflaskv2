@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+$(function(){
+	pagetoload="http://www.deytalytics.com/transactionhistory"
+	htmlcode="<iframe style=\"width: 70vw;height: 80vh;position: relative;\" src=\"" + pagetoload + "\"></iframe>"
+    $("#div2").hide();
+    $(".row").on("click", function(){
+		pagetoload=$(this).html();
+		htmlcode="<iframe style=\"width: 70vw;height: 80vh;position: relative;\" src=\"" + pagetoload + "\"></iframe>"
+		$("#div2").html(htmlcode)
+        $("#div2").show();
+    });
+});
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="row">http://hot-dinners.com/Features/The-best-restaurants-in-London/the-best-new-london-restaurants-opened-2017-so-far</div>
+	<div class="row">http://tripadvisor.com</div>
+	<div class="row">http://mysupermarket.com</div>
+	<div class="row">http://timeout.com</div>
+</div>
+<div class="container" id="div1">
+</div>
+<div class="container" id="div2">
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="/static/favicon.png" sizes="16x16">
+	<link href="/static/favicon.ico" rel="icon" type="image/x-icon" />
+	<link href="/static/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/static/favicon.png" />  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Account Transactions</title>
+</head>
+<body>
+<div class="container">
+		<p><a href="../../deypay"><img src='/static/deytalytics-smile-logo.png' height='150'></a><b>
+			<h1>Account Transactions</h1></b><hr>
+		</p>  
+		{% for results in data %}
+			<a href="#{{ results.account.provider.display_name }} {{ results.account.display_name }}">{{ results.account.provider.display_name }} {{ results.account.display_name }}</a><br>
+		{% endfor %}
+		<p>
+		{% for results in data %}
+     		<p><hr>
+			<a name="{{ results.account.provider.display_name }} {{ results.account.display_name }}"></a>
+			<div style="display:inline-block">
+			{% if results.account.provider.logo_uri %}
+				<h2><img src='{{ results.account.provider.logo_uri}}' height='42' width='42'>
+				{{ results.account.provider.display_name }}
+			{% endif %}
+			{% if results.account.display_name %}
+				{{ results.account.display_name}}
+			{% endif %}
+			</h2></div>
+			<br>
+			{% for transactions in results.transactions %}
+				{% if transactions.timestamp %}
+					<b>Timestamp:</b> {{ transactions.timestamp }}<br>
+				{% endif %}
+				{% if transactions.description %}
+					<b>Description:</b> <a href="https://www.google.co.uk/search?q={{ transactions.description }}">{{ transactions.description }}</a><br>
+				{% endif %}
+				{% if transactions.transaction_category %}
+					<b>Category:</b> {{ transactions.transaction_category }}<br>
+				{% endif %}
+				{% if transactions.transaction_type %}
+					<b>Type:</b> {{ transactions.transaction_type }}<br>
+				{% endif %}
+				{% if transactions.amount %}
+					<b>Amount:</b> {{ "£%.2f"|format(transactions.amount) }}<br>
+				{% endif %}
+				<hr>
+			{% endfor %}
+			<br>
+		{% endfor %}
+	</div>
+	</body
+</html>

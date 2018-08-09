@@ -1,0 +1,64 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="/static/favicon.png" sizes="16x16">
+	<link href="/static/favicon.ico" rel="icon" type="image/x-icon" />
+	<link href="/static/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/static/favicon.png" />  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Your Accounts</title>
+</head>
+<body>
+<div class="container">
+		<p><a href="../../deypay"><img src='/static/deytalytics-smile-logo.png' height='150'></a>
+			<h1>Your Accounts</h1></b><hr>
+		</p>
+		{% for resp_dict in resp_dict %}
+			{% for key, value in resp_dict.items() %}
+				{% if key == 'results' %}
+				{% for result in value %}
+					{% if result.provider %}
+						<img src='{{ result.provider.logo_uri}}' height='42' width='42'>
+						<h2>{{ result.provider.display_name }}
+					{% endif %}
+					{% if result.display_name %}
+						{{ result.display_name}}
+						<br>
+					{% endif %}
+					</h2>
+					{% if result.account_id %}
+						<b>Account ID:</b> {{ result.account_id }}
+						<br>
+					{% endif %}
+					{% if result.account_type %}
+						<b>Account Type:</b> {{ result.account_type }}
+						<br>
+					{% endif %}
+					{% if result.account_number %}
+						<b>IBAN:</b> {{ result.account_number.iban }}
+						<br>
+					{% endif %}
+					{% if result.account_number %}
+						<b>SWIFT BIC:</b> {{ result.account_number.swift_bic }}
+						<br>
+					{% endif %}
+					{% if result.account_number %}
+						<b>Account Number:</b> <a href="/truelayer/balances">{{ result.account_number.number }}</a>
+						<br>
+					{% endif %}
+					{% if result.account_number %}
+						<b>Sort Code:</b> {{ result.account_number.sort_code }}
+					{% endif %}
+					<hr></p>
+
+				{% endfor %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	</div>
+	</body>
+</html>

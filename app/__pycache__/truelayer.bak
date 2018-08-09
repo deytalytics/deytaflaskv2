@@ -1,0 +1,93 @@
+from requests_oauthlib import OAuth2Session
+from flask import Flask, request, redirect, session, url_for
+from flask.json import jsonify
+import os, requests, json
+from urllib.parse import urlparse, parse_qs 
+
+app = Flask(__name__)
+
+
+# Replace the client_id, client_secret and redirect_uri info below with the values for these that you entered/obtained upon registration of your application with Truelayer  
+# at:- https://console.truelayer.com/settings/application 
+client_id = "deypay-dvbg"
+client_secret = "l9pg4uyxyv8ly7ljyfyo6s"
+redirect_uri = "http://localhost:5000/callback"
+scopes = "info%20accounts%20balance%20transactions%20cards%20offline_access"
+authorization_base_url = "https://auth.truelayer.com/?response_type=code&client_id="+client_id+"&nonce=3452426391&scope="+scopes+"&redirect_uri="+redirect_uri+"&enable_mock=true"
+token_url = "https://auth.truelayer.com/connect/token"
+
+@app.route("/truelayer")
+def demo():
+
+    """Step 1: User Authorization.
+
+    Redirect the user/resource owner to the TrueLayer's Authorisation Server 
+    using an URL with a few key OAuth parameters.
+    """
+
+    truelayer = OAuth2Session(client_id)
+    authorization_url, state = truelayer.authorization_url(authorization_base_url)
+
+    # State is used to prevent CSRF, keep this for later.
+    session['oauth_state'] = state
+    return redirect(authorization_url)
+
+# Step 2: User authorization, this happens on the provider.
+
+@app.route("/truelayer/callback", methods=["GET"])
+def callback():
+    """ Step 3: Retrieving an access token.
+
+    The user has been redirected back from the provider to your registered
+    callback URL. With this redirection comes an authorization code included
+    in the redirect URL. We will use that to obtain an access token.
+    """
+
+    truelayer = OAuth2Session(client_id, state=session['oauth_state'])
+    
+    parsed_url=urlparse(request.url)
+    auth_code=parse_qs(parsed_url.query)['code']
+
+    response=requests.post('https://auth.truelayer.com/connect/token', data = {"grant_type":"authorization_code", "code":auth_code, "client_id":client_id, "client_secret": client_secret, "redirect_uri":redirect_uri})
+
+    resp_dict=json.loads(response.text)
+    access_token=resp_dict['access_token']
+    # At this point you've got an access token which you can use to access TrueLayer's Account Information API via their Resource Server  
+    session['oauth_token'] = access_token
+
+    return redirect(url_for('.profile'))
+
+
+@app.route("/truelayer/accounts", methods=["GET"])
+def get_accounts():
+    """Fetching a protected resource using an OAuth 2 token.
+    """
+    token='Bearer '+session['oauth_token']
+    get_acct_url="https://api.truelayer.com/data/v1/accounts"
+    headers = {"Authorization": token}
+    response=requests.get(get_acct_url,  headers=headers)
+    resp_dict=json.loads(response.text) 
+    html="""
+    <html><table border="1"><thead><th>Account ID</th><th>Account Type</th><th>Account Name</th><th>Currency</th><th>IBAN</th><th>SWIFT BIC</th><th>Account Number</th><th>Sort Code</th>
+    <tbody>"""
+    for results in resp_dict['results']:
+        html=html+"<tr>"
+        html=html+"<td>"+results['account_id']+"</td>"
+        html=html+"<td>"+results['account_type']+"</td>"
+        html=html+"<td>"+results['display_name']+"</td>"
+        html=html+"<td>"+results['currency']+"</td>"
+        html=html+"<td>"+results['account_number']['iban']+"</td>"
+        html=html+"<td>"+results['account_number']['swift_bic']+"</td>"
+        html=html+"<td>"+results['account_number']['number']+"</td>"
+        html=html+"<td>"+results['account_number']['sort_code']+"</td>"
+        html=html+"</tr>"
+    html=html+"</tbody></table></html>"
+    return html
+
+
+if __name__ == "__main__":
+    # This allows us to use a plain HTTP callback
+    os.environ['DEBUG'] = "1"
+    os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+    app.secret_key = os.urandom(24)
+    app.run(debug=True)

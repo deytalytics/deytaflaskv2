@@ -1,0 +1,49 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+DeyPay
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<p>
+	<img src="{{ url_for('static', filename='deytalytics-smile-logo.png') }}" height='150'>
+	<b><h1>Welcome to Deytalytics Account Information App</h1></b><hr>
+</p>
+<b>YOUR SECURITY IS EXTREMELY IMPORTANT TO US</b>
+<br>Remember:-
+<ol>
+	<li>Deytalytics will not store any of your bank login information</li>
+	<li>You have full control over what account information that Deytalytics can retrieve from your bank</li>
+	<li>Our technical partners <a href="http://www.truelayer.com">Truelayer</a> are FCA registered <a href="https://register.fca.org.uk/ShPo_FirmDetailsPage?id=001b0000042fMZyAAM">793171</a></li>
+</ol>
+<hr>
+<b>Hi {{session['username']}}. </b>
+<b>
+{% if connected_banks %}
+	You are connected to the following banks:-</b>
+	<font color='red'>
+	{% for bank in connected_banks %}
+		<br>{{ bank }}
+	{% endfor %}
+	</font>
+{% else %}
+	You are not connected to any banks
+{% endif %}
+<br><br>
+
+Choose an option:-
+<ol> 
+	<li><a href="/truelayer/accounts">Fetch Account Information</a> </li>
+	<li><a href="/truelayer/balances">Fetch Account Balances</a></li>
+	<li><a href="/truelayer/transactions">Fetch Transaction History</a></li>
+	<li><a href="/truelayer">Connect to bank</a></li>
+        {% if connected_banks %} 
+	   <li><a href="/truelayer/hangup">Disconnect from bank(s)</a></li>
+        {% endif %}
+	<li><a href="/deypay/graphs">Financial Graphs</a></li>
+	<li><a href="/deypay/logout">Logout</a></li>
+</ol>
+</div>
+{% endblock %}

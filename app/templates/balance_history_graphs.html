@@ -1,0 +1,27 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="/static/favicon.png" sizes="16x16">
+	<link href="/static/favicon.ico" rel="icon" type="image/x-icon" />
+	<link href="/static/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/static/favicon.png" />  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Financial Graphs</title>
+</head>
+<body>
+<div class="container">
+		<p><a href="../../deypay"><img src='/static/deytalytics-smile-logo.png' height='150'></a>
+			<h1>Your Balance History Graphs</h1></b><hr>
+		</p>
+
+		{% for results in data %}
+			<a href="/deypay/balance_history?provider={{ results.account.provider.display_name }}&acct={{ results.account.display_name }}">{{ results.account.provider.display_name }} {{ results.account.display_name }}</a><br>
+		{% endfor %}
+		<br><b>Note: No balance history graphs are available where there have been no transactions in past 3 months</b>
+	</div>
+	</body>
+</html>

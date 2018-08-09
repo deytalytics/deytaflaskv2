@@ -1,0 +1,1 @@
+set pythonpath=c:\users\james\OneDrive\Deytalytics\Software Development\Deytaflask\app\python;c:\users\james\OneDrive\Deytalytics\Software Development\Deytaflask\app\static
