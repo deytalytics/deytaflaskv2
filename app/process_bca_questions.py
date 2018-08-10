@@ -1,5 +1,5 @@
 def process_bca_questions(form_data):
-	from qry_bca_json_msgs import qry_bca_json_msgs
+	from app.qry_bca_json_msgs import qry_bca_json_msgs
 	welcome="""
 <!DOCTYPE html>
 <html lang="en">
