@@ -1,5 +1,5 @@
 def process_questions(form_data):
-	from qry_pca_json_msgs import qry_pca_json_msgs
+	from app.qry_pca_json_msgs import qry_pca_json_msgs
 	welcome="""
 <!DOCTYPE html>
 <html lang="en">
