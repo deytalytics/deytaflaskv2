@@ -1,1 +1,1 @@
-web: gunicorn deytaflask:app
+web: gunicorn app:app
