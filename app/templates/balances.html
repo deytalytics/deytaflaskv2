@@ -10,24 +10,29 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Account Balances</title>
+    <title>Your Bank Accounts</title>
 </head>
 <body>
 <div class="container">
 		<p><a href='../../deypay'><img src='/static/deytalytics-smile-logo.png' height='150'></a>
-			<h1>Account Balances</h1></b><hr>
+			<h1>Your Bank Accounts</h1></b><hr>
 		</p>     
 		{% for results in data %}
      		<p>
+			<div style="display:inline-block"><h2>
 			{% if results.account.provider.logo_uri %}
 				<img src='{{ results.account.provider.logo_uri}}' height='42' width='42'>
-				<h2>{{ results.account.provider.display_name }}
+				{{ results.account.provider.display_name }}
 			{% endif %}
 			{% if results.account.display_name %}
 				{{ results.account.display_name}}
-				<br>
 			{% endif %}
+			<a href="/truelayer/transactions#{{ results.account.provider.display_name }} {{ results.account.display_name }}"><img src='{{url_for("static", filename="txns.png") }}' title='Account transactions' height='50'></a>
+			<a href='../../deypay/balance_history?provider={{ results.account.provider.display_name }}&acct={{ results.account.display_name }}'><img src='{{url_for("static", filename="linechart-icon.png") }}' title='Balance history line chart' height='50'></a>
+			<a href='/truelayer/acctinfo'><img src='{{url_for("static", filename="info-icon.png") }}' title='Account info' height='50'></a>
 			</h2>
+			</div>
+			<br>
 			{% if results.balance.available %}
 				<b>Available Balance:</b> £{{ results.balance.available }}
 			{% else %}
@@ -35,7 +40,7 @@
 			{% endif %}
 			<br>
 			{% if results.balance.current %}
-				<b>Current Balance:</b> <a href="/truelayer/transactions#{{ results.account.provider.display_name }} {{ results.account.display_name }}">£{{ results.balance.current }}</a>
+				<b>Current Balance:</b> £{{ results.balance.current }}
 			{% else %}
 				<b>Current Balance:</b> £0.00
 			{% endif %}

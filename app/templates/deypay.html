@@ -29,21 +29,15 @@ DeyPay
 	{% endfor %}
 	</font>
 {% else %}
-	You are not connected to any banks
+	You are not connected to any banks</b>
 {% endif %}
 <br><br>
 
-Choose an option:-
-<ol> 
-	<li><a href="/truelayer/accounts">Fetch Account Information</a> </li>
-	<li><a href="/truelayer/balances">Fetch Account Balances</a></li>
-	<li><a href="/truelayer/transactions">Fetch Transaction History</a></li>
-	<li><a href="/truelayer">Connect to bank</a></li>
+<a href='/truelayer/accounts'><img src='{{url_for("static", filename="bankaccount-icon.png") }}' title='Your bank accounts' height='60'></a>
+<a href='/truelayer'><img src='{{url_for("static", filename="Connect-icon.png") }}' title='Connect to a bank' height='60'></a>
         {% if connected_banks %} 
-	   <li><a href="/truelayer/hangup">Disconnect from bank(s)</a></li>
+<a href='/truelayer/hangup'><img src='{{url_for("static", filename="disconnect-icon.png") }}' title='Disconnect from bank(s)' height='60'></a>
         {% endif %}
-	<li><a href="/deypay/graphs">Financial Graphs</a></li>
-	<li><a href="/deypay/logout">Logout</a></li>
-</ol>
+<a href='/deypay/logout'><img src='{{url_for("static", filename="logout-icon.jpg") }}' title='Logout' height='60'></a>
 </div>
 {% endblock %}

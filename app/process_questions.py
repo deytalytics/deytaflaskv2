@@ -1,5 +1,5 @@
 def process_questions(form_data):
-	from app.qry_pca_json_msgs import qry_pca_json_msgs
+	from qry_pca_json_msgs import qry_pca_json_msgs
 	welcome="""
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +49,7 @@ def process_questions(form_data):
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-        <div class="container-fluid">
+        <div class="container">
                 <h1>Your results</h1>
                 <p>Your results are based on the following criteria that you selected:-
 	<br>Age:

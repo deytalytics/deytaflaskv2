@@ -10,26 +10,27 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Your Accounts</title>
+    <title>Your Account Information</title>
 </head>
 <body>
 <div class="container">
 		<p><a href="../../deypay"><img src='/static/deytalytics-smile-logo.png' height='150'></a>
-			<h1>Your Accounts</h1></b><hr>
+			<h1>Your Account Information</h1></b><hr>
 		</p>
 		{% for resp_dict in resp_dict %}
 			{% for key, value in resp_dict.items() %}
 				{% if key == 'results' %}
 				{% for result in value %}
 					{% if result.provider %}
-						<img src='{{ result.provider.logo_uri}}' height='42' width='42'>
-						<h2>{{ result.provider.display_name }}
+						<div style="display:inline-block">
+						<h2><img src='{{ result.provider.logo_uri}}' height='42' width='42'>
+						{{ result.provider.display_name }}
 					{% endif %}
 					{% if result.display_name %}
 						{{ result.display_name}}
 						<br>
 					{% endif %}
-					</h2>
+					</h2></div><br>
 					{% if result.account_id %}
 						<b>Account ID:</b> {{ result.account_id }}
 						<br>
@@ -47,7 +48,7 @@
 						<br>
 					{% endif %}
 					{% if result.account_number %}
-						<b>Account Number:</b> <a href="/truelayer/balances">{{ result.account_number.number }}</a>
+						<b>Account Number:</b> {{ result.account_number.number }}
 						<br>
 					{% endif %}
 					{% if result.account_number %}

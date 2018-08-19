@@ -1,6 +1,4 @@
-def mk_bca_questionnaire():
-	welcome="""
-			<html>
+<html>
 <head>
   <title>Business Current Account Questionnaire</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,14 +9,8 @@ def mk_bca_questionnaire():
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </head>
 			<body> 
-				<style>
-					{  
-						background: no-repeat center center fixed url("ukmoney.jpg");
-						background-size: cover;  
-						background-color: #cccccc;
-					}
-				</style>
-				<div class="container-fluid">
+				<div class="container">
+						<p><img src='/static/deytalytics-smile-logo.png' height='150'>
 					<h1>Business Current Account Questionnaire</h1>
 					In order to provide you with the best personal current account products, we'd be grateful if you would be able to complete the following questions
 					<br>
@@ -35,5 +27,3 @@ def mk_bca_questionnaire():
 				</div>
 			</body>
 			</html>
-			"""
-	return welcome

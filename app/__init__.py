@@ -29,10 +29,10 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 app = Flask(__name__)
 
 #Define the database connection variables - should not be hardcoding these here
-hostname = 'aa1q1kus00tfvcf.cicyn2v77if2.us-west-2.rds.amazonaws.com'
-username = 'nesta'
-password = 'xedos123'
-database = 'nesta'
+hostname = 'ec2-50-16-196-138.compute-1.amazonaws.com'
+username = 'kbmymanebzaprn'
+password = 'a090dbaf8e346e65ea63436b9d22c6e709f786308c0f4744e4d257389c71a8fa'
+database = 'de3gnfncn93kt4'
 
 #Setup database config variables for the app
 app.config['SECRET_KEY'] = 'Thisissupposedtobesecret!'
@@ -99,22 +99,23 @@ def index():
 	return welcome
 
 @app.route('/development_projects')
-def dev_projs():
-	from app.mk_devprojs_html import mk_devprojs_html
-	welcome=mk_devprojs_html()
-	return welcome
+def dev_projs():	
+	return render_template('dev_projs.html')
 
 @app.route('/alexa_skills')
 def alexa():
 	from app.mk_alexa_skills_html import mk_alexa_skills_html
 	welcome=mk_alexa_skills_html()
 	return welcome
+	
+@app.route('/family')
+def family():
+	return render_template('family.html')
 
 @app.route('/pca_questionnaire')
 def pca_questionnaire():
-	from app.mk_pca_questionnaire import mk_pca_questionnaire
-	welcome=mk_pca_questionnaire()
-	return welcome
+	return render_template('pca_questionnaire.html')
+
 	
 @app.route('/process_questions', methods = ['POST'])
 def process_questions():
@@ -124,9 +125,7 @@ def process_questions():
 	
 @app.route('/bca_questionnaire')
 def bca_questionnaire():
-	from app.mk_bca_questionnaire import mk_bca_questionnaire
-	welcome=mk_bca_questionnaire()
-	return welcome
+	return render_template('bca_questionnaire.html')
 
 @app.route('/process_bca_questions', methods = ['POST'])
 def process_bca_questions():
@@ -220,11 +219,13 @@ def graphs():
 @app.route('/deypay/balance_history_graphs', methods=['GET'])
 def balance_history_graphs():
 	data=get_transaction_results()
+	print (data)
 	#List balance history graphs only for those accounts that have a transaction history
 	accts = []
 	for item in data:
 		if (item['transactions']):
 			accts.append(item)
+	#print(accts)
 	return render_template('balance_history_graphs.html',data=accts)	
 	
 @app.route('/deypay/balance_history', methods=['GET'])
@@ -236,18 +237,27 @@ def balance_history():
 	for results in data:
 		if (results['account']['display_name']==params['acct']):
 			current_balance=results['balance']['current']
+	#print("current balance="+str(current_balance))
 	#Fetch transactions
 	data=get_transaction_results()
 	txnhist=[]
 	for results in data:
 		if (results['account']['display_name']==params['acct']):
 			for transactions in results['transactions']:
-				txnhist.append({"date":transactions['timestamp'][:-6], "close":transactions['amount']})
+				date,time=str(transactions['timestamp']).split('T')
+				txn_date=date+"T00:00:00"
+				txnhist.append({"date":txn_date, "close":transactions['amount']})
 	sorted_txnhist=sorted(txnhist, key=lambda k:k["date"], reverse=True)
 	balances=[]
+	last_txn_date=""
 	for running_total in sorted_txnhist:
+		txn_date=running_total['date']
+		if txn_date != last_txn_date:
+			balances.append({"date":txn_date, "close":current_balance})
+			last_txn_date=txn_date
 		current_balance=current_balance-running_total['close']
-		balances.append({"date":running_total['date'], "close":current_balance})
+
+	#print(balances)
 	return render_template('balance_history.html',data=balances)
 	
 @app.route("/truelayer")
@@ -353,8 +363,8 @@ def process_response(url,access_token,refresh_token):
 	   response_text=process_response(url,access_token,refresh_token)
 	return response_text
 	
-@app.route("/truelayer/accounts", methods=["GET"])
-def get_accounts():
+@app.route("/truelayer/acctinfo", methods=["GET"])
+def get_acctinfo():
 	"""Fetching a protected resource using an OAuth 2 token.
 	"""
 	#If Tokens have been created for this user
@@ -367,20 +377,21 @@ def get_accounts():
 		return render_template('accounts.html',title='Your Accounts', resp_dict=resp_dict)
 	#Otherwise redirect to the truelayer connect to bank webpage and then return to original calling page
 	else:
-		session['return']='.get_accounts'
+		session['return']='.get_acctinfo'
 		return redirect(url_for('.truelayer'))
 
-@app.route("/truelayer/balances", methods=["GET"])
-def get_balances():
+@app.route("/truelayer/accounts", methods=["GET"])
+def get_accounts():
 	"""Fetching a protected resource using an OAuth 2 token.
 	"""
 	#If Tokens have been created for this user
 	if Tokens.query.filter_by(username=session['username']).first():
 		data = get_balance_results()
+		print(data)
 		return render_template('balances.html',data=data)
 	#Otherwise redirect to the truelayer connect to bank webpage and then return to original calling page
 	else:
-		session['return']='.get_balances'
+		session['return']='.get_accounts'
 		return redirect(url_for('.truelayer'))
 
 def get_balance_results():
@@ -418,7 +429,7 @@ def get_transaction_results():
 		for results in resp_dict['results']:
 			get_txn_url="https://api.truelayer.com/data/v1/accounts/"+results['account_id']+"/transactions"
 			txn_dict=json.loads(process_response(get_txn_url, tokens.access_token, tokens.refresh_token))
-			data.append({"account":results, "transactions":txn_dict['results']})
+			data.append({"account":results, "transactions":txn_dict['results']})	
 	return data
 	
 # Sample HTTP error handling
