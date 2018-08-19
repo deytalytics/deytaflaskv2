@@ -108,31 +108,6 @@ def alexa():
 	welcome=mk_alexa_skills_html()
 	return welcome
 	
-@app.route('/family')
-def family():
-	return render_template('family.html')
-
-@app.route('/pca_questionnaire')
-def pca_questionnaire():
-	return render_template('pca_questionnaire.html')
-
-	
-@app.route('/process_questions', methods = ['POST'])
-def process_questions():
-	from app.process_questions import process_questions
-	welcome=process_questions(request.form)
-	return welcome
-	
-@app.route('/bca_questionnaire')
-def bca_questionnaire():
-	return render_template('bca_questionnaire.html')
-
-@app.route('/process_bca_questions', methods = ['POST'])
-def process_bca_questions():
-	from app.process_bca_questions import process_bca_questions
-	welcome=process_bca_questions(request.form)	
-	return welcome
-	
 @app.route('/atmlocator')
 def atm():
 	from app.atmlocator import atmlocator
