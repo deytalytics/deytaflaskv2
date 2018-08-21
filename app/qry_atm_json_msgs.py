@@ -3,8 +3,6 @@ def qry_atm_json_msgs(lat, long, area, zoom) :
 	import sys
 	import json
 	import psycopg2
-	
-	print("Got here")
 
 	hostname = 'ec2-50-16-196-138.compute-1.amazonaws.com'
 	username = 'kbmymanebzaprn'
@@ -13,7 +11,7 @@ def qry_atm_json_msgs(lat, long, area, zoom) :
 
 	#Connect to the database
 	myConnection = psycopg2.connect( host=hostname, user=username, password=password, dbname=database )
-	print("Got here too")
+
 	cur=myConnection.cursor()
 	if not area:
 		range=0.05
@@ -84,7 +82,7 @@ and longitude between """+str(long-range)+""" and """+str(long+range)
 		if atmservices:
 			atm_json_res=atm_json_res+"<b>ATMServices:</b>"+str(atmservices)[1:-1].replace("'", "")+"<br>"
 		if locationcategory:
-			atm_json_res=atm_json_res+"<b>LocationCategory:</b>"+str(locationcategory)+"<br>"
+			atm_json_res=atm_json_res+"<b>LocationCategory:</b>"+str(locationcategory[1:-1])+"<br>"
 		atm_json_res=atm_json_res+"<a href=\"https://maps.google.com/maps?q="+str(latitude)+","+str(longitude)+"&z=16\">View on Google Maps</a> for directions"
 		atm_json_res=atm_json_res+"';"
 		atm_json_res=atm_json_res+"var infowindow"+str(i)+" = new google.maps.InfoWindow({content: label});"

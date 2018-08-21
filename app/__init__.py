@@ -6,6 +6,12 @@ from flask import Flask, render_template, flash, request, redirect, session, url
 #Import web forms
 from wtforms import Form, BooleanField, TextField, PasswordField, validators
 
+#import beautifulsoup
+from bs4 import BeautifulSoup
+
+#import urllib parser to parse parameters
+from urllib.parse import parse_qs
+
 #Import ability to mask passwords
 from passlib.hash import sha256_crypt
 
@@ -127,7 +133,15 @@ def atm():
 			longitude=''
 			welcome=atmlocator(postcode,latitude,longitude)
 	else:
-		welcome=atmlocator('SW198SF','','')  
+		response=requests.get("https://www.google.co.uk/maps/search/atms+near+me")
+	soup=BeautifulSoup(response.text, "html.parser")
+	for meta in soup.find_all("meta", property="og:image"):
+		url=meta["content"]
+		q=parse_qs(url)
+		geolocation=q['https://maps.google.com/maps/api/staticmap?center'][0].split(",")
+		latitude=float(geolocation[0])
+		longitude=float(geolocation[1])
+		welcome=atmlocator('',latitude,longitude)  
 	return welcome
 
 @app.route('/companies_house_reporting')
