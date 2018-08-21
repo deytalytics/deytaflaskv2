@@ -72,12 +72,12 @@ and longitude between """+str(long-range)+""" and """+str(long+range)
 			atm_json_res=atm_json_res+rest
 		atm_json_res=atm_json_res+"var label='<b>"+brand+"</b><br>"
 		if buildingnumber:
-			atm_json_res=atm_json_res+buildingnumber.replace("'","\'")+"<br>"
+			atm_json_res=atm_json_res+buildingnumber.replace("'","\\'")+"<br>"
 		if streetname:
-			atm_json_res=atm_json_res+streetname.replace("'","\'")+"<br>"
+			atm_json_res=atm_json_res+streetname.replace("'","\\'")+"<br>"
 			print(streetname)
 		if townname:
-			atm_json_res=atm_json_res+townname.replace("'","\'")+"<br>"
+			atm_json_res=atm_json_res+townname.replace("'","\\'")+"<br>"
 		if postcode:
 			atm_json_res=atm_json_res+postcode+"<br>"
 		if atmservices:
