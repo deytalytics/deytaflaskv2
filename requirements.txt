@@ -24,3 +24,4 @@ Werkzeug==0.14.1
 WTForms==2.1
 beautifulsoup4==4.6.3
 bs4==0.0.1
+gunicorn==19.9.0
