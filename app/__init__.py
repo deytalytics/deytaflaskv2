@@ -134,14 +134,14 @@ def atm():
 			welcome=atmlocator(postcode,latitude,longitude)
 	else:
 		response=requests.get("https://www.google.co.uk/maps/search/atms+near+me")
-	soup=BeautifulSoup(response.text, "html.parser")
-	for meta in soup.find_all("meta", property="og:image"):
-		url=meta["content"]
-		q=parse_qs(url)
-		geolocation=q['https://maps.google.com/maps/api/staticmap?center'][0].split(",")
-		latitude=float(geolocation[0])
-		longitude=float(geolocation[1])
-		welcome=atmlocator('',latitude,longitude)  
+		soup=BeautifulSoup(response.text, "html.parser")
+		for meta in soup.find_all("meta", property="og:image"):
+			url=meta["content"]
+			q=parse_qs(url)
+			geolocation=q['https://maps.google.com/maps/api/staticmap?center'][0].split(",")
+			latitude=float(geolocation[0])
+			longitude=float(geolocation[1])
+			welcome=atmlocator('',latitude,longitude)  
 	return welcome
 
 @app.route('/companies_house_reporting')
