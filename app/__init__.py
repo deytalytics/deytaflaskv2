@@ -3,6 +3,8 @@
 # Import flask and template operators
 from flask import Flask, render_template, flash, request, redirect, session, url_for
 
+import json
+
 #Import web forms
 from wtforms import Form, BooleanField, TextField, PasswordField, validators
 
@@ -133,17 +135,12 @@ def atm():
 			longitude=''
 			welcome=atmlocator(postcode,latitude,longitude)
 	else:
-		response=requests.get("https://www.google.co.uk/maps/search/atms+near+me")
-		soup=BeautifulSoup(response.text, "html.parser")
-		print(soup)
-		for meta in soup.find_all("meta", property="og:image"):
-			url=meta["content"]
-			q=parse_qs(url)
-			geolocation=q['https://maps.google.com/maps/api/staticmap?center'][0].split(",")
-			latitude=float(geolocation[0])
-			longitude=float(geolocation[1])
-			print("latitude:"+str(latitude)+" longitude:"+str(longitude))
-			welcome=atmlocator('',latitude,longitude)  
+		json_resp=json.loads(requests.get("https://ipinfo.io?TOKEN=8de0dd38786006").text)
+		geolocation=json_resp['loc'].split(',')
+		latitude=float(geolocation[0])
+		longitude=float(geolocation[1])
+		print("latitude:"+str(latitude)+" longitude:"+str(longitude))
+		welcome=atmlocator('',latitude,longitude)  
 	return welcome
 
 @app.route('/companies_house_reporting')
