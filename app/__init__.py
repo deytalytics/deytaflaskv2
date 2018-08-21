@@ -134,7 +134,6 @@ def atm():
 			welcome=atmlocator(postcode,latitude,longitude)
 	else:
 		response=requests.get("https://www.google.co.uk/maps/search/atms+near+me")
-		print(response.text)
 		soup=BeautifulSoup(response.text, "html.parser")
 		for meta in soup.find_all("meta", property="og:image"):
 			url=meta["content"]
@@ -142,6 +141,7 @@ def atm():
 			geolocation=q['https://maps.google.com/maps/api/staticmap?center'][0].split(",")
 			latitude=float(geolocation[0])
 			longitude=float(geolocation[1])
+			print("latitude:"+str(latitude)+" longitude:"+str(longitude))
 			welcome=atmlocator('',latitude,longitude)  
 	return welcome
 
