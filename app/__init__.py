@@ -137,8 +137,7 @@ def atm():
 			ip_addr=request.environ['REMOTE_ADDR']
 		else:
 			ip_addr=request.environ['HTTP_X_FORWARDED_FOR'] # if behind a proxy]
-		print(ip_addr)
-		response=requests.get("http://ipinfo.io/"+ip_addr+"Token=8de0dd38786006")
+		response=requests.get("https://ipinfo.io/"+ip_addr+"/geo")
 		json_resp=json.loads(response.text)
 		print(json_resp)
 		geolocation=json_resp['loc']
