@@ -3,8 +3,6 @@
 # Import flask and template operators
 from flask import Flask, render_template, flash, request, redirect, session, url_for
 
-import json
-
 #Import web forms
 from wtforms import Form, BooleanField, TextField, PasswordField, validators
 
@@ -135,10 +133,15 @@ def atm():
 			longitude=''
 			welcome=atmlocator(postcode,latitude,longitude)
 	else:
-		json_resp=json.loads(requests.get("http://httpbin.org/ip").text)
-		client_ip=json_resp['origin']
-		json_resp=json.loads(requests.get("https://ipinfo.io/"+client_ip+"?TOKEN=8de0dd38786006").text)
-		geolocation=json_resp['loc'].split(',')
+		if request.environ.get('HTTP_X_FORWARDED_FOR') is None:
+			ip_addr=request.environ['REMOTE_ADDR']
+		else:
+			ip_addr=request.environ['HTTP_X_FORWARDED_FOR'] # if behind a proxy]
+		print(ip_addr)
+		response=requests.get("http://ipinfo.io/"+ip_addr+"Token=8de0dd38786006")
+		json_resp=json.loads(response.text)
+		print(json_resp)
+		geolocation=json_resp['loc']
 		latitude=float(geolocation[0])
 		longitude=float(geolocation[1])
 		print("latitude:"+str(latitude)+" longitude:"+str(longitude))
