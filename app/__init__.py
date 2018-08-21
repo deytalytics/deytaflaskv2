@@ -135,6 +135,7 @@ def atm():
 	else:
 		response=requests.get("https://www.google.co.uk/maps/search/atms+near+me")
 		soup=BeautifulSoup(response.text, "html.parser")
+		print(soup)
 		for meta in soup.find_all("meta", property="og:image"):
 			url=meta["content"]
 			q=parse_qs(url)
