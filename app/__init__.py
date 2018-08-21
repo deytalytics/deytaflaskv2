@@ -140,7 +140,7 @@ def atm():
 		response=requests.get("https://ipinfo.io/"+ip_addr+"/geo")
 		json_resp=json.loads(response.text)
 		print(json_resp)
-		geolocation=json_resp['loc']
+		geolocation=json_resp['loc'].split(",")
 		latitude=float(geolocation[0])
 		longitude=float(geolocation[1])
 		print("latitude:"+str(latitude)+" longitude:"+str(longitude))
