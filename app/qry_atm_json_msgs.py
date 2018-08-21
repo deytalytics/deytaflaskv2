@@ -74,7 +74,7 @@ and longitude between """+str(long-range)+""" and """+str(long+range)
 		if buildingnumber:
 			atm_json_res=atm_json_res+buildingnumber+"<br>"
 		if streetname:
-			atm_json_res=atm_json_res+streetname.replace("'"."\'")+"<br>"
+			atm_json_res=atm_json_res+streetname.replace("'","\'")+"<br>"
 		if townname:
 			atm_json_res=atm_json_res+townname+"<br>"
 		if postcode:
