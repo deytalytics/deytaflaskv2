@@ -135,7 +135,9 @@ def atm():
 			longitude=''
 			welcome=atmlocator(postcode,latitude,longitude)
 	else:
-		json_resp=json.loads(requests.get("https://ipinfo.io?TOKEN=8de0dd38786006").text)
+		json_resp=json.loads(requests.get("http://httpbin.org/ip").text)
+		client_ip=json_resp['origin']
+		json_resp=json.loads(requests.get("https://ipinfo.io/"+client_ip+"?TOKEN=8de0dd38786006").text)
 		geolocation=json_resp['loc'].split(',')
 		latitude=float(geolocation[0])
 		longitude=float(geolocation[1])
