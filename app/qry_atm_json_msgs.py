@@ -100,6 +100,8 @@ and longitude between """+str(long-range)+""" and """+str(long+range)
 		area=area*5
 		zoom-=1
 		zoom, atm_json_res=qry_atm_json_msgs(lat,long,area,zoom)
+		
+	print(atm_json_res)
 
 
 	return zoom, atm_json_res
