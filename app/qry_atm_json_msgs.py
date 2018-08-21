@@ -80,8 +80,7 @@ and longitude between """+str(long-range)+""" and """+str(long+range)
 			atm_json_res=atm_json_res+townname.replace("'","\\'")+"<br>"
 		if postcode:
 			atm_json_res=atm_json_res+postcode+"<br>"
-		if atmservices:
-			atm_json_res=atm_json_res+"<b>ATMServices:</b>"+str(atmservices)[1:-1].replace("'", "")+"<br>"
+		#if atmservices:			#atm_json_res=atm_json_res+"<b>ATMServices:</b>"+str(atmservices)[1:-1].replace("'", "")+"<br>"
 		if locationcategory:
 			atm_json_res=atm_json_res+"<b>LocationCategory:</b>"+str(locationcategory[1:-1])+"<br>"
 		atm_json_res=atm_json_res+"<a href=\"https://maps.google.com/maps?q="+str(latitude)+","+str(longitude)+"&z=16\">View on Google Maps</a> for directions"
