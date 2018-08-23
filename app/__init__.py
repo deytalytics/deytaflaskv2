@@ -141,13 +141,16 @@ def atm():
 			forwarded_ip = ip_addr.split(",")
 			ip_addr=forwarded_ip[0]
 		print(ip_addr)
-		response=requests.get("https://ipinfo.io/"+ip_addr+"/geo")
-		print(response.text)
-		json_resp=json.loads(response.text)
-		geolocation=json_resp['loc'].split(",")
-		latitude=float(geolocation[0])
-		longitude=float(geolocation[1])
-		print("latitude:"+str(latitude)+" longitude:"+str(longitude))
+		latitude=51
+		longitude=-0.18
+		if ip_addr!='127.0.0.1':
+			response=requests.get("https://ipinfo.io/"+ip_addr+"/geo")
+			print(response.text)
+			json_resp=json.loads(response.text)
+			geolocation=json_resp['loc'].split(",")
+			latitude=float(geolocation[0])
+			longitude=float(geolocation[1])
+			print("latitude:"+str(latitude)+" longitude:"+str(longitude))
 		welcome=atmlocator('',latitude,longitude)  
 	return welcome
 	
