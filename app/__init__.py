@@ -152,7 +152,7 @@ def atm():
 	return welcome
 	
 @app.route('/geolocator')
-def geolocator()
+def geolocator():
 	return render_template('geolocator.html')
 
 @app.route('/companies_house_reporting')
