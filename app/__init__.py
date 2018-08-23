@@ -150,8 +150,10 @@ def atm():
 		print("latitude:"+str(latitude)+" longitude:"+str(longitude))
 		welcome=atmlocator('',latitude,longitude)  
 	return welcome
-@app.route('geolocator')
+	
+@app.route('/geolocator')
 	return render_template('geolocator.html')
+
 @app.route('/companies_house_reporting')
 def companies_house():
 	from app.mk_companyhouse_reporting_html import mk_companyhouse_reporting_html
