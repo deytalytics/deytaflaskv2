@@ -90,13 +90,13 @@ def atmlocator(postcode, latitude, longitude):
     } else { 
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
-	window.location.reload(false);
 }
 
 function showPosition(position) {
     latitude.value = position.coords.latitude
 	longitude.value = position.coords.longitude
 	postcode.value=''
+	window.location.reload(false);
 }
 </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSEr1W1SU0jzVPo0FYJRdIcH9lApBPxQg&callback=initMap">
