@@ -131,7 +131,7 @@ def atm():
 			longitude=float(params["longitude"])
 		else:
 			longitude=''
-			welcome=atmlocator(postcode,latitude,longitude)
+		welcome=atmlocator(postcode,latitude,longitude)
 	else:
 		if request.environ.get('HTTP_X_FORWARDED_FOR') is None:
 			ip_addr=request.environ['REMOTE_ADDR']
