@@ -91,6 +91,7 @@ function showPosition(position) {
     latitude.value = position.coords.latitude
 	longitude.value = position.coords.longitude
 	postcode.value=''
+	window.location.href = "http://www.deytalytics.com/atmlocator?latitude="+latitude.value+"&longitude="+longitude.value;
 }
 </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSEr1W1SU0jzVPo0FYJRdIcH9lApBPxQg&callback=initMap">
