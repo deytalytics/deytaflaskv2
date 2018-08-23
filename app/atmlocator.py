@@ -44,7 +44,7 @@ def atmlocator(postcode, latitude, longitude):
 	Click on an icon to reveal details about ATM Address & Services
 	</div>
 	<form action="atmlocator">
-	<button type="button" onclick="getLocation();	window.location.reload(false);">Use Current Location</button>"""
+	<button type="button" onclick="getLocation()">Use Current Location</button>"""
 	welcome=welcome+"""
 	Postcode:<input type="text" id="postcode" maxlength="8" size="8" name="postcode" value=\""""+str(postcode)+"""\">
     <input type="hidden" id="latitude" name="latitude" size="8" value="">	
