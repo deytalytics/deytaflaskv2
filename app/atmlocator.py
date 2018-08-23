@@ -85,7 +85,7 @@ def atmlocator(postcode, latitude, longitude):
     } else { 
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
-	document.getElementById("Submit").submit();
+	document.getElementById("Submit").click();
 }
 
 function showPosition(position) {
