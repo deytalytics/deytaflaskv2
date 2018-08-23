@@ -48,8 +48,8 @@ def atmlocator(postcode, latitude, longitude):
 	<div id="helptext">
 	Click on an icon to reveal details about ATM Address & Services
 	</div>
-	<form action="atmlocator">"""
-#	<button type="button" onclick="getLocation()">Use Current Location</button>
+	<form action="atmlocator">
+	<button type="button" onclick="getLocation()">Use Current Location</button>"""
 	welcome=welcome+"""
 	Postcode:<input type="text" id="postcode" maxlength="8" size="8" name="postcode" value=\""""+str(postcode)+"""\">
     <input type="hidden" id="latitude" name="latitude" size="8" value="">	
@@ -73,6 +73,7 @@ def atmlocator(postcode, latitude, longitude):
           zoom: """+str(zoom)+""",
           center: {lat: """+str(latitude)+""", lng: """+str(longitude)+"""}
         });
+		
 		"""
 	welcome=welcome+str(result)
 	welcome=welcome+"""
@@ -81,7 +82,8 @@ def atmlocator(postcode, latitude, longitude):
 	<script>
   var latitude=document.getElementById("latitude");
   var longitude=document.getElementById("longitude");
-	   
+  
+  
   function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -96,8 +98,7 @@ function showPosition(position) {
 	postcode.value=''
 }
 </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSEr1W1SU0jzVPo0FYJRdIcH9lApBPxQg&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSEr1W1SU0jzVPo0FYJRdIcH9lApBPxQg&callback=initMap">
     </script>
   </body>
 </html>"""
