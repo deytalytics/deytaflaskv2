@@ -34,11 +34,6 @@ def atmlocator(postcode, latitude, longitude):
 </head>
 
   <body>
-  <script>
-  xhttp.open("GET", "qry_companyno?s="+ctr, true);
-  xhttp.send();
-}
-</script>   
     <div>
 	<h3> 
 			<img style="vertical-align:middle" src="static/deytalyticslogo.png">
