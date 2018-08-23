@@ -49,7 +49,7 @@ def atmlocator(postcode, latitude, longitude):
 	Postcode:<input type="text" id="postcode" maxlength="8" size="8" name="postcode" value=\""""+str(postcode)+"""\">
     <input type="hidden" id="latitude" name="latitude" size="8" value="">	
 	<input type="hidden" id="longitude" name="longitude" size="8" value="">	
-	<input type="submit" value="Submit">
+	<input type="submit" id="mapSubmit" value="Submit">
     """
 
 	#Default the ATM locator to 1 mile - suitable for london
@@ -85,7 +85,7 @@ def atmlocator(postcode, latitude, longitude):
     } else { 
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
-	Submit();
+	document.getElementById('mapSubmit').submit();
 }
 
 function showPosition(position) {
