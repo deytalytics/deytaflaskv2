@@ -97,7 +97,7 @@ function showPosition(position) {
 }
 </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqIhNb4dc2o2hQbSrDK-7vHgSyX24znww&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSEr1W1SU0jzVPo0FYJRdIcH9lApBPxQg&callback=initMap">
     </script>
   </body>
 </html>"""
