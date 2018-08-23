@@ -44,7 +44,7 @@ def atmlocator(postcode, latitude, longitude):
 	Click on an icon to reveal details about ATM Address & Services
 	</div>
 	<form action="atmlocator">
-	<button type="button" onclick="getLocation();setTimeout(document.getElementById('Submit').click(), 30);;">Use Current Location</button>"""
+	<button type="button" onclick="getLocation();">Use Current Location</button>"""
 	welcome=welcome+"""
 	Postcode:<input type="text" id="postcode" maxlength="8" size="8" name="postcode" value=\""""+str(postcode)+"""\">
     <input type="hidden" id="latitude" name="latitude" size="8" value="">	
@@ -91,7 +91,8 @@ function showPosition(position) {
     latitude.value = position.coords.latitude
 	longitude.value = position.coords.longitude
 	postcode.value=''
-	window.location.href = "http://www.deytalytics.com/atmlocator?latitude="+latitude.value+"&longitude="+longitude.value;
+	window.location.href = "https://www.deytalytics.com/atmlocator?latitude="+latitude.value+"&longitude="+longitude.value;
+	document.getElementById('Submit').click();
 }
 </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSEr1W1SU0jzVPo0FYJRdIcH9lApBPxQg&callback=initMap">
