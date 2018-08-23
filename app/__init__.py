@@ -142,6 +142,7 @@ def atm():
 			ip_addr=forwarded_ip[0]
 		print(ip_addr)
 		response=requests.get("https://ipinfo.io/"+ip_addr+"/geo")
+		print(response.text)
 		json_resp=json.loads(response.text)
 		geolocation=json_resp['loc'].split(",")
 		latitude=float(geolocation[0])
