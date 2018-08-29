@@ -49,6 +49,7 @@ def atmlocator(postcode, latitude, longitude):
 	Postcode:<input type="text" id="postcode" maxlength="8" size="8" name="postcode" onchange="atmlocator()" value=\""""+str(postcode)+"""\">
     <input type="hidden" id="latitude" name="latitude" size="8" value="">	
 	<input type="hidden" id="longitude" name="longitude" size="8" value="">	
+	<input type="submit" id="Submit" value="Submit">
     """
 
 	#Default the ATM locator to 1 mile - suitable for london
@@ -91,7 +92,7 @@ function showPosition(position) {
 	longitude.value = position.coords.longitude
 	postcode.value=''
 	window.location.href = "https://www.deytalytics.com/atmlocator?latitude="+latitude.value+"&longitude="+longitude.value;
-	this.form.submit;
+	document.getElementById('Submit').click();
 }
 
 function atmlocator {
