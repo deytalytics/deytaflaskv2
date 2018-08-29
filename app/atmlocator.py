@@ -41,7 +41,7 @@ def atmlocator(postcode, latitude, longitude):
 	</h3>
 	</div>
 	<div id="helptext">
-	Click on an icon to reveal details about ATM Address & Services
+	Click on an icon to reveal the ATM details
 	</div>
 	<form action="atmlocator">
 	<img src="static/currloc.png" width="30" height="30" onclick="getLocation();"/>"""
