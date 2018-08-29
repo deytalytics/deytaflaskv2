@@ -95,6 +95,7 @@ function showPosition(position) {
 
 function atmlocator {
 	window.location.href="https://www.deytalytics.com/atmlocator?postcode="+postcode.value;
+}
 </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSEr1W1SU0jzVPo0FYJRdIcH9lApBPxQg&callback=initMap">
     </script>
