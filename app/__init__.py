@@ -108,50 +108,30 @@ def index():
 def getheaders():
 	html="""
 <!DOCTYPE html>
-<HTML>
-<HEAD>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-
-function ContainsKeyValue( obj, key, value ){
-    if( obj[key] === value ) return true;
-    for( all in obj )
-    {
-        if( obj[all] != null && obj[all][key] === value ){
-            return true;
-        }
-        if( typeof obj[all] == "object" && obj[all]!= null ){
-            var found = ContainsKeyValue( obj[all], key, value );
-            if( found == true ) return true;
-        }
-    }
-    return false;
-}
-
-var request = new XMLHttpRequest();
-
-request.open('POST', 'http://www.expedia.com/flight/search/');
-request.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-request.timeout = 90000;
-
-request.onreadystatechange = function() {//Call a function when the state changes.
-    console.log(this.readyState);
-    console.log(this.status);
-    if(this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-		var js=JSON.parse(request.responseText);
-		var livedata = [];
-		console.log(JSON.stringify(js));	
-		document.getElementById('json').innerHTML=JSON.stringify(js);
-     }
-}
-
-request.send('{"trips":[{"departureAirportCode":"LGW","arrivalAirportCode":"AYT","departureDate":"2018-10-20","returnDate":null}],"numberOfAdults":2,"childAges":["8"],"infantInLap":[false],"isRefundableFlight":false,"isNonStopFlight":true,"airlinePreference":"","cabinClass":"coach","pageSelectionParameters":{},"packageType":"f","routeType":"OneWay","hashCodeToCheckValidation":"d208f2360455f903fcc4486466c0530b","stubFile":null}');
-
+$(document).ready(function(){
+    $("button").click(function(){
+        $.post("http://www.expedia.com/flight/search/", '{"trips":[{"departureAirportCode":"LGW","arrivalAirportCode":"AYT","departureDate":"2018-10-20","returnDate":null}],"numberOfAdults":2,"childAges":["8"],"infantInLap":[false],"isRefundableFlight":false,"isNonStopFlight":true,"airlinePreference":"","cabinClass":"coach","pageSelectionParameters":{},"packageType":"f","routeType":"OneWay","hashCodeToCheckValidation":"d208f2360455f903fcc4486466c0530b","stubFile":null}',function(result){
+            $.each(result, function(i, field){
+                $("div").append(field + " ");
+            });
+        },'json');
+    });
+});
 </script>
-</HEAD>
-<BODY>
-<p id="json"></p>
-</BODY>
-</HTML>
+</head>
+<body>
+
+<button>Get JSON data</button>
+
+<div></div>
+
+</body>
+</html>
+
 """
 	return html
 
