@@ -108,6 +108,10 @@ def index():
 def validate_csr():
 	return "Mu4xX_JKJ-x8SQ9yU1ioSQBzW8s8IvLKcyIhf1OFNCw.kA9rInGS5htjUK_-rKsA01K0nmXHYosxy57AaoJHbNM"
 
+@app.route('/.well-known/acme-challenge/0hnWh-9dooFUN5jadYGySAqF4U_mxvgAxVXOEXH_XJc')
+def validate_csr2():
+	return "0hnWh-9dooFUN5jadYGySAqF4U_mxvgAxVXOEXH_XJc.kA9rInGS5htjUK_-rKsA01K0nmXHYosxy57AaoJHbNM"
+
 @app.route('/getheaders', methods={'GET','POST','OPTIONS'})
 def getheaders():
 	html="""
