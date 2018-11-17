@@ -104,6 +104,10 @@ def index():
 	welcome=mk_homepage_html()
 	return welcome
 
+@app.route('/.well-known/acme-challenge/Mu4xX_JKJ-x8SQ9yU1ioSQBzW8s8IvLKcyIhf1OFNCw')
+def validate_csr():
+	return "Mu4xX_JKJ-x8SQ9yU1ioSQBzW8s8IvLKcyIhf1OFNCw.kA9rInGS5htjUK_-rKsA01K0nmXHYosxy57AaoJHbNM"
+
 @app.route('/getheaders', methods={'GET','POST','OPTIONS'})
 def getheaders():
 	html="""
@@ -114,7 +118,10 @@ def getheaders():
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $.post("http://www.expedia.com/flight/search/", '{"trips":[{"departureAirportCode":"LGW","arrivalAirportCode":"AYT","departureDate":"2018-10-20","returnDate":null}],"numberOfAdults":2,"childAges":["8"],"infantInLap":[false],"isRefundableFlight":false,"isNonStopFlight":true,"airlinePreference":"","cabinClass":"coach","pageSelectionParameters":{},"packageType":"f","routeType":"OneWay","hashCodeToCheckValidation":"d208f2360455f903fcc4486466c0530b","stubFile":null}',function(result){
+        $.ajax({
+		url:'http://www.expedia.com/flight/search/',
+		dataType:'JSON',
+	    headers: {'Access-Control-Allow-Origin':'*'},	data:{"trips":[{"departureAirportCode":"LGW","arrivalAirportCode":"AYT","departureDate":"2018-10-20","returnDate":null}],"numberOfAdults":2,"childAges":["8"],"infantInLap":[false],"isRefundableFlight":false,"isNonStopFlight":true,"airlinePreference":"","cabinClass":"coach","pageSelectionParameters":{},"packageType":"f","routeType":"OneWay","hashCodeToCheckValidation":"d208f2360455f903fcc4486466c0530b","stubFile":null},function(result){
             $.each(result, function(i, field){
                 $("div").append(field + " ");
             });
