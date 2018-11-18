@@ -205,6 +205,13 @@ def companies_house():
 	from app.mk_companyhouse_reporting_html import mk_companyhouse_reporting_html
 	welcome=mk_companyhouse_reporting_html()	
 	return welcome
+	
+@app.route('/qry_companyno')
+def qry_companyno():
+	from app.qry_companyno import qry_companyno
+	companyno=int(request.args.get('s'))+11679062
+	welcome=qry_companyno(companyno)
+	return welcome
 
 # Replace the client_id, client_secret and redirect_uri info below with the values for these that you entered/obtained upon registration of your application with Truelayer  
 # at:- https://console.truelayer.com/settings/application 

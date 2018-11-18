@@ -3,10 +3,10 @@ def mk_companyhouse_reporting_html():
 	import requests
 	import json
 
-	hostname = 'aa1q1kus00tfvcf.cicyn2v77if2.us-west-2.rds.amazonaws.com'
-	username = 'nesta'
-	password = 'xedos123'
-	database = 'nesta'
+	hostname = 'ec2-50-16-196-138.compute-1.amazonaws.com'
+	username = 'kbmymanebzaprn'
+	password = 'a090dbaf8e346e65ea63436b9d22c6e709f786308c0f4744e4d257389c71a8fa'
+	database = 'de3gnfncn93kt4'
 
 	#Connect to the database
 	myConnection = psycopg2.connect( host=hostname, user=username, password=password, dbname=database )
