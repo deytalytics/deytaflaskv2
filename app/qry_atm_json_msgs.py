@@ -26,16 +26,16 @@ and longitude between """+str(long-range)+""" and """+str(long+range)
 
 	atm_json_res=''
 
-	halifax="var image={url:'http://www.userlogos.org/files/logos/macleod.mac/halifax.u.png', scaledSize: new google.maps.Size(50, 50)};"
+	halifax="var image={url:'https://www.userlogos.org/files/logos/macleod.mac/halifax.u.png', scaledSize: new google.maps.Size(50, 50)};"
 	nationwide="var image={url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1k24H30PRLEKtWovF41OYeE3Ew6opaLobKtfyE0OU85qr24s9Aw', scaledSize: new google.maps.Size(25, 25)};"
 	hsbc="var image={url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9Dm6-t1BiMqhh2sLpyhLzwKiRLfNqPKBYnUYZXCzEVDxz8VL', scaledSize: new google.maps.Size(25, 25)};"
 	barclays="var image={url:'https://static-s.aa-cdn.net/img/ios/636504159/b699e896b260b52dc7c7cc7c23dec913', scaledSize: new google.maps.Size(25, 25)};"
 	lloyds="var image={url:'https://www.lloydsbank.com/assets/img/personal/lloyds_personal_banking_logo_m.png', scaledSize: new google.maps.Size(25, 25)};"
 	santander="var image={url:'https://logo.clearbit.com/santander.com', scaledSize: new google.maps.Size(25, 25)};"
-	natwest="var image={url:'http://personal.natwest.com/etc/designs/dmp_natwest/favicon.ico', scaledSize: new google.maps.Size(25, 25)};"
-	rbs="var image={url:'http://pbs.twimg.com/profile_images/557489898018459648/wnP2DMIe_normal.png', scaledSize: new google.maps.Size(25, 25)};"
+	natwest="var image={url:'https://personal.natwest.com/etc/designs/dmp_natwest/favicon.ico', scaledSize: new google.maps.Size(25, 25)};"
+	rbs="var image={url:'https://pbs.twimg.com/profile_images/557489898018459648/wnP2DMIe_normal.png', scaledSize: new google.maps.Size(25, 25)};"
 	ulsterbank="var image={url:'https://pbs.twimg.com/profile_images/481434724317945859/bspl1Agb_normal.jpeg', scaledSize: new google.maps.Size(25, 25)};"
-	bankofscotland="var image={url:'http://carilloncapital.com/newsitecarillon/wp-content/uploads/2014/06/imgres-3.jpg', scaledSize: new google.maps.Size(25, 25)};"
+	bankofscotland="var image={url:'https://carilloncapital.com/newsitecarillon/wp-content/uploads/2014/06/imgres-3.jpg', scaledSize: new google.maps.Size(25, 25)};"
 	bankofireland="var image={url:'https://pbs.twimg.com/profile_images/618717342986575876/T3XrKqYV_400x400.jpg', scaledSize: new google.maps.Size(25,25)};"
 	danskebank="var image={url:'https://pbs.twimg.com/profile_images/840180636220563456/YMP5Jj9d.jpg', scaledSize: new google.maps.Size(25,25)};"
 	firsttrustbank="var image={url:'https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/First_Trust_Bank_logo.svg/100px-First_Trust_Bank_logo.svg.png', scaledSize: new google.maps.Size(25,25)};"
@@ -91,7 +91,7 @@ and longitude between """+str(long-range)+""" and """+str(long+range)
 	myConnection.close()
 
 	#Add a marker for the actual location user chose
-	atm_json_res=atm_json_res+"var image={url:'http://pbs.twimg.com/profile_images/557489898018459648/wnP2DMIe_normal.png', scaledSize: new google.maps.Size(25, 25)};"
+	atm_json_res=atm_json_res+"var image={url:'https://pbs.twimg.com/profile_images/557489898018459648/wnP2DMIe_normal.png', scaledSize: new google.maps.Size(25, 25)};"
 	atm_json_res=atm_json_res+"var marker = new google.maps.Marker({position: {lat: "+str(lat)+", lng: "+str(long)+"}, map: map});"
 
 	#If there are less than 10 ATMs returned then lets widen the search area

@@ -90,7 +90,7 @@ function showPosition(position) {
     latitude.value = position.coords.latitude
 	longitude.value = position.coords.longitude
 	postcode.value=''
-	window.location.href = "https://www.deytalytics.com/atmlocator?latitude="+latitude.value+"&longitude="+longitude.value;
+	window.location.href = "/atmlocator?latitude="+latitude.value+"&longitude="+longitude.value;
 	this.form.submit;
 }
 </script>
