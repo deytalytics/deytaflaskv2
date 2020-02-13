@@ -72,7 +72,15 @@ Companies House Reporting - deytalytics</title>
 	
 	
 	<!-- User analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133427054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-133427054-1');
+</script>
 
 <!-- Serving analytics -->
 	<script>
@@ -236,7 +244,7 @@ Companies House Reporting - deytalytics</title>
 	
 		<a href="/free/jdey123/deytalytics"  data-link-type="EXISTING" target="_self" >
 	
-		<img id="element-427842af52876ca" class="preview-element icon-source magic-circle-holder shrinkable-img  allow-mobile-hide" data-menu-name="PREVIEW_ICON" src="https://lh3.googleusercontent.com/o3rP51nX_EOEvQhIAbKyginke-VGWPVBYaCsCUR5Dym-nKX9c2YUFPHu6OxvFN-kb8yC6Lqf7jldSIm2">
+		<img id="element-427842af52876ca" class="preview-element icon-source magic-circle-holder shrinkable-img  allow-mobile-hide" data-menu-name="PREVIEW_ICON" src="static/deytalyticslogobig.png">
 	</a>
 	</div>
 	<br />

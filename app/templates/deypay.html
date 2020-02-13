@@ -5,6 +5,15 @@
 DeyPay
 {% endblock %}
 
+{% block head %}
+  {{ super() }}
+  <style>
+  figure { 
+    display: inline-block;
+}
+  </style>
+{% endblock %}
+
 {% block content %}
 <div class="container">
 <p>
@@ -32,12 +41,23 @@ DeyPay
 	You are not connected to any banks</b>
 {% endif %}
 <br><br>
-
+<figure>
 <a href='/truelayer/accounts'><img src='{{url_for("static", filename="bankaccount-icon.png") }}' title='Your bank accounts' height='60'></a>
-<a href='/truelayer'><img src='{{url_for("static", filename="Connect-icon.png") }}' title='Connect to a bank' height='60'></a>
+<figcaption>View Accounts</figcaption>
+</figure>
+<figure>
+<a href='/truelayer'><img src='{{url_for("static", filename="connect-icon.png") }}' title='Connect to a bank' height='60'></a>
+<figcaption>Connect bank(s)</figcaption>
+</figure>
         {% if connected_banks %} 
+<figure>
 <a href='/truelayer/hangup'><img src='{{url_for("static", filename="disconnect-icon.png") }}' title='Disconnect from bank(s)' height='60'></a>
+<figcaption>Disconnect bank(s)</figcaption>
+</figure>
         {% endif %}
-<a href='/deypay/logout'><img src='{{url_for("static", filename="logout-icon.jpg") }}' title='Logout' height='60'></a>
+<figure>
+<a href='/deypay/logout'><img src='{{url_for("static", filename="Logout-icon.jpg") }}' title='Logout' height='60'></a>
+<figcaption>Logout</figcaption>
+</figure>
 </div>
 {% endblock %}

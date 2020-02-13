@@ -58,7 +58,15 @@ deytalytics</title>
 	
 	
 	<!-- User analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133427054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-133427054-1');
+</script>
 
 <!-- Serving analytics -->
 	<script>
@@ -222,7 +230,7 @@ deytalytics</title>
 	
 		<a href="/"  data-link-type="EXISTING" target="_self" >
 	
-		<img id="element-427842af52876ca" class="preview-element icon-source magic-circle-holder shrinkable-img  allow-mobile-hide" data-menu-name="PREVIEW_ICON" src="https://lh3.googleusercontent.com/o3rP51nX_EOEvQhIAbKyginke-VGWPVBYaCsCUR5Dym-nKX9c2YUFPHu6OxvFN-kb8yC6Lqf7jldSIm2">
+		<img id="element-427842af52876ca" class="preview-element icon-source magic-circle-holder allow-mobile-hide" data-menu-name="PREVIEW_ICON" src="static/deytalyticslogobig.png">
 	</a>
 	</div>
 	<br />
@@ -249,6 +257,14 @@ deytalytics</title>
 
 
 	
+		<li class="removable-parent">
+		
+			<a class="removable-parent" href="whitepapers" data-link-type="EXTERNAL"   target="_blank" >
+		
+			<span id="3bd05a8f"  class="preview-element Link item-link magic-circle-holder text-element custom" data-menu-name="PREVIEW_LINK" >Whitepapers</span>
+			</a>
+	
+		</li>
 		
 		<li class="removable-parent">
 		
@@ -265,7 +281,7 @@ deytalytics</title>
 		
 			<a class="removable-parent" href="/development_projects" data-link-type="EXISTING"   target="_self" >
 		
-			<span id="7f81a0bc"  class="preview-element Link item-link magic-circle-holder text-element custom" data-menu-name="PREVIEW_LINK" >Developments Projects</span>
+			<span id="7f81a0bc"  class="preview-element Link item-link magic-circle-holder text-element custom" data-menu-name="PREVIEW_LINK" >Development Projects</span>
 			</a>
 	
 		</li>
@@ -605,7 +621,7 @@ deytalytics</title>
 <div class="preview-body-holder removable-parent order-handle">
 	
 	<div id="vbid-8eb2b-z9vpu1zy" class="preview-element preview-body magic-circle-holder text-element quick-text-style-menu   allow-mobile-hide" data-menu-name="PREVIEW_BODY">
-		<p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Strategy &amp; Roadmap</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Solution Architecture</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Data Governance</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Data Security</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Data Quality</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Master Data Management</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Data Modelling</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Data Integration</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Dashboards &amp; Reports</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Business Glossary &amp; Subject Classification</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Big Data (Hadoop, Spark)</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">NoSQL (Document, Graph, Wide Column, Key Value)</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Semantic Web (RDF, OWL)</span></p>
+		<p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Strategy &amp; Roadmap</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Solution Architecture</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Data Governance</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Data Security</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Data Quality</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Master Data Management</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Data Modelling</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Data Integration</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Dashboards &amp; Reports</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Business Glossary &amp; Subject Classification</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">REST API</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Cloud (GCP, Redhat Openshift, AWS, Heroku, Azure)</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Fintech (Open Banking, ISO20022)</span></p>
 	</div>
 	
 </div>
@@ -738,7 +754,7 @@ deytalytics</title>
 <div class="preview-body-holder removable-parent order-handle">
 	
 	<div id="vbid-8eb2b-nfciaeas" class="preview-element preview-body magic-circle-holder text-element quick-text-style-menu   allow-mobile-hide" data-menu-name="PREVIEW_BODY">
-		<p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Deytalytics Ltd</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Thornton House</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Thornton Road</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">London</span></p><p>SW19 4NQ</p><p>james.dey@deytalytics.com<br></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">+44 (0)7941 252447</span></p>
+		<p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Deytalytics Ltd</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;"></span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">Milton Road</span></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">London</span></p><p>SW19 8SF</p><p>james.dey@deytalytics.com<br></p><p><span style="font-size: 12px; letter-spacing: 0.6px; text-transform: none;">+44 (0)7941 252447</span></p>
 	</div>
 	
 </div>
@@ -983,7 +999,7 @@ James Dey (Director)' target="_self" >
 						<div class="content">
 					
 					<div class="page-map-cover" >
-	<div id="vbid-8eb2b-tugqgsz7" class="element map-source  magic-circle-holder" data-menu-name="MAP" data-json-name="MAP"  data-spimeNORTHEAST-LAT = '51.4207513302915'  data-spimeSOUTHWEST-LNG = '-0.2169533697085626'  data-spimeLAT = '51.4193524'  data-spimeLOCATION = 'SW19 4NQ'  data-spimeMAP_STYLE_ID = 'blue_water'  data-spimeNORTHEAST-LNG = '-0.2169533697085626'  data-spimeLNG = '-0.21835239999995792'  data-spimeVBID = 'vbid-8eb2b-tugqgsz7'  data-spimeSOUTHWEST-LAT = '51.4180533697085'  >
+	<div id="vbid-8eb2b-tugqgsz7" class="element map-source  magic-circle-holder" data-menu-name="MAP" data-json-name="MAP"  data-spimeNORTHEAST-LAT = '51.4222854'  data-spimeSOUTHWEST-LNG = '-0.1869841'  data-spimeLAT = '51.4193524'  data-spimeLOCATION = 'SW19 8SF'  data-spimeMAP_STYLE_ID = 'blue_water'  data-spimeNORTHEAST-LNG = '-0.2169533697085626'  data-spimeLNG = '-0.21835239999995792'  data-spimeVBID = 'vbid-8eb2b-tugqgsz7'  data-spimeSOUTHWEST-LAT = '51.4180533697085'  >
 	<div class="map-blocker"></div>
 
 <!-- <iframe class="map-frame" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC_rQkOzLFzNFDolszpJnNiz-klYsz0gAw&q=SW19 4NQ"></iframe> -->
@@ -1043,7 +1059,7 @@ James Dey (Director)' target="_self" >
 							
 <div class="preview-subtitle-holder removable-parent">
 	
-	<h3 id="vbid-8eb2b-bqiikga4" class="preview-element preview-subtitle magic-circle-holder text-element quick-text-style-menu   allow-mobile-hide" data-menu-name="PREVIEW_SUBTITLE">+44 (0)7941 252447| thornton house, thornton Road, London, SW19 4NQ<br>Company No. 10439062<br></h3>
+	<h3 id="vbid-8eb2b-bqiikga4" class="preview-element preview-subtitle magic-circle-holder text-element quick-text-style-menu   allow-mobile-hide" data-menu-name="PREVIEW_SUBTITLE">+44 (0)7941 252447 | Milton Road, London, SW19 8SF<br>Company No. 10439062<br></h3>
 
 </div>
 <br />
