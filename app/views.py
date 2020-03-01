@@ -23,7 +23,7 @@ heroku_redirect_uri="https://deytalytics.com/truelayer/callback"
 dev_redirect_uri="http://localhost:5000/truelayer/callback"
 client_id=gcp_client_id
 client_secret=gcp_client_secret
-redirect_uri=dev_redirect_uri
+redirect_uri=heroku_redirect_uri
 scopes = "info%20accounts%20balance%20transactions%20cards%20offline_access"
 
 nonce=generate_nonce()
