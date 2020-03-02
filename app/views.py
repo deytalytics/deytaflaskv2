@@ -146,9 +146,8 @@ def companies_house():
 
 @app.route('/qry_companyno')
 def qry_companyno():
-    print("Got here")
     from app.qry_companyno import qry_companyno
-    companyno=int(request.args.get('s'))+13679062
+    companyno=int(request.args.get('s'))+12379062
     welcome=qry_companyno(companyno)
     return welcome
 
