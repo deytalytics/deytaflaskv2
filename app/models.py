@@ -26,3 +26,4 @@ class Tokens(db.Model):
 	created_ts= db.Column(db.DateTime,  default=db.func.current_timestamp())
 	updated_ts= db.Column(db.DateTime,  default=db.func.current_timestamp(),
 	                                   onupdate=db.func.current_timestamp())
+

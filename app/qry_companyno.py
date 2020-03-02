@@ -5,10 +5,12 @@ def qry_companyno(i):
 	import csv
 	from os import curdir
 	r={}
-	
-	with open('static/SICCodes.csv', mode='r') as infile:
+	print("companyno="+str(i))
+
+	with open('app/SICCodes.csv', mode='r') as infile:
 		reader = csv.reader(infile)
 		siccodes = {rows[0]:rows[1] for rows in reader}
+
 
 	auth=('FzYg4_ufx-_dYc3hZKt51XnnejZFg-V59lSfQJBh','')
 	url='https://api.companieshouse.gov.uk/company/'+str(i)

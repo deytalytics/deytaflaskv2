@@ -142,14 +142,13 @@ def geolocator():
 
 @app.route('/companies_house_reporting')
 def companies_house():
-    from app.mk_companyhouse_reporting_html import mk_companyhouse_reporting_html
-    welcome=mk_companyhouse_reporting_html()
-    return welcome
+    return render_template('companyhouse_reporting.html', title="Companies House Reporting")
 
 @app.route('/qry_companyno')
 def qry_companyno():
+    print("Got here")
     from app.qry_companyno import qry_companyno
-    companyno=int(request.args.get('s'))+11679062
+    companyno=int(request.args.get('s'))+13679062
     welcome=qry_companyno(companyno)
     return welcome
 
