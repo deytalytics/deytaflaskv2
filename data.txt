@@ -1,4 +1,0 @@
-{"grant_type": "refresh_token", 
- "client_id": "deypay-9f90ef", 
- "client_secret": "71d21656-d612-4310-ac2f-9618040ccc50", 
- "refresh_token": "f623128d6e7bad867c1c67c6017a3fa6fd85934e826c06710b9b5ea5a42ab2d6"}
