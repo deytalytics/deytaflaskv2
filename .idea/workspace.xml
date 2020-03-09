@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91470348-25da-4c91-9a5c-feee92d784da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deytaflask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deytaflask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583754953102</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated .gitignore with files to exclude from upload">
+      <created>1583758873211</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583758873211</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,17 +205,18 @@
     <MESSAGE value="." />
     <MESSAGE value="Upgraded versions for urllib3, werkzeug, Jinja2, requests &amp; flask due to security alerts flagged up by Github" />
     <MESSAGE value="Upgraded Flask-SQLAlchemy to latest version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgraded Flask-SQLAlchemy to latest version" />
+    <MESSAGE value="Updated .gitignore with files to exclude from upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated .gitignore with files to exclude from upload" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583755224866">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1583755224866" />
-    <state x="373" y="27" key="CommitChangelistDialog2" timestamp="1583758846397">
+    <state x="373" y="27" key="CommitChangelistDialog2" timestamp="1583758871986">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="373" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583758846397" />
+    <state x="373" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583758871986" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1583758743631">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -221,10 +225,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1583755161012" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1583758635191">
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1583758885414">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583758635191" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583758885414" />
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1583752868937">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
