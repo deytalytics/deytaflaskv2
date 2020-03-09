@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91470348-25da-4c91-9a5c-feee92d784da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535058381001</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Upgraded versions for urllib3, werkzeug, Jinja2, requests &amp; flask due to security alerts flagged up by Github">
+      <created>1583754897455</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583754897455</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,9 +189,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Upgraded versions for urllib3, werkzeug, Jinja2, requests &amp; flask due to security alerts flagged up by Github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgraded versions for urllib3, werkzeug, Jinja2, requests &amp; flask due to security alerts flagged up by Github" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="373" y="27" key="CommitChangelistDialog2" timestamp="1583754884948">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="373" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583754884948" />
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1583752868937">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
