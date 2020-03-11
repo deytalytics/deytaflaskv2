@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91470348-25da-4c91-9a5c-feee92d784da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mk_alexa_skills_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mk_alexa_skills_html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mk_companyhouse_reporting_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mk_companyhouse_reporting_html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mk_homepage_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mk_homepage_html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/process_bca_questions.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/process_bca_questions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/process_questions.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/process_questions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/data_in_the_clouds.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/data_in_the_clouds.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583917131303</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Removed robots no-follow">
+      <created>1583919308515</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583919308515</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +230,8 @@
     <MESSAGE value="Updated .gitignore with files to exclude from upload" />
     <MESSAGE value="Added google analytics tag script to webpages that were currently missing it." />
     <MESSAGE value="Removed debug info" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed debug info" />
+    <MESSAGE value="Removed robots no-follow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed robots no-follow" />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="59" key="#app" timestamp="1583916392347">
@@ -241,38 +242,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1583755224866" />
-    <state x="373" y="27" key="CommitChangelistDialog2" timestamp="1583917130346">
+    <state x="373" y="27" key="CommitChangelistDialog2" timestamp="1583919307306">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="373" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583917130346" />
+    <state x="373" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583919307306" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1583916389806">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1583916389806" />
-    <state width="754" height="185" key="GridCell.Tab.0.bottom" timestamp="1583919267861">
+    <state width="754" height="185" key="GridCell.Tab.0.bottom" timestamp="1583919369671">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="754" height="185" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583919267861" />
-    <state width="754" height="185" key="GridCell.Tab.0.center" timestamp="1583919267861">
+    <state width="754" height="185" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583919369671" />
+    <state width="754" height="185" key="GridCell.Tab.0.center" timestamp="1583919369671">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="754" height="185" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583919267861" />
-    <state width="754" height="185" key="GridCell.Tab.0.left" timestamp="1583919267861">
+    <state width="754" height="185" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583919369671" />
+    <state width="754" height="185" key="GridCell.Tab.0.left" timestamp="1583919369670">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="754" height="185" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583919267861" />
-    <state width="754" height="185" key="GridCell.Tab.0.right" timestamp="1583919267861">
+    <state width="754" height="185" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583919369670" />
+    <state width="754" height="185" key="GridCell.Tab.0.right" timestamp="1583919369671">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="754" height="185" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583919267861" />
+    <state width="754" height="185" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583919369671" />
     <state x="277" y="75" key="SettingsEditor" timestamp="1583755161012">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1583755161012" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1583917142271">
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1583919344550">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583917142271" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583919344550" />
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1583915516910">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -281,10 +282,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1583758559203" />
-    <state x="463" y="164" width="609" height="536" key="find.popup" timestamp="1583919254838">
+    <state x="463" y="164" width="609" height="536" key="find.popup" timestamp="1583919617770">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="463" y="164" width="609" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1583919254838" />
+    <state x="463" y="164" width="609" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1583919617770" />
     <state x="460" y="224" key="git4idea.merge.GitPullDialog" timestamp="1583916620436">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
