@@ -76,20 +76,16 @@ Data in the clouds - deytalytics</title>
 	
 	
 	<!-- User analytics  -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133427054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-133427054-1');
+</script>
 
-<!-- Serving analytics -->
-	<script>
-		var currentDomain =  window.location.host;
-		if (currentDomain != "localhost:7000"){
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-58695071-1']);
-			_gaq.push(['_setDomainName', currentDomain]);
-			_gaq.push(['_setAllowLinker', true]);
-			_gaq.push(['_trackPageview']);
-		}
-	</script>
-	
 
 	<!-- Label config-->
 		<script>

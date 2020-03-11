@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91470348-25da-4c91-9a5c-feee92d784da" name="Default Changelist" comment="" />
+    <list default="true" id="91470348-25da-4c91-9a5c-feee92d784da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/balances.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/balances.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base_layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base_layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/bca_questionnaire.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/bca_questionnaire.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/data_in_the_clouds.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/data_in_the_clouds.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/dev_projs - Copy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/deypay.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/deypay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/family.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/logout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/pca_questionnaire.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/pca_questionnaire.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/transactions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/whitepapers.bak" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,10 +243,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583758885414" />
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1583752868937">
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1583915516910">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1583752868936" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1583915516910" />
     <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583758559203">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

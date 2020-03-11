@@ -45,7 +45,7 @@
 
 		<script src="//www.imcreator.com/js/xprs_helper.js?v=1.4.1g" type="text/javascript"></script>
 
-<script src="https://imos004-dot-im--os.appspot.com/js/imos.js?v=1.4.1g" type="text/javascript"></script>
+        <script src="https://imos004-dot-im--os.appspot.com/js/imos.js?v=1.4.1g" type="text/javascript"></script>
 
 		<script type="text/javascript" src="//www.imcreator.com/all_js.js?v=1.4.1g"></script>
 		<script src="//www.imcreator.com/js/lib/touchswipe/jquery.mobile.custom.min.js"></script>
@@ -56,21 +56,16 @@
 
 		<script src="//www.imcreator.com/js/preview_helper.js?v=1.4.1g"  type="text/javascript"></script>
 
+	  <!-- User analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133427054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-	<!-- User analytics -->
-
-
-<!-- Serving analytics -->
-	<script>
-		var currentDomain =  window.location.host;
-		if (currentDomain != "localhost:7000"){
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-58695071-1']);
-			_gaq.push(['_setDomainName', currentDomain]);
-			_gaq.push(['_setAllowLinker', true]);
-			_gaq.push(['_trackPageview']);
-		}
-	</script>
+  gtag('config', 'UA-133427054-1');
+</script>
 
 	<!-- Label config-->
 		<script>
