@@ -44,6 +44,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app.py" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -273,10 +274,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1583755224866" />
-    <state x="373" y="27" key="CommitChangelistDialog2" timestamp="1583921839844">
+    <state x="373" y="27" key="CommitChangelistDialog2" timestamp="1583922089905">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="373" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583921839844" />
+    <state x="373" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583922089905" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1583916389806">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -301,10 +302,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1583755161012" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1583921854431">
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1583922142617">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583921854431" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583922142617" />
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1583915516910">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

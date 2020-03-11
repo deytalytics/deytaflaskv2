@@ -4,7 +4,7 @@ from app.models import Deypay_user, Tokens, Connected_banks
 from app.forms import LoginForm, RegisterForm
 import requests, json, os, random
 from requests_oauthlib import OAuth2Session
-from flask import render_template, flash, request, redirect, session, url_for, jsonify, send_file
+from flask import render_template, flash, request, redirect, session, url_for, jsonify, send_from_directory
 from werkzeug.security import generate_password_hash, check_password_hash
 from app import whitepapers 
 from twilio.twiml.messaging_response import MessagingResponse, Message
@@ -40,7 +40,7 @@ def index():
 
 @app.route('/sitemap.xml')
 def sitemap():
-    return send_file("../static/sitemap.xml")
+    return send_from_directory(app.static_folder, request.path[1:])
 
 @app.route('/getheaders', methods={'GET','POST','OPTIONS'})
 def getheaders():
