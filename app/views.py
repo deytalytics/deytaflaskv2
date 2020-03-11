@@ -40,7 +40,7 @@ def index():
 
 @app.route('/sitemap.xml')
 def sitemap():
-    return send_file("static/sitemap.xml")
+    return send_file("../static/sitemap.xml")
 
 @app.route('/getheaders', methods={'GET','POST','OPTIONS'})
 def getheaders():
