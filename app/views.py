@@ -27,7 +27,6 @@ redirect_uri=heroku_redirect_uri
 scopes = "info%20accounts%20balance%20transactions%20cards%20offline_access"
 
 nonce=generate_nonce()
-print("nonce="+str(nonce))
 
 authorization_base_url = "https://auth.truelayer.com/?response_type=code&client_id="+client_id+"&nonce="+nonce+"&scope="+scopes+"&redirect_uri="+redirect_uri+"&enable_mock=true"
 token_url = "https://auth.truelayer.com/connect/token"
@@ -75,12 +74,10 @@ $(document).ready(function(){
 
 @app.route('/development_projects')
 def dev_projs():
-    print('dev_projects')
     return render_template('dev_projs.html')
 
 @app.route('/alexa_skills')
 def alexa():
-    print('alexa_skills')
     return render_template('alexa_skills.html')
 
 @app.route('/twilio',methods={'GET','POST','OPTIONS'})
@@ -122,17 +119,14 @@ def atm():
         if "," in ip_addr:
             forwarded_ip = ip_addr.split(",")
             ip_addr=forwarded_ip[0]
-        print(ip_addr)
         latitude=51
         longitude=-0.18
         if ip_addr!='127.0.0.1':
             response=requests.get("https://ipinfo.io/"+ip_addr+"/geo")
-            print(response.text)
             json_resp=json.loads(response.text)
             geolocation=json_resp['loc'].split(",")
             latitude=float(geolocation[0])
             longitude=float(geolocation[1])
-            print("latitude:"+str(latitude)+" longitude:"+str(longitude))
         welcome=atmlocator('',latitude,longitude)
     return welcome
 
@@ -196,13 +190,11 @@ def graphs():
 @app.route('/deypay/balance_history_graphs', methods=['GET'])
 def balance_history_graphs():
     data=get_transaction_results()
-    print (data)
     #List balance history graphs only for those accounts that have a transaction history
     accts = []
     for item in data:
         if (item['transactions']):
             accts.append(item)
-    #print(accts)
     return render_template('balance_history_graphs.html',data=accts)
 
 @app.route('/deypay/balance_history', methods=['GET'])
@@ -214,7 +206,6 @@ def balance_history():
     for results in data:
         if (results['account']['display_name']==params['acct']):
             current_balance=results['balance']['current']
-    #print("current balance="+str(current_balance))
     #Fetch transactions
     data=get_transaction_results()
     txnhist=[]
@@ -234,7 +225,6 @@ def balance_history():
             last_txn_date=txn_date
         current_balance=current_balance-running_total['close']
 
-    #print(balances)
     return render_template('balance_history.html',data=balances)
 
 @app.route("/truelayer")
@@ -283,7 +273,6 @@ def callback():
     auth_code=request.args.get('code')
 
     response=requests.post('https://auth.truelayer.com/connect/token', data = {"grant_type":"authorization_code", "code":auth_code, "client_id":client_id, "client_secret": client_secret, "redirect_uri":redirect_uri})
-    print('response.text='+response.text)
     resp_dict=json.loads(response.text)
     access_token=resp_dict['access_token']
     refresh_token=resp_dict['refresh_token']
@@ -303,7 +292,6 @@ def add_bank(connected_bank):
         user=session['username']
     else:
         user=Deypay_user.query.filter_by(id=session['user_id']).first()
-    print(user)
     new_bank = Connected_banks(username=user, bank=connected_bank)
     db.session.add(new_bank)
     #Save changes to database
@@ -311,25 +299,19 @@ def add_bank(connected_bank):
     return True
 
 def add_tokens(connected_bank, access_token, refresh_token):
-    #print('access_token='+access_token)
-    #print('refresh_token='+refresh_token)
     #for x in session:
-    #	print("session["+x+"]="+str(session[x]))
     if 'username' in session:
         user=session['username']
     else:
         user=Deypay_user.query.filter_by(id=session['user_id']).first()
-    print(user)
     new_tokens = Tokens.query.filter_by(username=user, bank=connected_bank).first()
     #Either update the user's access tokens
     if new_tokens:
         new_tokens.access_token=access_token
         new_tokens.refresh_token=refresh_token
-        print("Updating an existing token"+str(new_tokens))
     #Or add new tokens for this user for this bank
     else:
         new_tokens = Tokens(username=user, bank=connected_bank, access_token=access_token,refresh_token=refresh_token)
-        print("Adding a new token")
         db.session.add(new_tokens)
     #Save changes to database
     db.session.commit()
@@ -338,13 +320,8 @@ def add_tokens(connected_bank, access_token, refresh_token):
 
 def refresh_access_token(refresh_token):
     #Call this function when current access token has expired
-    print('refresh_token='+refresh_token)
-    print('client_secret='+client_secret)
-    print('client_id='+client_id)
     payload={'grant_type':'refresh_token','client_id':client_id	, 'client_secret': client_secret, 'refresh_token': refresh_token}
-    print(payload)
     response=requests.post('https://auth.truelayer.com/connect/token', data = payload)
-    print('response.status_code='+str(response.status_code)+' reponse.text='+response.text)
     resp_dict=json.loads(response.text)
     access_token=resp_dict['access_token']
     refresh_token=resp_dict['refresh_token']
@@ -352,9 +329,7 @@ def refresh_access_token(refresh_token):
     headers = {"Authorization": 'Bearer '+access_token}
     response=requests.get(get_acct_url,  headers=headers)
     resp_dict=json.loads(response.text)
-    print('response.text='+response.text)
     connected_bank=resp_dict['results'][0]['provider']['display_name']
-    print('connected_bank='+connected_bank)
     #Add tokens to database
     add_tokens(connected_bank, access_token, refresh_token)
     return access_token
@@ -363,7 +338,6 @@ def process_response(url,access_token,refresh_token):
     headers = {"Authorization": 'Bearer '+access_token}
     response=requests.get(url,  headers=headers)
     #If we receive back an unauthorised status code as a response, the current access token has expired so we will need to refresh it
-    print('response.status_code='+str(response.status_code))
     response_text=response.text
     if response.status_code==401 or response.status_code==403:
        access_token = refresh_access_token(refresh_token)
@@ -379,9 +353,7 @@ def get_acctinfo():
         #Fetch the access and refresh tokensfor the user
         resp_dict=[]
         for tokens in Tokens.query.filter_by(username=session['username']).all():
-            #print('tokens.refresh_token='+tokens.refresh_token)
             resp_dict.append(json.loads(process_response(get_acct_url, tokens.access_token, tokens.refresh_token)))
-            print(str(resp_dict))
         return render_template('accounts.html',title='Your Accounts', resp_dict=resp_dict)
     #Otherwise redirect to the truelayer connect to bank webpage and then return to original calling page
     else:
@@ -395,7 +367,6 @@ def get_accounts():
     #If Tokens have been created for this user
     if Tokens.query.filter_by(username=session['username']).first():
         data = get_balance_results()
-        print(data)
         return render_template('balances.html',data=data)
     #Otherwise redirect to the truelayer connect to bank webpage and then return to original calling page
     else:
@@ -404,19 +375,13 @@ def get_accounts():
 
 def get_balance_results():
         data=[]
-        for x in session:
-            print("session["+x+"]="+str(session[x]))
         if 'username' in session:
             user=session['username']
         else:
             user=Deypay_user.query.filter_by(id=session['user_id']).first()
-        print(user)
         #Fetch the tokens for this user
         for tokens in Tokens.query.filter_by(username=user).all():
-            print('access_token='+tokens.access_token)
-            print('refresh_token='+tokens.refresh_token)
             resp_dict=json.loads(process_response(get_acct_url, tokens.access_token, tokens.refresh_token))
-            print("resp_dict:"+str(resp_dict))
             if 'error_description' in resp_dict:
                     refresh_access_token(tokens.refresh_token)
             else:
