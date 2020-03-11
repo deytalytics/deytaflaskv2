@@ -62,16 +62,6 @@ Alexa Skills - deytalytics</title>
 
 
 <!-- Serving analytics -->
-	<script>
-		var currentDomain =  window.location.host;
-		if (currentDomain != "localhost:7000"){
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-58695071-1']);
-			_gaq.push(['_setDomainName', currentDomain]);
-			_gaq.push(['_setAllowLinker', true]);
-			_gaq.push(['_trackPageview']);
-		}
-	</script>
 	
 	<!-- Label config-->
 		<script>
