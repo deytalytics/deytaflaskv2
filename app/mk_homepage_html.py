@@ -3,7 +3,7 @@ def mk_homepage_html():
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head><meta name='robots' content='noindex, nofollow'>
+	<head>
 		<title>
 deytalytics</title>
 		<!-- META -->
@@ -170,7 +170,7 @@ deytalytics</title>
 		
 		<li class="removable-parent">
 		
-			<a class="removable-parent" href="/free/jdey123/deytalytics/companies-house-reporting" data-link-type="EXISTING"   target="_self" >
+			<a class="removable-parent" href="/companies-house-reporting" data-link-type="EXISTING"   target="_self" >
 		
 			<span id="01736e78"  class="preview-element Link item-link magic-circle-holder text-element custom" data-menu-name="PREVIEW_LINK" >Companies House Reporting</span>
 			</a>
@@ -958,7 +958,7 @@ deytalytics</title>
 											
 												<div class="preview-item-links order-handle removable-parent" style="display:inline-block;">
 
-		<a class="removable-parent" href="james_dey@hotmail.com"  data-link-type="SUBMIT"  data-text='Dear Sir/Madam,
+		<a class="removable-parent" href="mailto:james_dey@hotmail.com"  data-link-type="SUBMIT"  data-text='Dear Sir/Madam,
 
 Thank you very much for your interest in Deytalytics services. We will be in touch very shortly.
 

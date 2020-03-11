@@ -15,7 +15,7 @@ def mk_companyhouse_reporting_html():
 	welcome="""
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head><meta name='robots' content='noindex, nofollow'>
+	<head>
 		<title>
 Companies House Reporting - deytalytics</title>
 		<!-- META -->

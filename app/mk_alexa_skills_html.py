@@ -2,7 +2,7 @@ def mk_alexa_skills_html():
 	welcome="""
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head><meta name='robots' content='noindex, nofollow'>
+	<head>
 		<title>
 Alexa Skills - deytalytics</title>
 		<!-- META -->
