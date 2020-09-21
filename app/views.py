@@ -40,6 +40,10 @@ def index():
 def pdf(name):
     return app.send_static_file('output/pdf/'+name)
 
+@app.route('/author/<name>')
+def author(name):
+    return app.send_static_file('output/author/'+name)
+
 @app.route('/<name>.html')
 def html(name):
     return app.send_static_file('output/'+name+'.html')
