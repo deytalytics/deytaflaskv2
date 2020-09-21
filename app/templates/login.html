@@ -13,7 +13,7 @@ Login
 {% block content %}
     <div class="container">
 	  <form class="form-signin" method="POST" action="/deypay/login">
-		<img src="{{ url_for('static', filename='deytalytics-smile-logo.png') }}" height='150'>
+          <a href="/"><img src="/images/deytalytics-smile-logo.png" height='150'></a>
         <h2 class="form-signin-heading">Please sign in</h2>
         {{ form.hidden_tag() }}
         {{ wtf.form_field(form.username) }}

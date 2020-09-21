@@ -34,9 +34,47 @@ get_acct_url="https://api.truelayer.com/data/v1/accounts"
 
 @app.route('/')
 def index():
-    from app.mk_homepage_html import mk_homepage_html
-    welcome=mk_homepage_html()
-    return welcome
+    return app.send_static_file('output/index.html')
+
+@app.route('/<name>.html')
+def html(name):
+    return app.send_static_file('output/'+name+'.html')
+
+@app.route('/theme/images/<name>')
+def themeimages(name):
+    print(name)
+    return app.send_static_file("output/images/"+name)
+
+@app.route('/theme/img/<name>')
+def themeimg(name):
+    print(name)
+    return app.send_static_file("output/theme/img/"+name)
+
+@app.route('/images/<name>')
+def images(name):
+    print(name)
+    return app.send_static_file('images/'+name)
+
+@app.route('/category/<name>')
+def category(name):
+    print(name)
+    return app.send_static_file('output/category/'+name)
+
+@app.route('/tag/<name>')
+def tag(name):
+    return app.send_static_file('output/tag/'+name)
+
+@ app.route('/theme/js/<name>')
+def themejs(name):
+    return app.send_static_file("output/theme/js/" + name)
+
+@app.route('/theme/css/<name>')
+def themecss(name):
+    return app.send_static_file("output/theme/css/"+name)
+
+@app.route('/theme/font/<name>')
+def themefont(name):
+    return app.send_static_file("output/theme/font/"+name)
 
 @app.route('/sitemap.xml')
 def sitemap():

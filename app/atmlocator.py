@@ -45,7 +45,7 @@ def atmlocator(postcode, latitude, longitude):
   <body>
     <div>
 	<h3> 
-			<img style="vertical-align:middle" src="static/deytalyticslogo.png">
+			<a href="/"><img style="vertical-align:middle" src="images/deytalytics-icon.png" width="50px"></a>
 			<span style="">ATM Locator</span>
 	</h3>
 	</div>
@@ -53,7 +53,7 @@ def atmlocator(postcode, latitude, longitude):
 	Click on an icon to reveal the ATM details
 	</div>
 	<form action="atmlocator">
-	<img src="static/currloc.png" width="30" height="30" onclick="getLocation();"/>"""
+	<img src="images/currloc.png" width="30" height="30" onclick="getLocation();"/>"""
 	welcome=welcome+"""
 	Postcode:<input type="text" id="postcode" maxlength="8" size="8" name="postcode" value=\""""+str(postcode)+"""\">
     <input type="hidden" id="latitude" name="latitude" size="8" value="">	

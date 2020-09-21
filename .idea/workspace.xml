@@ -2,7 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91470348-25da-4c91-9a5c-feee92d784da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/static/images/alexa-skills-demo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/atm-locator-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/bankaccounts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/business-glossary.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/cloud-choices" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/companies-house-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/currloc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/data-modelling-notation.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/data-modelling.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/deytalytics-header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/deytalytics-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/deytalytics-smile-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/deytalyticslogobig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/ea-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/ea-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/ea-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/ea-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/ea-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/edi-reqs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/edi-solns.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/info-hairball-sales-example.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/info-hairball.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/iso20022-data-dict.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/iso20022-erwin-cdm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/iso20022-pig.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/iso20022-uml.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/iso20022.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/linkedn-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/money-pit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/pelican.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/rest-api.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/rubiks-cube-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/rubiks-cube-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/rubiks-cube-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/semantic-web.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/addthis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/analytics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/disqus_script.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/piwik.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deytaflask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deytaflask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/atmlocator.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/atmlocator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/Connect-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/SICCodes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/adambank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/balance-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/bankaccount-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/bankaccounts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/currloc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/deytalytics-smile-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/deytalyticslogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/deytalyticslogobig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/disconnect-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/info-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/line_chart-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/linechart-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/logout-icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/signin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/sitemap.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/starter-template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/txns.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/ukmoney.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/deypay.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/deypay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +109,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -48,7 +120,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app.py" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -61,11 +134,14 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\james\OneDrive\Deytalytics\Software Development\deytaflaskv2\venv" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\templates" />
       <recent name="C:\Users\james\OneDrive\Deytalytics\Software Development\deytaflaskv2\app\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\static\output\images" />
+      <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\static" />
+      <recent name="C:\Users\james\OneDrive\Deytalytics\Software Development\deytaflaskv2\venv" />
     </key>
   </component>
   <component name="RunManager" selected="Python.app">
@@ -283,62 +359,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added sitemap.xml" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="496" y="59" key="#app" timestamp="1583916392347">
+    <state x="535" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600695072441">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="496" y="59" key="#app/0.0.1536.864@0.0.1536.864" timestamp="1583916392347" />
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583755224866">
+    <state x="535" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600695072441" />
+    <state width="1515" height="160" key="GridCell.Tab.0.bottom" timestamp="1600698355470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1583755224866" />
-    <state x="373" y="27" key="CommitChangelistDialog2" timestamp="1583922301607">
+    <state width="1515" height="160" key="GridCell.Tab.0.bottom/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600698355470" />
+    <state width="1515" height="160" key="GridCell.Tab.0.center" timestamp="1600698355470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="373" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1583922301607" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1583916389806">
+    <state width="1515" height="160" key="GridCell.Tab.0.center/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600698355470" />
+    <state width="1515" height="160" key="GridCell.Tab.0.left" timestamp="1600698355470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1583916389806" />
-    <state width="754" height="185" key="GridCell.Tab.0.bottom" timestamp="1583925201394">
+    <state width="1515" height="160" key="GridCell.Tab.0.left/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600698355470" />
+    <state width="1515" height="160" key="GridCell.Tab.0.right" timestamp="1600698355470">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="754" height="185" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583925201394" />
-    <state width="754" height="185" key="GridCell.Tab.0.center" timestamp="1583925201394">
+    <state width="1515" height="160" key="GridCell.Tab.0.right/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600698355470" />
+    <state x="278" y="75" key="SettingsEditor" timestamp="1600676873028">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="754" height="185" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583925201394" />
-    <state width="754" height="185" key="GridCell.Tab.0.left" timestamp="1583925201393">
+    <state x="278" y="75" key="SettingsEditor/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600676873028" />
+    <state x="466" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1600682682847">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="754" height="185" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583925201393" />
-    <state width="754" height="185" key="GridCell.Tab.0.right" timestamp="1583925201394">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="754" height="185" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583925201394" />
-    <state x="277" y="75" key="SettingsEditor" timestamp="1583755161012">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1583755161012" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1583922322492">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1583922322492" />
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1583915516910">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1583915516910" />
-    <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583758559203">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1583758559203" />
-    <state x="463" y="164" width="609" height="536" key="find.popup" timestamp="1583925187603">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="463" y="164" width="609" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1583925187603" />
-    <state x="460" y="224" key="git4idea.merge.GitPullDialog" timestamp="1583916620436">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="460" y="224" key="git4idea.merge.GitPullDialog/0.0.1536.864@0.0.1536.864" timestamp="1583916620436" />
+    <state x="466" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600682682847" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
