@@ -36,6 +36,10 @@ get_acct_url="https://api.truelayer.com/data/v1/accounts"
 def index():
     return app.send_static_file('output/index.html')
 
+@app.route('/pdf/<name>')
+def pdf(name):
+    return app.send_static_file('output/pdf/'+name)
+
 @app.route('/<name>.html')
 def html(name):
     return app.send_static_file('output/'+name+'.html')
