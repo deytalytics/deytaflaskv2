@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Modelling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="James Dey">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      .container-fluid {
+        padding-left: 10px;
+        }
+    body{
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="http://127.0.0.1:8000/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="http://127.0.0.1:8000/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="http://127.0.0.1:8000/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://127.0.0.1:8000/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://127.0.0.1:8000/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://127.0.0.1:8000/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="http://127.0.0.1:8000/" type="application/atom+xml" rel="alternate" title="Deytalytics ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://127.0.0.1:8000/index.html"><img alt="Deytalytics"  src="http://127.0.0.1:8000/images/deytalytics-icon.png" width="30px">Deytalytics  Articles</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/cloud-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Cloud Architecture
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="http://127.0.0.1:8000/category/data-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Data Architecture
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/enterprise-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Enterprise Architecture
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/solution-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Solution Architecture
+					</a>
+                  </li>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Data Modelling">
+                                        Data Modelling
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2016-09-05T10:20:00+01:00">
+        <i class="icon-calendar"></i>Mon 05 September 2016
+</abbr>
+<span class="label">By</span>
+<a href="http://127.0.0.1:8000/author/deytalytics-ltd.html"><i class="icon-user"></i>Deytalytics Ltd</a>
+<span class="label">Category</span>
+<a href="http://127.0.0.1:8000/category/data-architecture.html"><i class="icon-folder-open"></i>Data architecture</a>.
+
+<span class="label">
+<a href="http://127.0.0.1:8000/pdf/data-modelling.pdf">PDF</a>
+</span>
+
+<span class="label">Tags</span>
+	<a href="http://127.0.0.1:8000/tag/data-modelling.html"><i class="icon-tag"></i>data modelling</a>
+	<a href="http://127.0.0.1:8000/tag/data-vault.html"><i class="icon-tag"></i>data vault</a>
+	<a href="http://127.0.0.1:8000/tag/erwin.html"><i class="icon-tag"></i>erwin</a>
+	<a href="http://127.0.0.1:8000/tag/powerdesigner.html"><i class="icon-tag"></i>powerdesigner</a>
+	<a href="http://127.0.0.1:8000/tag/uml.html"><i class="icon-tag"></i>uml</a>
+	<a href="http://127.0.0.1:8000/tag/relational.html"><i class="icon-tag"></i>relational</a>
+	<a href="http://127.0.0.1:8000/tag/e-r.html"><i class="icon-tag"></i>e-r</a>
+</footer><!-- /.post-info -->                </div>
+                <p><img alt="data modelling image" src="https://deytalytics.github.io/deyblog/images/data-modelling.jpg"></p>
+<h2>What is data modelling?</h2>
+<p>Data modelling is used to describe data objects (aka entities or tables), their attributes (aka fields or columns) and the relationships between them. It is important to do this so that you know what data needs to be stored for a particular purpose, and how relationships between that data should be enforced.</p>
+<p>For example a customer sale, may involve:-</p>
+<ol>
+<li>
+<p>A customer entity</p>
+</li>
+<li>
+<p>A sales order header entity</p>
+</li>
+<li>
+<p>A sales order item entity.</p>
+</li>
+</ol>
+<p>The relationships between these entities may be:-</p>
+<ol>
+<li>
+<p>A customer can place 1 or more sales orders</p>
+</li>
+<li>
+<p>A sales order contains 1 sales order header and 1 or more sales order items.</p>
+</li>
+</ol>
+<h2>What are the 3 common data modelling techniques?</h2>
+<ol>
+<li>
+<p>The oldest way of modelling data object relationships is <a href="https://en.wikipedia.org/wiki/Hierarchical_database_model">hierarchical data modelling</a>. 
+This was the most common data modelling technique in the 1970s when mainframe databases 
+were in common use. This technique also had a revival when XML (1 of the main document integration formats) was introduced in the 1990s to allow documents to be shared between systems. In hierarchical data modelling, data is stored in a tree like structure e.g. for a customer sale, you might have customer as 1 entity and sales order header-&gt;sales order item as another entity with a link between the sales order header entity and the customer entity. </p>
+</li>
+<li>
+<p>In the 1980s, <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">entity-relationship data modelling (ER-modelling)</a> became common as relational databases e.g. Oracle, DB2, Sybase became more common. This remains by far the most common method of modelling data today, and is typically used for online transaction processing and data warehousing applications. In the customer sale problem, you have 3 entities - a customer, a sales order header and a sales order item. A customer can be associated to 1 or more sales order headers. A sales order header can have 1 or more sales order items.</p>
+</li>
+<li>
+<p>In the 1990s, as object-orientated progamming e.g. C++, Java became popular within 
+application developers, there was a need to store data in the same way as the application 
+held data in memory. <a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">Universal Modelling Language (UML) modelling</a> was introduced to meet this need with the class diagram concept of most use to data architects. This remains little used in practice, however, due to the lack of popularity of object-orientated databases and application developers using other techniques to quickly store data e.g. in JSON objects nowadays. In the customer sale problem, the class diagram would have classes for customer and sales order and sales order item.</p>
+</li>
+</ol>
+<p>The main differences between a class diagram and an E-R diagram are that a class diagram can:-</p>
+<ul>
+<li>
+<p>Describe the allowable operations that can be applied to the class e.g. registerCustomer, createSalesOrderHeader, readSalesOrderHeader etc.</p>
+</li>
+<li>
+<p>Can use more sophisticated relationships. For example, in an E-R diagram, there is no differentiation between the way that you model "a customer can place 1 or more sales orders" (2 distinctly different entities) and "a team is made up of 1 or more people (team is simply an aggregate of people). Similarly E-R modelling doesn't  model composition objects e.g. a car is made up of 1 steering wheel, a body shell, x doors, x wheels etc. </p>
+</li>
+</ul>
+<h2>What are the 3 common data modelling methodologies used in E-R modelling?</h2>
+<ol>
+<li>
+<p>The oldest method of storing data in a relational database was developed by E.F. Codd 
+and focuses on ensuring that data is physically stored in as efficient method as possible. 
+This methodology requires data to be stored in what is known as <a href="https://en.wikipedia.org/wiki/Third_normal_form">3rd normal form (3NF)</a>. 
+A simple mantra "The key, the whole key and nothing but the key, so help me Codd" reminds 
+the data modeller that a data object needs to have a set of attributes that can be uniquely 
+identified by the whole primary key defined for that data object and is not dependent on 
+other data attributes within the data object. A primary key is simply a field which 
+uniquely identifies a particular instance of data object. For example, for a customer, 
+a customer id would be a good primary key, so long as you truly uniquely identify a 
+customer using it. You might think that a combination of customer first name and last name 
+or their email address would make good primary keys but the drawbacks there are that 
+people's names aren't particularly unique and a person can have more than 1 email address. 
+Data is typically physically stored in 3NF in 
+<a href="https://en.wikipedia.org/wiki/Online_transaction_processing">online transaction processing (OLTP)</a> relational databases or in enterprise data warehouses that use the Bill Inmon approach.</p>
+</li>
+<li>
+<p>The 2nd most common method of storing data in relational databases was developed by 
+Ralph Kimball in the 1990s and is known as <a href="https://en.wikipedia.org/wiki/Dimensional_modeling">dimensional modelling</a>. It's typically used for 
+data warehousing applications. The downside of efficiently storing data in 3NF is that 
+querying data can become non-performant due to the extensive set of relationships that 
+need to be navigated in order to join data between different data objects. 
+Kimball's dimensional model stores transactions either at a granular or aggregated level 
+in a central fact table, and reference data hierarchies that are used to dice, slice and 
+aggregate the fact table at different levels are merged in to single tables (for each 
+hierarchy) known as dimensions. By having a single central fact table joined directly to 
+dimension tables, the number of joins required to retrieve data is dramatically reduced 
+leading to much more performant queries. The downside of dimensional modelling is that 
+data can be lost. For example, if you create a sales data model with customer, product 
+and store as dimensions, then you would not be able to query products by store, 
+where a product has yet to be sold. For most use cases, the advantage of performant 
+queries overcomes any minor disadvantages that Kimball's technique incurs, however. </p>
+</li>
+<li>
+<p>An emerging data modelling methodology has been invented by Dan Linstadt and is known as <a href="https://en.wikipedia.org/wiki/Data_vault_modeling">data vault modelling</a>. 
+One of the drawbacks of data modelling for a data warehouse is having to change the data model (and associated data integration scripts) as new data objects and relationships are discovered. Data vault modelling has a concept of:-</p>
+</li>
+<li>
+<p>A hub - which is a data object containing just the primary key information</p>
+</li>
+<li>
+<p>A satellite - which is a data object which contains all of the associated attributes</p>
+</li>
+<li>
+<p>A link - which is a data object which allows many to many relationships to be stored between 2 or more hub objects.
+The advantage of data vault modelling is around it's flexibility. If new attributes need to be added, then you can create an additional satellite table. If new relationships need to be added, you can create a new link data object. If new data objects need to be added, you can create a new hub, satellite and link tables. The disadvantage of data vault modelling is that it leads to the creation of many more tables than you would using the 3NF approach, so is even less performant for actually querying the data. </p>
+</li>
+</ol>
+<h2>What the 3 main levels of data modelling in use today?</h2>
+<ol>
+<li>
+<p>A data modelling exercise typically starts with a conceptual data model. This is simply identifying key entities that are required to be stored and relationships between them without identifiying primary keys or attributes. </p>
+</li>
+<li>
+<p>Logical data modelling then fills in the primary keys, attributes and relationships. The logical data model most closely represents in totality a business analyst or SME's view as to how entities and their relationships work in the real world. </p>
+</li>
+<li>
+<p>Physical data modelling models data in a form that is relevant to a particular database management system. So will define specific datatypes, storage requirements and indexes, for example. It also resolves supertype/subtype and many to many relationships which appear in a logical data model but can't be physically accommodated in relational database management systems.</p>
+</li>
+</ol>
+<h2>What are the most popular data modelling tools used today?</h2>
+<p>Gartner hasn't covered data modelling tools for a number of years but the 3 choices that are most commonly made (not tied to a single database vendor), in my experience are:-</p>
+<ol>
+<li><a href="http://erwin.com/">Erwin</a></li>
+<li><a href="http://go.sap.com/uk/product/data-mgmt/powerdesigner-data-modeling-tools.html">SAP PowerDesigner</a></li>
+<li><a href="https://www.idera.com/er-studio-data-architect-software?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=emberstudio&amp;utm_content=brand&amp;gclid=cj0keqjwr7s-brd96_uw9jk8unabeiqaujbffams4poe6mowozdx0dvu9brjbmr69xi9odxyxyma-poaar2g8p8haq">ER/Studio</a></li>
+</ol>
+<p>Other worthy candidates include:-</p>
+<ul>
+<li>
+<p>If you're predominantly modelling SQL*Server databases, you'll likely do physical 
+data modelling using <a href="https://msdn.microsoft.com/en-us/library/ms188251.aspx">SQL*Server Management Studio</a> </p>
+</li>
+<li>
+<p>For IBM DB2, <a href="http://www-03.ibm.com/software/products/en/ibminfodataarch">Infosphere Data Architect</a> is a data modelling tool that IBM promote.</p>
+</li>
+<li>
+<p>For Oracle data modelling, <a href="http://www.oracle.com/technetwork/developer-tools/datamodeler/overview/index.html">Oracle SQL Developer Data Modeller</a> is a popular free offering</p>
+</li>
+<li>
+<p>If you're working at the enterprise architecture level, then <a href="http://www.sparxsystems.com/products/ea/">Sparx EA</a> is often chosen.</p>
+</li>
+</ul>
+<h2>Which data modelling notation should I use?</h2>
+<p>There are 4 common data modelling notations in use today. The easiest to understand is 
+<a href="https://en.wikipedia.org/wiki/Barker%27s_notation">Barker</a>. 
+<a href="https://www.eastcoastoracle.org/PDF_files/2011/Presentations/LurtonDatamodeling.pdf">IE</a> 
+&amp; <a href="https://en.wikipedia.org/wiki/IDEF1X">IDEF1X</a> are supported by most data modelling tools,
+ and <a href="http://www.uml-diagrams.org/class-reference.html">UML</a> is also quite common. </p>
+<p>The diagram shows the way that various data modelling components are depicted using these notations:-</p>
+<p><img alt="data modelling notation" src="https://deytalytics.github.io/deyblog/images/data-modelling-notation.jpg"></p>
+                </div><!-- /.entry-content -->
+                <div class="comments">
+                <h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "data-modelling.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'https://deyblog.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
+                </div>
+        </article>
+
+</section>
+        </div><!--/span-->
+
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header">
+                                <form class="search" action="http://127.0.0.1:8000/search.html">
+                                    <input type="text" class="search-query" placeholder="Search" name="q" id="s">
+                                </form>
+
+                          </li>
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://www.deytalytics.com"><i class="icon-external-link"></i>Deytalytics.com</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://www.linkedin.com/company/deytalyticsltd"><i class="icon-Linkedin-sign icon-large"></i>Linkedin</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="http://127.0.0.1:8000/category/cloud-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Cloud Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/data-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Data Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/enterprise-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Enterprise Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/solution-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Solution Architecture
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/cloud.html">
+        <i class="icon-tag icon-large"></i>cloud
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>, <pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/github-pages.html">
+        <i class="icon-tag icon-large"></i>github pages
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/aws.html">
+        <i class="icon-tag icon-large"></i>aws
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/azure.html">
+        <i class="icon-tag icon-large"></i>azure
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/gcp.html">
+        <i class="icon-tag icon-large"></i>gcp
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/website.html">
+        <i class="icon-tag icon-large"></i>website
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/cms.html">
+        <i class="icon-tag icon-large"></i>cms
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/fintech.html">
+        <i class="icon-tag icon-large"></i>fintech
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/alexa.html">
+        <i class="icon-tag icon-large"></i>alexa
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/openbanking.html">
+        <i class="icon-tag icon-large"></i>openbanking
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB67C8>, <pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/data-standards.html">
+        <i class="icon-tag icon-large"></i>data standards
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB67C8>, <pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/financial-services.html">
+        <i class="icon-tag icon-large"></i>financial services
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDAE708>]">
+    <a href="http://127.0.0.1:8000/tag/business-glossary.html">
+        <i class="icon-tag icon-large"></i>business glossary
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/iso20022.html">
+        <i class="icon-tag icon-large"></i>iso20022
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>, <pelican.contents.Article object at 0x000002089CDC4A48>]">
+    <a href="http://127.0.0.1:8000/tag/data-integration.html">
+        <i class="icon-tag icon-large"></i>data integration
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>]">
+    <a href="http://127.0.0.1:8000/tag/rest.html">
+        <i class="icon-tag icon-large"></i>REST
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>]">
+    <a href="http://127.0.0.1:8000/tag/api.html">
+        <i class="icon-tag icon-large"></i>API
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/semantic-web.html">
+        <i class="icon-tag icon-large"></i>semantic web
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/rdf.html">
+        <i class="icon-tag icon-large"></i>rdf
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/owl.html">
+        <i class="icon-tag icon-large"></i>owl
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/web-30.html">
+        <i class="icon-tag icon-large"></i>web 3.0
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/data-modelling.html">
+        <i class="icon-tag icon-large"></i>data modelling
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/data-vault.html">
+        <i class="icon-tag icon-large"></i>data vault
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/erwin.html">
+        <i class="icon-tag icon-large"></i>erwin
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/powerdesigner.html">
+        <i class="icon-tag icon-large"></i>powerdesigner
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/uml.html">
+        <i class="icon-tag icon-large"></i>uml
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/relational.html">
+        <i class="icon-tag icon-large"></i>relational
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/e-r.html">
+        <i class="icon-tag icon-large"></i>e-r
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC4A48>, <pelican.contents.Article object at 0x000002089CDCA9C8>]">
+    <a href="http://127.0.0.1:8000/tag/data-architecture.html">
+        <i class="icon-tag icon-large"></i>data architecture
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD78048>]">
+    <a href="http://127.0.0.1:8000/tag/digital-transformation.html">
+        <i class="icon-tag icon-large"></i>digital transformation
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD21C8>]">
+    <a href="http://127.0.0.1:8000/tag/business-benefits.html">
+        <i class="icon-tag icon-large"></i>business benefits
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD21C8>]">
+    <a href="http://127.0.0.1:8000/tag/enterprise-architecture.html">
+        <i class="icon-tag icon-large"></i>enterprise architecture
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCC1788>]">
+    <a href="http://127.0.0.1:8000/tag/digital-marketing.html">
+        <i class="icon-tag icon-large"></i>digital marketing
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCC1788>, <pelican.contents.Article object at 0x000002089CDCA9C8>]">
+    <a href="http://127.0.0.1:8000/tag/strategy.html">
+        <i class="icon-tag icon-large"></i>strategy
+    </a>
+</li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+
+    <div class="navbar navbar-fixed-bottom">
+      <div class="navbar-inner">
+        <div class="container-fluid text-right">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f51ef315bda6dfd"></script>
+<div class="addthis_inline_share_toolbox"></div>      </div>
+      </div>
+    </div>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://127.0.0.1:8000/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

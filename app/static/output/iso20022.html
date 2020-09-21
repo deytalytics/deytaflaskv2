@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Getting started with ISO20022</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="James Dey">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      .container-fluid {
+        padding-left: 10px;
+        }
+    body{
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="http://127.0.0.1:8000/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="http://127.0.0.1:8000/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="http://127.0.0.1:8000/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://127.0.0.1:8000/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://127.0.0.1:8000/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://127.0.0.1:8000/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="http://127.0.0.1:8000/" type="application/atom+xml" rel="alternate" title="Deytalytics ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://127.0.0.1:8000/index.html"><img alt="Deytalytics"  src="http://127.0.0.1:8000/images/deytalytics-icon.png" width="30px">Deytalytics  Articles</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/cloud-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Cloud Architecture
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="http://127.0.0.1:8000/category/data-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Data Architecture
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/enterprise-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Enterprise Architecture
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/solution-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Solution Architecture
+					</a>
+                  </li>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Getting started with ISO20022">
+                                        Getting started with ISO20022
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2016-11-26T10:20:00+00:00">
+        <i class="icon-calendar"></i>Sat 26 November 2016
+</abbr>
+<span class="label">By</span>
+<a href="http://127.0.0.1:8000/author/deytalytics-ltd.html"><i class="icon-user"></i>Deytalytics Ltd</a>
+<span class="label">Category</span>
+<a href="http://127.0.0.1:8000/category/data-architecture.html"><i class="icon-folder-open"></i>Data Architecture</a>.
+
+<span class="label">
+<a href="http://127.0.0.1:8000/pdf/iso20022.pdf">PDF</a>
+</span>
+
+<span class="label">Tags</span>
+	<a href="http://127.0.0.1:8000/tag/iso20022.html"><i class="icon-tag"></i>iso20022</a>
+	<a href="http://127.0.0.1:8000/tag/financial-services.html"><i class="icon-tag"></i>financial services</a>
+	<a href="http://127.0.0.1:8000/tag/data-standards.html"><i class="icon-tag"></i>data standards</a>
+</footer><!-- /.post-info -->                </div>
+                <p><img alt="ISO20022 image" src="https://deytalytics.github.io/deyblog/images/iso20022-pig.jpg"></p>
+<h2>What is ISO20022?</h2>
+<p>ISO20022 is a universal financial messaging standard which covers messages received from or sent to financial institutions which relate to payments, securities, cards, foreign exchange (FX) and trade securities </p>
+<h2>Are there other ISO financial messaging standards?</h2>
+<h3>ISO15022</h3>
+<p>The earlier <a href="http://www.iso20022.org/15022/iso-15022-home">ISO15022</a> standard covers similar domains to ISO20022. The main problem with ISO15022 is that it was designed prior to standardised messaging formats e.g. XML became popular. Given the ubiquity of XML, many processing languages have in-built ability to parse XML messages, whereas ISO15022 is confined to the financial services industry so is not supported.</p>
+<p>Consumers who’ve had to make an international payment from their bank account may recall that this payment is called a SWIFT payment. SWIFT MT is based on the ISO15022 standard</p>
+<h3>ISO8583</h3>
+<p><a href="http://en.wikipedia.org/wiki/ISO_8583">ISO8583</a> covers payment card authorisation messages. This standard is commonly used to send information to and from your bank when you use a card terminal within a store to make a payment, or when you receive cash from an ATM (cash machine).</p>
+<h2>ISO20022 building blocks</h2>
+<p>ISO2022 can be split in to 3 main building blocks:-</p>
+<ol>
+<li>Data model – Which is referred to as the <a href="http://www.iso20022.org/business_model.page">ISO20022 business model</a></li>
+<li>Data dictionary - Known as the <a href="http://www.iso20022.org/standardsrepository/public/dictionaryModel/repositorySearch.xhtml">ISO20022 repository</a></li>
+<li><a href="http://www.iso20022.org/full_catalogue.page">Message Definition Reports</a></li>
+</ol>
+<h3>ISO20022 Business Model</h3>
+<p>ISO20022 splits the data model by business domain (payments, securities etc.) and also has a separate section for common business components (aka uml classes).</p>
+<p>Within the zip file for a particular domain, the business model can be split down in to lower level business capabilities. For example, in the payments business concepts zip file, there are 2 spreadsheets:-</p>
+<ol>
+<li>Payments</li>
+<li>Exceptions and Investigations</li>
+</ol>
+<p>Within each Excel spreadsheet, there are then tabs which look at the relationships surrounding a particular business component. </p>
+<p>The data model is provided as a set of UML class diagrams. Each uml class is referred to as a business component.</p>
+<p><img alt="iso20022 data model" src="https://deytalytics.github.io/deyblog/images/iso20022-uml.jpg"></p>
+<p>Unfortunately, the UML class diagrams are simply images embedded in an Excel spreadsheet, 
+whereas a data architect’s job would be a lot easier if they’d used the 
+XML Interchange (XMI) format which is designed for sharing UML diagrams. </p>
+<p>The business components don’t have any attributes (aka business elements) depicted in the 
+diagrams so you will need to <a href="http://www.iso20022.org/standardsrepository/public/dictionaryModel/repositorySearch.xhtml">search the repository</a> in order to find this information or 
+look at part 3 of the relevant message definition report (see section below)</p>
+<p>Finally, each tab only gives you a partial view on the business model. To create a complete business model, you'll need to add the 
+information stored in multiple tabs on multiple spreadsheets together.</p>
+<h3>ISO20022 Repository</h3>
+<p>The online repository search is the best way of navigating between the 
+ISO20022 business model and the Message Definition Reports. It provides information about:-</p>
+<ol>
+<li>
+<p>ISO20022 business model (business components, business elements, business codesets, datatypes)</p>
+</li>
+<li>
+<p>Message Definition Reports (message components, message elements)</p>
+</li>
+</ol>
+<p>If you search, for example, for information about the <a href="http://www.iso20022.org/standardsrepository/public/dictionaryModel/repositorySearch.xhtml#query=Account/status=ANY/object=BUSINESS_COMPONENT">“Account” business component</a>, it will be returned as the top entry in your search list. </p>
+<hr>
+<p>Note: You can check that it is a business component rather than a message component by hovering your cursor over the moon shaped icon to the left of the word "Account". You can also see on the left hand side that there are business elements, message definitions, message components and message elements that refer to “Account” in some shape or form.​</p>
+<hr>
+<p><img alt="iso20022 data dictionary image" src="https://deytalytics.github.io/deyblog/images/iso20022-data-dict.jpg"></p>
+<p>For a business component, you can also see that there are 4 tabs which will provide you with information.</p>
+<ol>
+<li>
+<p>The description tab is a short description of the business component and may contain synonyms.</p>
+</li>
+<li>
+<p>The content tab contains the business elements (attributes) of the business component.</p>
+</li>
+<li>
+<p>The business usage tab shows the other business components that this business component has relationships with.</p>
+</li>
+<li>
+<p>The derived message concepts tab shows which message components reference this business component.</p>
+</li>
+</ol>
+<p>Using the information obtained so far, you should be able to start to cobble together an entity-relationship diagram covering part of the ISO20022 business model. Here's an example of a part of payment covering the 4 main party roles, the different payment methods and the payment initiation and instructions (which make up the payment execution). Missing from the diagram are additional party roles, currency exchange, tax, the underlying payment obligation, account information and the manner in which the payment is settled (money transferred from the debtor to the creditor's account).</p>
+<p><img alt="iso20022 erwin cdm image" src="https://deytalytics.github.io/deyblog/images/iso20022-erwin-cdm.jpg"></p>
+<p>In order to utilise the eRepository, ISO20022 suggest that you:-</p>
+<ol>
+<li>
+<p>Download the <a href="http://www.iso20022.org/documents/eRepositories/Metamodel/ISO20022_2013_ecore_metamodel.zip">ISO 20022:2013 ecore implementation metamodel</a>. (which is a zip containing a file with a .ecore suffix).
+Then generate an Eclipse plugin</p>
+</li>
+<li>
+<p><a href="http://www.iso20022.org/sites/default/files/documents/eRepositories/Metamodel/20161025_ISO20022_eRepository.zip">Download the e-Repository</a> (which is a zip with a .iso20022 suffix)</p>
+</li>
+<li>Load the eRepository using the Eclipse plugin that you generated.</li>
+</ol>
+<p>When I started examining ISO20022, It took me a day or two to install Eclipse and follow these steps to find that it provides you a plugin that appears only to allow you to browse the information and I was unable to work out how to extract the information from it, as there was no export capability.</p>
+<p>What I did eventually discover was the eRepository in step 3, is actually an xml file. Once I found that, I wrote an xquery script in order to extract the xpath definitions for each message component/message element in each message schema definition. With this information, any xml parser can extract the data from an incoming xml file, and you can then process it and/or save it to a back end data store. </p>
+<h2>ISO20022 Message Definition Reports (MDRs)</h2>
+<p>This is where you’re most likely to start when you look at ISO20022. 
+The MDRs are contained within the full <a href="http://www.iso20022.org/full_catalogue.page">catalogue of messages</a> and also within domain-specific catalogues e.g. the payments domain catalogue</p>
+<p>There is an MDR for each business process (e.g. payments initiation, payments clearing &amp; settlement, notifications and exceptions etc.)</p>
+<p>The message definition reports are written for human understanding. They’re split into 3 parts:-</p>
+<ol>
+<li>
+<p>Part 1 – is a word document which explains the business scenarios in which the business process is typically used and includes information about the actors (systems, people) involved in the business process and which messages would typically be passed between them. </p>
+</li>
+<li>
+<p>Part 2 – is a PDF document which, for each message used by the business process, describes:-</p>
+</li>
+</ol>
+<p>a. The overall structure of the message </p>
+<p>b. The definitions of any constraints identified within the message specification</p>
+<p>c. The message building blocks – detailed information about the message components and message elements</p>
+<ol>
+<li>Part 3 – provides information about:-</li>
+</ol>
+<p>a. The business components &amp; business elements used by the messages</p>
+<p>b. Links the message components &amp; message elements in the message to the business components &amp; business elements </p>
+<p>c. Provides a uml class diagram depicting the relationships between the business components used in the message (unfortunately missing the cardinality)</p>
+<p>It’s recommended that you read part 1 first to get a clear understanding of the business process, and then read part 2 to start to understand the information that will be contained in the message, referring back to part 3 to link this back to the business components &amp; business elements that will need to be in your back end data store.</p>
+<h2>Potential drawbacks of ISO20022</h2>
+<p>It is impossible to create a standard that satisfies everybody. 
+As the standard has been produced by financial institutions for the purpose of 
+financial institutions, it can be seen as being a little heavy for other developers 
+who don’t have a need for all of the information required for processing financial messages, and have more lightweight methods of passing data.</p>
+<p>For example, ISO20022 originally exclusively mandated messages to be defined 
+using XML schema definitions (<a href="http://en.wikipedia.org/wiki/XML_Schema_(W3C)">XSDs</a>) which are relatively robust in enforcing the syntax of XML messages by examining their structure, cardinality, data types, whether elements are mandatory or optional and whether they have restricted sets of values (codesets) associated with them. </p>
+<p>Nowadays, most web developers have got used to being able to pass data between back end web services and front end web pages using a simpler message format known as JSON. This is much less verbose (i.e. requires less words) than the equivalent XML message (but JSON also not as robust at validating the message as there is currently no standard JSON schema definition agreed).</p>
+<p>A key advantage of JSON for web developers is that <a href="http://en.wikipedia.org/wiki/JavaScript">javascript</a> (most common language for dynamically altering the contents of a web page) can easily parse the data provided by a JSON file and assign a message component to a javascript object and a message element to a javascript object property. The reduction in message size and not requiring an additional library to be installed to parse the message makes JSON more attractive to web developers than XML.</p>
+                </div><!-- /.entry-content -->
+                <div class="comments">
+                <h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "iso20022.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'https://deyblog.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
+                </div>
+        </article>
+
+</section>
+        </div><!--/span-->
+
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header">
+                                <form class="search" action="http://127.0.0.1:8000/search.html">
+                                    <input type="text" class="search-query" placeholder="Search" name="q" id="s">
+                                </form>
+
+                          </li>
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://www.deytalytics.com"><i class="icon-external-link"></i>Deytalytics.com</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://www.linkedin.com/company/deytalyticsltd"><i class="icon-Linkedin-sign icon-large"></i>Linkedin</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="http://127.0.0.1:8000/category/cloud-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Cloud Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/data-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Data Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/enterprise-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Enterprise Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/solution-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Solution Architecture
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/cloud.html">
+        <i class="icon-tag icon-large"></i>cloud
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>, <pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/github-pages.html">
+        <i class="icon-tag icon-large"></i>github pages
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/aws.html">
+        <i class="icon-tag icon-large"></i>aws
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/azure.html">
+        <i class="icon-tag icon-large"></i>azure
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/gcp.html">
+        <i class="icon-tag icon-large"></i>gcp
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/website.html">
+        <i class="icon-tag icon-large"></i>website
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/cms.html">
+        <i class="icon-tag icon-large"></i>cms
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/fintech.html">
+        <i class="icon-tag icon-large"></i>fintech
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/alexa.html">
+        <i class="icon-tag icon-large"></i>alexa
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/openbanking.html">
+        <i class="icon-tag icon-large"></i>openbanking
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB67C8>, <pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/data-standards.html">
+        <i class="icon-tag icon-large"></i>data standards
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB67C8>, <pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/financial-services.html">
+        <i class="icon-tag icon-large"></i>financial services
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDAE708>]">
+    <a href="http://127.0.0.1:8000/tag/business-glossary.html">
+        <i class="icon-tag icon-large"></i>business glossary
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/iso20022.html">
+        <i class="icon-tag icon-large"></i>iso20022
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>, <pelican.contents.Article object at 0x000002089CDC4A48>]">
+    <a href="http://127.0.0.1:8000/tag/data-integration.html">
+        <i class="icon-tag icon-large"></i>data integration
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>]">
+    <a href="http://127.0.0.1:8000/tag/rest.html">
+        <i class="icon-tag icon-large"></i>REST
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>]">
+    <a href="http://127.0.0.1:8000/tag/api.html">
+        <i class="icon-tag icon-large"></i>API
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/semantic-web.html">
+        <i class="icon-tag icon-large"></i>semantic web
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/rdf.html">
+        <i class="icon-tag icon-large"></i>rdf
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/owl.html">
+        <i class="icon-tag icon-large"></i>owl
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/web-30.html">
+        <i class="icon-tag icon-large"></i>web 3.0
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/data-modelling.html">
+        <i class="icon-tag icon-large"></i>data modelling
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/data-vault.html">
+        <i class="icon-tag icon-large"></i>data vault
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/erwin.html">
+        <i class="icon-tag icon-large"></i>erwin
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/powerdesigner.html">
+        <i class="icon-tag icon-large"></i>powerdesigner
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/uml.html">
+        <i class="icon-tag icon-large"></i>uml
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/relational.html">
+        <i class="icon-tag icon-large"></i>relational
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/e-r.html">
+        <i class="icon-tag icon-large"></i>e-r
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC4A48>, <pelican.contents.Article object at 0x000002089CDCA9C8>]">
+    <a href="http://127.0.0.1:8000/tag/data-architecture.html">
+        <i class="icon-tag icon-large"></i>data architecture
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD78048>]">
+    <a href="http://127.0.0.1:8000/tag/digital-transformation.html">
+        <i class="icon-tag icon-large"></i>digital transformation
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD21C8>]">
+    <a href="http://127.0.0.1:8000/tag/business-benefits.html">
+        <i class="icon-tag icon-large"></i>business benefits
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD21C8>]">
+    <a href="http://127.0.0.1:8000/tag/enterprise-architecture.html">
+        <i class="icon-tag icon-large"></i>enterprise architecture
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCC1788>]">
+    <a href="http://127.0.0.1:8000/tag/digital-marketing.html">
+        <i class="icon-tag icon-large"></i>digital marketing
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCC1788>, <pelican.contents.Article object at 0x000002089CDCA9C8>]">
+    <a href="http://127.0.0.1:8000/tag/strategy.html">
+        <i class="icon-tag icon-large"></i>strategy
+    </a>
+</li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+
+    <div class="navbar navbar-fixed-bottom">
+      <div class="navbar-inner">
+        <div class="container-fluid text-right">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f51ef315bda6dfd"></script>
+<div class="addthis_inline_share_toolbox"></div>      </div>
+      </div>
+    </div>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://127.0.0.1:8000/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

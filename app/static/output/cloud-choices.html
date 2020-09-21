@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Choosing your cloud platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="James Dey">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      .container-fluid {
+        padding-left: 10px;
+        }
+    body{
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="http://127.0.0.1:8000/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="http://127.0.0.1:8000/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="http://127.0.0.1:8000/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://127.0.0.1:8000/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://127.0.0.1:8000/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://127.0.0.1:8000/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="http://127.0.0.1:8000/" type="application/atom+xml" rel="alternate" title="Deytalytics ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://127.0.0.1:8000/index.html"><img alt="Deytalytics"  src="http://127.0.0.1:8000/images/deytalytics-icon.png" width="30px">Deytalytics  Articles</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li class="active">
+                    <a href="http://127.0.0.1:8000/category/cloud-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Cloud Architecture
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/data-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Data Architecture
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/enterprise-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Enterprise Architecture
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/solution-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Solution Architecture
+					</a>
+                  </li>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Choosing your cloud platform">
+                                        Choosing your cloud platform
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2020-09-14T10:20:00+01:00">
+        <i class="icon-calendar"></i>Mon 14 September 2020
+</abbr>
+<span class="label">By</span>
+<a href="http://127.0.0.1:8000/author/deytalytics-ltd.html"><i class="icon-user"></i>Deytalytics Ltd</a>
+<span class="label">Category</span>
+<a href="http://127.0.0.1:8000/category/cloud-architecture.html"><i class="icon-folder-open"></i>Cloud Architecture</a>.
+
+<span class="label">
+<a href="http://127.0.0.1:8000/pdf/cloud-choices.pdf">PDF</a>
+</span>
+
+<span class="label">Tags</span>
+	<a href="http://127.0.0.1:8000/tag/cloud.html"><i class="icon-tag"></i>cloud</a>
+	<a href="http://127.0.0.1:8000/tag/github-pages.html"><i class="icon-tag"></i>github pages</a>
+	<a href="http://127.0.0.1:8000/tag/aws.html"><i class="icon-tag"></i>aws</a>
+	<a href="http://127.0.0.1:8000/tag/azure.html"><i class="icon-tag"></i>azure</a>
+	<a href="http://127.0.0.1:8000/tag/gcp.html"><i class="icon-tag"></i>gcp</a>
+</footer><!-- /.post-info -->                </div>
+                <p>The points below cover the main aspects, at a high level, that you need to consider when developing, finding a cloud provider, getting a web domain and securing your website,
+ordered by the main cloud providers in terms of technical complexity required to get started.</p>
+<h1>First some website development basics</h1>
+<h1>Creating web content</h1>
+<p>Web content tends to be a mixture of:-</p>
+<ul>
+<li>
+<p><a href="https://www.w3schools.com/html/">Hypertext Markup Language (HTML)</a> - Current version of this is known as HTML5. This is where you write the bulk of your content.</p>
+</li>
+<li>
+<p><a href="https://www.w3schools.com/css/default.asp">Cascading Style Sheets (CSS)</a> - This provides the styling e.g. you can define the colour &amp; fontsize that you want for a heading seperately from that which you want for the body. CSS files are usually stored seperately from the HTML web page files and referenced by them. CSS is really where you'll need to employ somebody with an artistic flair, if you want your website to look cool. Like HTML, CSS comes in versions, with the latest one being CSS3</p>
+</li>
+<li>
+<p><a href="https://www.w3schools.com/js/default.asp">Javascript</a> - This allows code to be called from the web page, typically as the result of an event or action e.g. if you don't fill in the correct content in a field, you call javascript code to inform the use that the field needs to be completed.
+Javascript code can be found easily by googling and there are plenty of examples as to how to incorporate javascript in to your webpage to do a variety of actions.</p>
+</li>
+</ul>
+<h2>Static website</h2>
+<p>Most people start by creating a website which just has information on it. As the content remains the same as when you first publish the website, this is known as a static website. Even webpages that incorporate javascript code are still called static websites.
+To create nice looking websites, typical choices are:-</p>
+<ol>
+<li>
+<p><a href="https://wordpress.com">Wordpress.com</a></p>
+</li>
+<li>
+<p><a href="https://wix.com">Wix.com</a></p>
+</li>
+</ol>
+<h2>Software as a Service (SaaS)</h2>
+<p>Rather than building everything yourself from scratch, it's much easier to integrate with SaaS providers e.g. you might want to integrate with a payments gateway e.g. Paypal to provide a checkout service for your website, or Disqus to add comments to your blog</p>
+<h2>Dynamic websites</h2>
+<p>Dynamic websites differ in that they rely on server-side code (Common ones are PHP, Node.JS &amp; Python) to generate webpages on the fly. This means that dependent on what the user chooses or their settings, different webpages can be returned</p>
+<h2>Web Hosting</h2>
+<p>In order for anybody to be able to access your website, you'll need to have it hosted by a cloud provider. This means that your website html5, css, javascript (and server-side code, if relevant) needs to be uploaded to a cloud web hosting provider.</p>
+<h2>Web Domains</h2>
+<p>When you first develop your site, you'll typically be given a technical looking url e.g. <a href="https://deytalytics.github.io/deyblog">https://deytalytics.github.io/deyblog</a> provided by the cloud provider
+In order to get a nice looking url that's more relevant to your business e.g. <a href="https://www.deytalytics.com">https://www.deytalytics.com</a>, you will need to seperately purchase a web domain.
+Web domains are typically rented on a yearly basis and can cost very little. I think I pay £10/year for the deytalytics.com domain.</p>
+<h2>Website Security</h2>
+<p>If you're just creating a website for your own needs, then website security isn't top of your mind, but nowadays, if you do anything much more sophisticated, you can find yourself in a legal minefield if you're not careful.
+For example, if you wish to store a database of people who've shown an interest in your product, you need to ensure that no hacker can steal this personal info.
+For these reasons, you'll eventually need to set up website security which will ensure that only the people that you want to can do things like change the website content or access a backend database. In addition to this as your needs progress, you'll want to add in logging functionality to audit anybody whose trying to access your website and prevent denial of service (DDOS) or code injection attacks</p>
+<p><a href="https://cloudflare.com">Cloudflare</a> is an excellent solution for encrypting your web traffic (uses https to ensure things like passwords are safe) as well as protecting your website from DDOS attacks. In addition to the security functionality, it also acts as a <a href="https://en.wikipedia.org/wiki/Content_delivery_network">content delivery network (cdn)</a> which means that all of your static content (html, css, javascript etc) will be served directly from cloudflare increasing your website performance</p>
+<h1>Website provider choices</h1>
+<h2>Common Options for Individuals &amp; Small Businesses</h2>
+<p>Although an individual or small business may choose to use any cloud provider due to having smaller budgets than larger businesses, the options below are the typical choices made.</p>
+<h3><a href="https://wordpress.com">Wordpress.com</a></h3>
+<p>Wordpress is pretty much the go-to site for anybody who wants to produce a static website with a rich set of functionality provided e.g. styling/themes and plugins
+which allow you to integrate with a vast range of other tools. Wordpress.com is the version of Wordpress where they'll host your site for you.
+Wordpress.com allows you to develop your website on their website.</p>
+<p>Pros:</p>
+<ol>
+<li>
+<p>Simple to get started, deploy a site and get a web domain.</p>
+</li>
+<li>
+<p>There are a vast array of plugins on offer that allow integration with most well known SaaS providers</p>
+</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>
+<p>Can be difficult to differentiate your website from 100s of others, as most people don't do much to change the theme.</p>
+</li>
+<li>
+<p>Wordpress.com control everything about your website. If their business fails, potentially you could lose your website.</p>
+</li>
+<li>
+<p>As your needs become more sophisticated e.g. you might want improved security or more control over who can access the site, Wordpress becomes more limiting, and you'll need to migrate to another provider.</p>
+</li>
+</ol>
+<h3><a href="https://wordpress.org/">Wordpress.org</a></h3>
+<p>Wordpress.org allows you to download the code that is used to build your website and develop your website locally. You'll then have a choice as to which web domain &amp; cloud provider you wish to use.</p>
+<p>Pros:</p>
+<ol>
+<li>
+<p>Gives you all of the functionality of wordpress.com but you own your own website material and can choose your own web host &amp; domain</p>
+</li>
+<li>
+<p>You aren't sharing your website with 100s of 1000s of other people's websites so the performance can be better</p>
+</li>
+<li>
+<p>As you can pick &amp; choose your web host &amp; web domain provider, you may be able to save money</p>
+</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>
+<p>Requires more technical expertise than Wordpress.com</p>
+</li>
+<li>
+<p>Although you have more control over how you can adapt your website, you're still dependent on Wordpress for any plugins you might use.</p>
+</li>
+</ol>
+<h3><a href="https://uk.godaddy.com/">GoDaddy</a></h3>
+<p>GoDaddy started off by being best known for selling web domains. They do provide a web hosting platform as well, however.</p>
+<p>Pros:</p>
+<ol>
+<li>It's less expensive than going for a more fully functioned cloud provider</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>
+<p>It's very limited on being able to integrate with other software providers that are not hosted by GoDaddy e.g. if you wanted Tableau to produce reports against your GoDaddy website, GoDaddy doesn't support Tableau and you need to open up ports, risking your security, in order to allow the integration.</p>
+</li>
+<li>
+<p>If you're producing a dynamic website, you're pretty much limited to PHP which is considered an outdated web language nowadays</p>
+</li>
+</ol>
+<h3><a href="https://pages.github.com/">Github pages</a></h3>
+<p>Github is best known as the place to store your code/website material.
+Less well known is that they provide the ability to host a static website for free.</p>
+<p>Pros:</p>
+<ol>
+<li>
+<p>It's free</p>
+</li>
+<li>
+<p>As you should be stored your website code/material somewhere, GitHub is 1 of the best places, so it's not a huge learning curve to setup GitHub pages</p>
+</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>
+<p>You're limited to a static website.</p>
+</li>
+<li>
+<p>There's no assistance in creating your own website, so you'll have to be fairly technical to use this option.</p>
+</li>
+</ol>
+<h3><a href="https://www.heroku.com/">Heroku</a></h3>
+<p>Heroku is another developer friendly method of deploying code.
+The Pros &amp; Cons are pretty much identical to Github pages, but an advantage of Heroku is that you can also deploy a dynamic website that uses PHP, Node.JS or Python.
+Heroku doesn't provide a https url on the free tier, but you can stick cloudflare.com</p>
+<h2>Big Boy Cloud Providers</h2>
+<p>For larger businesses, these are the 3 main cloud providers as of 2020 (Note: There are others like IBM, Oracle &amp; Redhat Openshift but they're not popular)
+The main cloud providers really provide the following functionality that makes them different:-</p>
+<ol>
+<li>
+<p>Seperation of the 3 tiers of website development (Presentation, Business Logic, Database)</p>
+</li>
+<li>
+<p>Fine grained control of cloud security</p>
+</li>
+<li>
+<p>Sophisticated logging tools</p>
+</li>
+<li>
+<p>Ability to deploy dynamic websites using a variety of development languages</p>
+</li>
+<li>
+<p>Containerisation of website applications - This is very useful to provide a reliable deployment for complex websites</p>
+</li>
+<li>
+<p>Ability to be able to deploy an application from a local environment to the cloud using an API</p>
+</li>
+<li>
+<p>Able to deploy your website application in different geographies</p>
+</li>
+<li>
+<p>Able to control the scaling of the deployment environment to adjust for a cost vs performance budget model</p>
+</li>
+<li>
+<p>Budget reports so you know how much you're being charged for each service.</p>
+</li>
+</ol>
+<h3><a href="https://cloud.google.com/">Google Cloud Platform (GCP)</a></h3>
+<p>Google are obviously known for producing a range of funky web tools as well as their ubiquitous search engine.
+Google were relatively late to the party for enterprise scale cloud provision but produce a decent enough platform</p>
+<p>Pros:</p>
+<ol>
+<li>
+<p>They do provide the functionality mentioned above</p>
+</li>
+<li>
+<p>As well as the common functionality, Google can provide services such as a custom search of your website, integration with Google Maps and a Google Home Skills kit</p>
+</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>Google's products are less well known by end users than Microsoft's and are much less extensive than what AWS offers.</li>
+</ol>
+<h3><a href="https://azure.microsoft.com/">Microsoft Azure</a></h3>
+<p>Pros:</p>
+<ol>
+<li>
+<p>Microsoft have the leading database in the non-cloud world - SQL*Server. As it can be difficult to migrate from existing databases to new databases,
+Azure is often the choice made for this reason.</p>
+</li>
+<li>
+<p>Azure integrates well with Office360 products</p>
+</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>Some Azure products can be pretty ropey e.g. Azure Data Factory V1 was little better than a job scheduler and didn't provide the data integration that enterprise level businesses require.</li>
+</ol>
+<h3><a href="https://aws.amazon.com/">Amazon Web Services (AWS)</a></h3>
+<p>Amazon were the first to create an enterprise cloud platform and are still the cloud platform that very technical developers enjoy using the most.</p>
+<p>Pros:</p>
+<ol>
+<li>
+<p>AWS is the most technically sophisticated of the 3 cloud providers providing services that cover pretty much anything you'd want to do technically.</p>
+</li>
+<li>
+<p>As well as AWS, Amazon provide the Alexa Skills kit</p>
+</li>
+</ol>
+<p>Cons:</p>
+<ol>
+<li>Technical sophistication comes with the need for more technically expert staff to be involved.</li>
+</ol>
+                </div><!-- /.entry-content -->
+                <div class="comments">
+                <h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "cloud-choices.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'https://deyblog.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
+                </div>
+        </article>
+
+</section>
+        </div><!--/span-->
+
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header">
+                                <form class="search" action="http://127.0.0.1:8000/search.html">
+                                    <input type="text" class="search-query" placeholder="Search" name="q" id="s">
+                                </form>
+
+                          </li>
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://www.deytalytics.com"><i class="icon-external-link"></i>Deytalytics.com</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://www.linkedin.com/company/deytalyticsltd"><i class="icon-Linkedin-sign icon-large"></i>Linkedin</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="http://127.0.0.1:8000/category/cloud-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Cloud Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/data-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Data Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/enterprise-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Enterprise Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/solution-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Solution Architecture
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/cloud.html">
+        <i class="icon-tag icon-large"></i>cloud
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>, <pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/github-pages.html">
+        <i class="icon-tag icon-large"></i>github pages
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/aws.html">
+        <i class="icon-tag icon-large"></i>aws
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/azure.html">
+        <i class="icon-tag icon-large"></i>azure
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/gcp.html">
+        <i class="icon-tag icon-large"></i>gcp
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/website.html">
+        <i class="icon-tag icon-large"></i>website
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/cms.html">
+        <i class="icon-tag icon-large"></i>cms
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/fintech.html">
+        <i class="icon-tag icon-large"></i>fintech
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/alexa.html">
+        <i class="icon-tag icon-large"></i>alexa
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/openbanking.html">
+        <i class="icon-tag icon-large"></i>openbanking
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB67C8>, <pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/data-standards.html">
+        <i class="icon-tag icon-large"></i>data standards
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB67C8>, <pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/financial-services.html">
+        <i class="icon-tag icon-large"></i>financial services
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDAE708>]">
+    <a href="http://127.0.0.1:8000/tag/business-glossary.html">
+        <i class="icon-tag icon-large"></i>business glossary
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/iso20022.html">
+        <i class="icon-tag icon-large"></i>iso20022
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>, <pelican.contents.Article object at 0x000002089CDC4A48>]">
+    <a href="http://127.0.0.1:8000/tag/data-integration.html">
+        <i class="icon-tag icon-large"></i>data integration
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>]">
+    <a href="http://127.0.0.1:8000/tag/rest.html">
+        <i class="icon-tag icon-large"></i>REST
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>]">
+    <a href="http://127.0.0.1:8000/tag/api.html">
+        <i class="icon-tag icon-large"></i>API
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/semantic-web.html">
+        <i class="icon-tag icon-large"></i>semantic web
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/rdf.html">
+        <i class="icon-tag icon-large"></i>rdf
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/owl.html">
+        <i class="icon-tag icon-large"></i>owl
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/web-30.html">
+        <i class="icon-tag icon-large"></i>web 3.0
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/data-modelling.html">
+        <i class="icon-tag icon-large"></i>data modelling
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/data-vault.html">
+        <i class="icon-tag icon-large"></i>data vault
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/erwin.html">
+        <i class="icon-tag icon-large"></i>erwin
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/powerdesigner.html">
+        <i class="icon-tag icon-large"></i>powerdesigner
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/uml.html">
+        <i class="icon-tag icon-large"></i>uml
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/relational.html">
+        <i class="icon-tag icon-large"></i>relational
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/e-r.html">
+        <i class="icon-tag icon-large"></i>e-r
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC4A48>, <pelican.contents.Article object at 0x000002089CDCA9C8>]">
+    <a href="http://127.0.0.1:8000/tag/data-architecture.html">
+        <i class="icon-tag icon-large"></i>data architecture
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD78048>]">
+    <a href="http://127.0.0.1:8000/tag/digital-transformation.html">
+        <i class="icon-tag icon-large"></i>digital transformation
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD21C8>]">
+    <a href="http://127.0.0.1:8000/tag/business-benefits.html">
+        <i class="icon-tag icon-large"></i>business benefits
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD21C8>]">
+    <a href="http://127.0.0.1:8000/tag/enterprise-architecture.html">
+        <i class="icon-tag icon-large"></i>enterprise architecture
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCC1788>]">
+    <a href="http://127.0.0.1:8000/tag/digital-marketing.html">
+        <i class="icon-tag icon-large"></i>digital marketing
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCC1788>, <pelican.contents.Article object at 0x000002089CDCA9C8>]">
+    <a href="http://127.0.0.1:8000/tag/strategy.html">
+        <i class="icon-tag icon-large"></i>strategy
+    </a>
+</li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+
+    <div class="navbar navbar-fixed-bottom">
+      <div class="navbar-inner">
+        <div class="container-fluid text-right">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f51ef315bda6dfd"></script>
+<div class="addthis_inline_share_toolbox"></div>      </div>
+      </div>
+    </div>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://127.0.0.1:8000/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

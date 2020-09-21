@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Designing an API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="James Dey">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      .container-fluid {
+        padding-left: 10px;
+        }
+    body{
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="http://127.0.0.1:8000/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="http://127.0.0.1:8000/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="http://127.0.0.1:8000/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://127.0.0.1:8000/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://127.0.0.1:8000/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://127.0.0.1:8000/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="http://127.0.0.1:8000/" type="application/atom+xml" rel="alternate" title="Deytalytics ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://127.0.0.1:8000/index.html"><img alt="Deytalytics"  src="http://127.0.0.1:8000/images/deytalytics-icon.png" width="30px">Deytalytics  Articles</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/cloud-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Cloud Architecture
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="http://127.0.0.1:8000/category/data-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Data Architecture
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/enterprise-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Enterprise Architecture
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://127.0.0.1:8000/category/solution-architecture.html">
+						<i class="icon-folder-open icon-large"></i>Solution Architecture
+					</a>
+                  </li>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Designing an API">
+                                        Designing an API
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2016-11-24T10:20:00+00:00">
+        <i class="icon-calendar"></i>Thu 24 November 2016
+</abbr>
+<span class="label">By</span>
+<a href="http://127.0.0.1:8000/author/deytalytics-ltd.html"><i class="icon-user"></i>Deytalytics Ltd</a>
+<span class="label">Category</span>
+<a href="http://127.0.0.1:8000/category/data-architecture.html"><i class="icon-folder-open"></i>Data Architecture</a>.
+
+<span class="label">
+<a href="http://127.0.0.1:8000/pdf/rest-api.pdf">PDF</a>
+</span>
+
+<span class="label">Tags</span>
+	<a href="http://127.0.0.1:8000/tag/data-integration.html"><i class="icon-tag"></i>data integration</a>
+	<a href="http://127.0.0.1:8000/tag/rest.html"><i class="icon-tag"></i>REST</a>
+	<a href="http://127.0.0.1:8000/tag/api.html"><i class="icon-tag"></i>API</a>
+</footer><!-- /.post-info -->                </div>
+                <p><img alt="Rest API" src="https://deytalytics.github.io/deyblog/images/rest-api.jpg"></p>
+<h2>What is an API?</h2>
+<p>An API defines a controlled way in which you can interact with a service. It restricts the methods by which you can access a service, the parameters that can be passed, and the messages that can be sent to a service as a request, and the message that is returned as a response.</p>
+<h2>Why do we need APIs?</h2>
+<p>Service orientated architecture splits systems and applications in to a logical set of services. So, for example, in order to access your facebook page, you need to be able to logon. What happens behind the scenes is that the username and password is passed to an authentication service via a defined API. Similarly, when you view your posts, the facebook web page has called a post retrieval service via an API, in order to retrieve the posts that you've made from a back end data store. The advantages of logically splitting systems and applications in to services include:-</p>
+<ol>
+<li>
+<p>It's easier to understand how the system works</p>
+</li>
+<li>
+<p>It's easier to maintain the code, as you've split what would otherwise be a very large piece of code in to smaller parts</p>
+</li>
+<li>
+<p>You can have developers work independently on a particular service.</p>
+</li>
+<li>
+<p>You can re-write a particular service, or move the service to different hardware without affecting the system.</p>
+</li>
+<li>
+<p>You can apply appropriate levels of security to different services</p>
+</li>
+</ol>
+<p>An API is effectively a contract. In the same way that when you're dealing with a human interaction, there are rules that define what information you need to provide and what you expect as a response. For example, if you make a cash payment in a store for a basket of items, you:-</p>
+<ol>
+<li>
+<p>Hand over the shopping items.</p>
+</li>
+<li>
+<p>Hand over money for a particular value and currency</p>
+</li>
+<li>
+<p>And wait for a receipt or verbal acknowledgement that the transaction is complete.</p>
+</li>
+</ol>
+<p>In order for payment services to take an online payment, it has to emulate that same transaction, so it requires identification of the particular shopping basket and the value and currency to be paid as part of the order completion service. The payment request service will request the customer to make payment. The customer then has to enter information about his payment method (e.g. debit card or paypal) and the payment authorisation service will respond to state whether the card payment worked properly (after calling a service to authorise payment from the cardholder's bank). Since this set of services has to work as smoothly as possible, an API will restrict the methods, parameters and messages which can be passed to the service, and the valid responses and messages that can be returned.</p>
+<h2>What are the steps in designing an API?</h2>
+<ol>
+<li>
+<p>You will first need to understand the business service that you want to emulate. So in the example above, the business service is a shopping service.</p>
+</li>
+<li>
+<p>From there, you need to consider how to split that business service in to a logical set of technical services e.g. add_shopping_item, finalise_shopping_basket, take_payment.</p>
+</li>
+<li>
+<p>You will need a data architect to define the attributes associated to each object for which you wish to store information. For example, shopping item, shopping basket, payment method, payment card, currency, transaction date, payment instruction etc.</p>
+</li>
+<li>
+<p>The data architect will also need to define the relationships between these data objects so that information that relates to each other can be retrieved later. For example, the payment instruction involves a payment card (f card is the payment method), a currency, a transaction date and a payment method. The payment instruction also relates to the shopping basket. The shopping basket contains many shopping basket items.</p>
+</li>
+<li>
+<p>The data architect will also need to specify which attributes should have a restricted set of values. For example, there will only be restricted set of payment methods e.g. paypal, credit card, debit card and the list of currencies should be restricted to those defined by the International Standards Organisation (ISO).</p>
+</li>
+<li>
+<p>The security architect will need to be consulted to ensure that legally sensitive data is not passed over the network in an unencrypted form, or stored in it's raw form in a data store or backup file.</p>
+</li>
+<li>
+<p>The security architect will also need to approve the authentication method that is used to ensure that only authorised users can obtain access to certain data. For example, to gain access to your facebook posts, you first have to use the OAUTH authentication service to authenticate yourself via a username &amp; password. You are then given a unique access code which needs to be supplied in subsequent API calls in order to retrieve sensitive data. (You may have noticed that it is common nowadays to register for a web site using your social media login. Invariably, you are also asked as to whether you agree to share certain private data with the web site owner. Since you've authenticated and accepted that the website should be authorised, Facebook will update it's internal authorisation tables to allow the website access to the data that you agreed to share).</p>
+</li>
+<li>
+<p>The API designer will need to consider the methods by which information can be sent to the service and the parameters (fields and acceptable values) that need to be supplied.</p>
+</li>
+<li>
+<p>The API designer will need to also define the response messages and any status codes to help the calling application understand whether the service call was successful or not.</p>
+</li>
+<li>
+<p>The API will need to be documented in order that there's a clear understanding to 3rd party application developers as to how the technical services interact with each other in order to complete the business service, and the what the methods, parameters and messages are that need to be passed to and received from each technical service, and how to respond to status codes.</p>
+</li>
+</ol>
+<h2>What style should an API be written in?</h2>
+<p>The predominant style for writing modern web services is known as <a href="http://restcookbook.com/">REST</a>. It uses the http protocol methods (POST, PUT, DELETE &amp; GET) to interact with a technical service via it's API. The advantage of this is that most programming languages already support the http style and status codes, so it's easier to write technical services.</p>
+<p>The programmer can interact with any web-based service by identifying resources which are defined using the uniform resource identifier (URI). For example, this web page might have a URI of http://www.deytaltyics.com/designing-an-api.</p>
+<p>The application programmer can retrieve information from the service via the API using the GET method</p>
+<p>For example:-</p>
+<div class="highlight"><pre><span></span><span class="err">GET http://api.deytalytics.com/retrieve_shopping_basket?basket_id=100001</span>
+</pre></div>
+
+
+<p>would call the retrieve_shopping_basket service and request the contents of shopping basket 100001.</p>
+<p>Typically, the API designer will respond with a http status code which tells the calling application whether the service call succeeded, failed, timed out etc. plus a response message in <a href="http://json.org/">JSON</a> or <a href="http://xml.org/">XML</a> format.</p>
+<p>In a similar fashion data can be stored via a service API call using the POST method e.g.</p>
+<div class="highlight"><pre><span></span><span class="err">POST http://api.deytalytics.com/add_shopping_item?basket_id=100001 {item_id:1}</span>
+</pre></div>
+
+
+<p>might add a particular product to a shopping basket.</p>
+<h2>What is the best way of specifying a complete set of REST service APIs?</h2>
+<p>A popular way of specifying REST service APIs is to use the <a href="http://raml.org/">REST API Modelling Language (RAML)</a>. </p>
+<p>Using the modelling language has the benefits of:-</p>
+<ol>
+<li>
+<p>Ensuring that your design contains all of the necessary elements required for the API</p>
+</li>
+<li>
+<p>That the API can be tested</p>
+</li>
+<li>
+<p>The API is well documented </p>
+</li>
+<li>
+<p>The API can be published to API repositories for discovery by 3rd party providers.</p>
+</li>
+</ol>
+                </div><!-- /.entry-content -->
+                <div class="comments">
+                <h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "rest-api.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'https://deyblog.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
+                </div>
+        </article>
+
+</section>
+        </div><!--/span-->
+
+        <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header">
+                                <form class="search" action="http://127.0.0.1:8000/search.html">
+                                    <input type="text" class="search-query" placeholder="Search" name="q" id="s">
+                                </form>
+
+                          </li>
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://www.deytalytics.com"><i class="icon-external-link"></i>Deytalytics.com</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://www.linkedin.com/company/deytalyticsltd"><i class="icon-Linkedin-sign icon-large"></i>Linkedin</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="http://127.0.0.1:8000/category/cloud-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Cloud Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/data-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Data Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/enterprise-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Enterprise Architecture
+</a>
+</li>
+<li>
+<a href="http://127.0.0.1:8000/category/solution-architecture.html">
+    <i class="icon-folder-open icon-large"></i>Solution Architecture
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/cloud.html">
+        <i class="icon-tag icon-large"></i>cloud
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>, <pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/github-pages.html">
+        <i class="icon-tag icon-large"></i>github pages
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/aws.html">
+        <i class="icon-tag icon-large"></i>aws
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/azure.html">
+        <i class="icon-tag icon-large"></i>azure
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8F7C8>]">
+    <a href="http://127.0.0.1:8000/tag/gcp.html">
+        <i class="icon-tag icon-large"></i>gcp
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/website.html">
+        <i class="icon-tag icon-large"></i>website
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDA9EC8>]">
+    <a href="http://127.0.0.1:8000/tag/cms.html">
+        <i class="icon-tag icon-large"></i>cms
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/fintech.html">
+        <i class="icon-tag icon-large"></i>fintech
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/alexa.html">
+        <i class="icon-tag icon-large"></i>alexa
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD8FB08>]">
+    <a href="http://127.0.0.1:8000/tag/openbanking.html">
+        <i class="icon-tag icon-large"></i>openbanking
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB67C8>, <pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/data-standards.html">
+        <i class="icon-tag icon-large"></i>data standards
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB67C8>, <pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/financial-services.html">
+        <i class="icon-tag icon-large"></i>financial services
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDAE708>]">
+    <a href="http://127.0.0.1:8000/tag/business-glossary.html">
+        <i class="icon-tag icon-large"></i>business glossary
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD9BF08>]">
+    <a href="http://127.0.0.1:8000/tag/iso20022.html">
+        <i class="icon-tag icon-large"></i>iso20022
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>, <pelican.contents.Article object at 0x000002089CDC4A48>]">
+    <a href="http://127.0.0.1:8000/tag/data-integration.html">
+        <i class="icon-tag icon-large"></i>data integration
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>]">
+    <a href="http://127.0.0.1:8000/tag/rest.html">
+        <i class="icon-tag icon-large"></i>REST
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDB7E08>]">
+    <a href="http://127.0.0.1:8000/tag/api.html">
+        <i class="icon-tag icon-large"></i>API
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/semantic-web.html">
+        <i class="icon-tag icon-large"></i>semantic web
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/rdf.html">
+        <i class="icon-tag icon-large"></i>rdf
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/owl.html">
+        <i class="icon-tag icon-large"></i>owl
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD3548>]">
+    <a href="http://127.0.0.1:8000/tag/web-30.html">
+        <i class="icon-tag icon-large"></i>web 3.0
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/data-modelling.html">
+        <i class="icon-tag icon-large"></i>data modelling
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/data-vault.html">
+        <i class="icon-tag icon-large"></i>data vault
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/erwin.html">
+        <i class="icon-tag icon-large"></i>erwin
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/powerdesigner.html">
+        <i class="icon-tag icon-large"></i>powerdesigner
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/uml.html">
+        <i class="icon-tag icon-large"></i>uml
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/relational.html">
+        <i class="icon-tag icon-large"></i>relational
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC6B08>]">
+    <a href="http://127.0.0.1:8000/tag/e-r.html">
+        <i class="icon-tag icon-large"></i>e-r
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CDC4A48>, <pelican.contents.Article object at 0x000002089CDCA9C8>]">
+    <a href="http://127.0.0.1:8000/tag/data-architecture.html">
+        <i class="icon-tag icon-large"></i>data architecture
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CD78048>]">
+    <a href="http://127.0.0.1:8000/tag/digital-transformation.html">
+        <i class="icon-tag icon-large"></i>digital transformation
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD21C8>]">
+    <a href="http://127.0.0.1:8000/tag/business-benefits.html">
+        <i class="icon-tag icon-large"></i>business benefits
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCD21C8>]">
+    <a href="http://127.0.0.1:8000/tag/enterprise-architecture.html">
+        <i class="icon-tag icon-large"></i>enterprise architecture
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCC1788>]">
+    <a href="http://127.0.0.1:8000/tag/digital-marketing.html">
+        <i class="icon-tag icon-large"></i>digital marketing
+    </a>
+</li>
+<li class="tag-[<pelican.contents.Article object at 0x000002089CCC1788>, <pelican.contents.Article object at 0x000002089CDCA9C8>]">
+    <a href="http://127.0.0.1:8000/tag/strategy.html">
+        <i class="icon-tag icon-large"></i>strategy
+    </a>
+</li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+
+    <div class="navbar navbar-fixed-bottom">
+      <div class="navbar-inner">
+        <div class="container-fluid text-right">
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f51ef315bda6dfd"></script>
+<div class="addthis_inline_share_toolbox"></div>      </div>
+      </div>
+    </div>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://127.0.0.1:8000/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/bootstrap.min.js"></script>
+  </body>
+</html>

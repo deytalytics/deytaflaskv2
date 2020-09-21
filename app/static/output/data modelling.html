@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Digital Marketing is watching you! &mdash; Deytalytics Blog</title>
+  <meta name="author" content="James Dey">
+  <meta name="google-site-verification" content="cU1FV6UY8WjlyEc_1AO8F7mD75hchAIDn0a-7Q4xxiM" />
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="http://127.0.0.1:8000/favicon.png" rel="icon">
+
+  <link href="http://127.0.0.1:8000/theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="http://127.0.0.1:8000/"><img src="http://127.0.0.1:8000/theme/images/deytalyticslogobig.png"></a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+<form class="search" action="http://127.0.0.1:8000/search.html">
+    <input type="text" class="search-query" placeholder="Search" name="q" id="s">
+</form>
+
+<ul class="main-navigation">
+      <li >
+        <a href="http://127.0.0.1:8000/category/data-architecture.html">Data architecture</a>
+      </li>
+      <li >
+        <a href="http://127.0.0.1:8000/category/enterprise-architecture.html">Enterprise architecture</a>
+      </li>
+      <li class="active">
+        <a href="http://127.0.0.1:8000/category/misc.html">Misc</a>
+      </li>
+      <li >
+        <a href="http://127.0.0.1:8000/category/solution-architecture.html">Solution architecture</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">Digital Marketing is watching you!</h1>
+    <p class="meta">
+<time datetime="2016-09-05T10:20:00+01:00" pubdate>Mon 05 September 2016</time>    </p>
+</header>
+
+  <div class="entry-content"><p><img alt="data modelling image" src="images/data-modelling.jpg"></p>
+<h2>What is data modelling?</h2>
+<p>Data modelling is used to describe data objects (aka entities or tables), their attributes (aka fields or columns) and the relationships between them. It is important to do this so that you know what data needs to be stored for a particular purpose, and how relationships between that data should be enforced.</p>
+<p>For example a customer sale, may involve:-</p>
+<ol>
+<li>
+<p>A customer entity</p>
+</li>
+<li>
+<p>A sales order header entity</p>
+</li>
+<li>
+<p>A sales order item entity.</p>
+</li>
+</ol>
+<p>The relationships between these entities may be:-</p>
+<ol>
+<li>
+<p>A customer can place 1 or more sales orders</p>
+</li>
+<li>
+<p>A sales order contains 1 sales order header and 1 or more sales order items.</p>
+</li>
+</ol>
+<h2>What are the 3 common data modelling techniques?</h2>
+<ol>
+<li>
+<p>The oldest way of modelling data object relationships is <a href="https://en.wikipedia.org/wiki/Hierarchical_database_model">hierarchical data modelling</a>. 
+This was the most common data modelling technique in the 1970s when mainframe databases 
+were in common use. This technique also had a revival when XML (1 of the main document integration formats) was introduced in the 1990s to allow documents to be shared between systems. In hierarchical data modelling, data is stored in a tree like structure e.g. for a customer sale, you might have customer as 1 entity and sales order header-&gt;sales order item as another entity with a link between the sales order header entity and the customer entity. </p>
+</li>
+<li>
+<p>In the 1980s, <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">entity-relationship data modelling (ER-modelling)</a> became common as relational databases e.g. Oracle, DB2, Sybase became more common. This remains by far the most common method of modelling data today, and is typically used for online transaction processing and data warehousing applications. In the customer sale problem, you have 3 entities - a customer, a sales order header and a sales order item. A customer can be associated to 1 or more sales order headers. A sales order header can have 1 or more sales order items.</p>
+</li>
+<li>
+<p>In the 1990s, as object-orientated progamming e.g. C++, Java became popular within 
+application developers, there was a need to store data in the same way as the application 
+held data in memory. <a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">Universal Modelling Language (UML) modelling</a> was introduced to meet this need with the class diagram concept of most use to data architects. This remains little used in practice, however, due to the lack of popularity of object-orientated databases and application developers using other techniques to quickly store data e.g. in JSON objects nowadays. In the customer sale problem, the class diagram would have classes for customer and sales order and sales order item.</p>
+</li>
+</ol>
+<p>The main differences between a class diagram and an E-R diagram are that a class diagram can:-</p>
+<ul>
+<li>
+<p>Describe the allowable operations that can be applied to the class e.g. registerCustomer, createSalesOrderHeader, readSalesOrderHeader etc.</p>
+</li>
+<li>
+<p>Can use more sophisticated relationships. For example, in an E-R diagram, there is no differentiation between the way that you model "a customer can place 1 or more sales orders" (2 distinctly different entities) and "a team is made up of 1 or more people (team is simply an aggregate of people). Similarly E-R modelling doesn't  model composition objects e.g. a car is made up of 1 steering wheel, a body shell, x doors, x wheels etc. </p>
+</li>
+</ul>
+<h2>What are the 3 common data modelling methodologies used in E-R modelling?</h2>
+<ol>
+<li>
+<p>The oldest method of storing data in a relational database was developed by E.F. Codd 
+and focuses on ensuring that data is physically stored in as efficient method as possible. 
+This methodology requires data to be stored in what is known as <a href="https://en.wikipedia.org/wiki/Third_normal_form">3rd normal form (3NF)</a>. 
+A simple mantra "The key, the whole key and nothing but the key, so help me Codd" reminds 
+the data modeller that a data object needs to have a set of attributes that can be uniquely 
+identified by the whole primary key defined for that data object and is not dependent on 
+other data attributes within the data object. A primary key is simply a field which 
+uniquely identifies a particular instance of data object. For example, for a customer, 
+a customer id would be a good primary key, so long as you truly uniquely identify a 
+customer using it. You might think that a combination of customer first name and last name 
+or their email address would make good primary keys but the drawbacks there are that 
+people's names aren't particularly unique and a person can have more than 1 email address. 
+Data is typically physically stored in 3NF in 
+<a href="https://en.wikipedia.org/wiki/Online_transaction_processing">online transaction processing (OLTP)</a> relational databases or in enterprise data warehouses that use the Bill Inmon approach.</p>
+</li>
+<li>
+<p>The 2nd most common method of storing data in relational databases was developed by 
+Ralph Kimball in the 1990s and is known as <a href="https://en.wikipedia.org/wiki/Dimensional_modeling">dimensional modelling</a>. It's typically used for 
+data warehousing applications. The downside of efficiently storing data in 3NF is that 
+querying data can become non-performant due to the extensive set of relationships that 
+need to be navigated in order to join data between different data objects. 
+Kimball's dimensional model stores transactions either at a granular or aggregated level 
+in a central fact table, and reference data hierarchies that are used to dice, slice and 
+aggregate the fact table at different levels are merged in to single tables (for each 
+hierarchy) known as dimensions. By having a single central fact table joined directly to 
+dimension tables, the number of joins required to retrieve data is dramatically reduced 
+leading to much more performant queries. The downside of dimensional modelling is that 
+data can be lost. For example, if you create a sales data model with customer, product 
+and store as dimensions, then you would not be able to query products by store, 
+where a product has yet to be sold. For most use cases, the advantage of performant 
+queries overcomes any minor disadvantages that Kimball's technique incurs, however. </p>
+</li>
+<li>
+<p>An emerging data modelling methodology has been invented by Dan Linstadt and is known as <a href="https://en.wikipedia.org/wiki/Data_vault_modeling">data vault modelling</a>. 
+One of the drawbacks of data modelling for a data warehouse is having to change the data model (and associated data integration scripts) as new data objects and relationships are discovered. Data vault modelling has a concept of:-</p>
+</li>
+<li>
+<p>A hub - which is a data object containing just the primary key information</p>
+</li>
+<li>
+<p>A satellite - which is a data object which contains all of the associated attributes</p>
+</li>
+<li>
+<p>A link - which is a data object which allows many to many relationships to be stored between 2 or more hub objects.
+The advantage of data vault modelling is around it's flexibility. If new attributes need to be added, then you can create an additional satellite table. If new relationships need to be added, you can create a new link data object. If new data objects need to be added, you can create a new hub, satellite and link tables. The disadvantage of data vault modelling is that it leads to the creation of many more tables than you would using the 3NF approach, so is even less performant for actually querying the data. </p>
+</li>
+</ol>
+<h2>What the 3 main levels of data modelling in use today?</h2>
+<ol>
+<li>
+<p>A data modelling exercise typically starts with a conceptual data model. This is simply identifying key entities that are required to be stored and relationships between them without identifiying primary keys or attributes. </p>
+</li>
+<li>
+<p>Logical data modelling then fills in the primary keys, attributes and relationships. The logical data model most closely represents in totality a business analyst or SME's view as to how entities and their relationships work in the real world. </p>
+</li>
+<li>
+<p>Physical data modelling models data in a form that is relevant to a particular database management system. So will define specific datatypes, storage requirements and indexes, for example. It also resolves supertype/subtype and many to many relationships which appear in a logical data model but can't be physically accommodated in relational database management systems.</p>
+</li>
+</ol>
+<h2>What are the most popular data modelling tools used today?</h2>
+<p>Gartner hasn't covered data modelling tools for a number of years but the 3 choices that are most commonly made (not tied to a single database vendor), in my experience are:-</p>
+<ol>
+<li><a href="http://erwin.com/">Erwin</a></li>
+<li><a href="http://go.sap.com/uk/product/data-mgmt/powerdesigner-data-modeling-tools.html">SAP PowerDesigner</a></li>
+<li><a href="https://www.idera.com/er-studio-data-architect-software?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=emberstudio&amp;utm_content=brand&amp;gclid=cj0keqjwr7s-brd96_uw9jk8unabeiqaujbffams4poe6mowozdx0dvu9brjbmr69xi9odxyxyma-poaar2g8p8haq">ER/Studio</a></li>
+</ol>
+<p>Other worthy candidates include:-</p>
+<ul>
+<li>
+<p>If you're predominantly modelling SQL*Server databases, you'll likely do physical 
+data modelling using <a href="https://msdn.microsoft.com/en-us/library/ms188251.aspx">SQL*Server Management Studio</a> </p>
+</li>
+<li>
+<p>For IBM DB2, <a href="http://www-03.ibm.com/software/products/en/ibminfodataarch">Infosphere Data Architect</a> is a data modelling tool that IBM promote.</p>
+</li>
+<li>
+<p>For Oracle data modelling, <a href="http://www.oracle.com/technetwork/developer-tools/datamodeler/overview/index.html">Oracle SQL Developer Data Modeller</a> is a popular free offering</p>
+</li>
+<li>
+<p>If you're working at the enterprise architecture level, then <a href="http://www.sparxsystems.com/products/ea/">Sparx EA</a> is often chosen.</p>
+</li>
+</ul>
+<h2>Which data modelling notation should I use?</h2>
+<p>There are 4 common data modelling notations in use today. The easiest to understand is 
+<a href="https://en.wikipedia.org/wiki/Barker%27s_notation">Barker</a>. 
+<a href="https://www.eastcoastoracle.org/PDF_files/2011/Presentations/LurtonDatamodeling.pdf">IE</a> 
+&amp; <a href="https://en.wikipedia.org/wiki/IDEF1X">IDEF1X</a> are supported by most data modelling tools,
+ and <a href="http://www.uml-diagrams.org/class-reference.html">UML</a> is also quite common. </p>
+<p>The diagram shows the way that various data modelling components are depicted using these notations:-</p>
+<p><img alt="data modelling notation" src="images/data-modelling-notation.jpg"></p></div>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = "http://127.0.0.1:8000/data modelling.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "data modelling; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://deyblog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        Deytalytics Ltd
+    </span>
+  </span>
+<time datetime="2016-09-05T10:20:00+01:00" pubdate>Mon 05 September 2016</time>  <span class="categories">
+    <a class='category' href='http://127.0.0.1:8000/category/misc.html'>misc</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="http://127.0.0.1:8000/tag/data-modelling.html">data modelling</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="http://127.0.0.1:8000/pelican-website-info.html">Pelican Static Website Generator</a>
+      </li>
+      <li class="post">
+          <a href="http://127.0.0.1:8000/alexa-skills-video.html">Fintech Alexa Skills Demo</a>
+      </li>
+      <li class="post">
+          <a href="http://127.0.0.1:8000/finance-data-standards.html">Common Finance Industry Data Standards</a>
+      </li>
+      <li class="post">
+          <a href="http://127.0.0.1:8000/business-glossary.html">Creating a business glossary</a>
+      </li>
+      <li class="post">
+          <a href="http://127.0.0.1:8000/iso20022.html">Getting started with ISO20022</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="http://127.0.0.1:8000/category/data-architecture.html">Data Architecture</a></li>
+        <li><a href="http://127.0.0.1:8000/category/enterprise-architecture.html">Enterprise Architecture</a></li>
+        <li><a href="http://127.0.0.1:8000/category/misc.html">misc</a></li>
+        <li><a href="http://127.0.0.1:8000/category/solution-architecture.html">Solution Architecture</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="http://127.0.0.1:8000/tag/website.html">website</a>,    <a href="http://127.0.0.1:8000/tag/python.html">python</a>,    <a href="http://127.0.0.1:8000/tag/cms.html">cms</a>,    <a href="http://127.0.0.1:8000/tag/fintech.html">fintech</a>,    <a href="http://127.0.0.1:8000/tag/alexa.html">alexa</a>,    <a href="http://127.0.0.1:8000/tag/openbanking.html">openbanking</a>,    <a href="http://127.0.0.1:8000/tag/data-standards.html">data standards</a>,    <a href="http://127.0.0.1:8000/tag/financial-services.html">financial services</a>,    <a href="http://127.0.0.1:8000/tag/business-glossary.html">business glossary</a>,    <a href="http://127.0.0.1:8000/tag/iso20022.html">iso20022</a>,    <a href="http://127.0.0.1:8000/tag/data-integration.html">data integration</a>,    <a href="http://127.0.0.1:8000/tag/rest.html">REST</a>,    <a href="http://127.0.0.1:8000/tag/api.html">API</a>,    <a href="http://127.0.0.1:8000/tag/semantic-web.html">semantic web</a>,    <a href="http://127.0.0.1:8000/tag/rdf.html">rdf</a>,    <a href="http://127.0.0.1:8000/tag/owl.html">owl</a>,    <a href="http://127.0.0.1:8000/tag/web-30.html">web 3.0</a>,    <a href="http://127.0.0.1:8000/tag/data-modelling.html">data modelling</a>,    <a href="http://127.0.0.1:8000/tag/digital-transformation.html">digital transformation</a>,    <a href="http://127.0.0.1:8000/tag/digital-marketing.html">digital marketing</a>,    <a href="http://127.0.0.1:8000/tag/strategy.html">strategy</a>,    <a href="http://127.0.0.1:8000/tag/data-architecture.html">data architecture</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="https://www.linkedin.com/company/deytalyticsltd" target="_blank">Linkedin</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://www.deytalytics.com" target="_blank">Deytalytics.com</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+ <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f51ef315bda6dfd"></script>
+ <div class="addthis_inline_share_toolbox"></div>  <footer role="contentinfo"><p>
+    Copyright &copy;  2015&ndash;2020  James Dey &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script src="http://127.0.0.1:8000/theme/js/modernizr-2.0.js"></script>
+  <script src="http://127.0.0.1:8000/theme/js/ender.js"></script>
+  <script src="http://127.0.0.1:8000/theme/js/octopress.js" type="text/javascript"></script>
+</body>
+</html>
