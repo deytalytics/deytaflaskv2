@@ -2,79 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91470348-25da-4c91-9a5c-feee92d784da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/static/images/alexa-skills-demo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/atm-locator-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/bankaccounts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/business-glossary.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/cloud-choices" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/companies-house-logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/currloc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/data-modelling-notation.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/data-modelling.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/deytalytics-header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/deytalytics-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/deytalytics-smile-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/deytalyticslogobig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/ea-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/ea-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/ea-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/ea-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/ea-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/edi-reqs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/edi-solns.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/info-hairball-sales-example.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/info-hairball.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/iso20022-data-dict.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/iso20022-erwin-cdm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/iso20022-pig.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/iso20022-uml.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/iso20022.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/linkedn-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/money-pit.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/pelican.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/rest-api.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/rubiks-cube-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/rubiks-cube-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/rubiks-cube-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/semantic-web.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/addthis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/analytics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/disqus_script.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/piwik.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deytaflask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deytaflask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/atmlocator.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/atmlocator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/Connect-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/SICCodes.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/adambank.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/balance-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/bankaccount-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/bankaccounts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/currloc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/deytalytics-smile-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/deytalyticslogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/deytalyticslogobig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/disconnect-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/info-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/line_chart-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/linechart-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/logout-icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/signin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/starter-template.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/txns.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/ukmoney.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/deypay.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/deypay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
