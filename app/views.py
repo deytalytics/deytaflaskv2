@@ -48,9 +48,9 @@ def author(name):
 def html(name):
     return app.send_static_file('output/'+name+'.html')
 
-@app.route('/sitemap.xml')
-def xml():
-    return app.send_static_file('output/sitemap.xml')
+@app.route('/<name>.xml')
+def xml(name):
+    return app.send_static_file('output/'+name+'.xml')
 
 @app.route('/theme/images/<name>')
 def themeimages(name):
