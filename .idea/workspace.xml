@@ -62,14 +62,15 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\templates" />
-      <recent name="C:\Users\james\OneDrive\Deytalytics\Software Development\deytaflaskv2\app\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\static\output\author" />
       <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\static\output\images" />
       <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\static" />
       <recent name="C:\Users\james\OneDrive\Deytalytics\Software Development\deytaflaskv2\venv" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\templates" />
+      <recent name="C:\Users\james\OneDrive\Deytalytics\Software Development\deytaflaskv2\app\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python.app">
@@ -311,10 +312,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="278" y="75" key="SettingsEditor/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600676873028" />
-    <state x="466" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1600682682847">
+    <state x="466" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1600713690602">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="466" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600682682847" />
+    <state x="466" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600713690602" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
