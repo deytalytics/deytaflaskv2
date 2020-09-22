@@ -50,7 +50,6 @@ def html(name):
 
 @app.route('/sitemap.xml')
 def sitemap():
-    print("Serving sitemap.xml")
     return app.send_static_file('output/sitemap.xml')
 
 @app.route('/theme/images/<name>')
