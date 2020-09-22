@@ -4,386 +4,386 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/</loc>
-<lastmod>2020-09-18T15:05:41-00:00</lastmod>
+<loc>/</loc>
+<lastmod>2020-09-22T18:03:45-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/cloud-choices.html</loc>
+<loc>/cloud-choices.html</loc>
 <lastmod>2020-09-14T19:30:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/pelican-website-info.html</loc>
-<lastmod>2020-09-03T19:30:00+01:00</lastmod>
+<loc>/pelican-website-info.html</loc>
+<lastmod>2020-09-21T19:30:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/alexa-skills-video.html</loc>
+<loc>/alexa-skills-video.html</loc>
 <lastmod>2018-09-01T19:30:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/finance-data-standards.html</loc>
+<loc>/finance-data-standards.html</loc>
 <lastmod>2016-11-30T19:30:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/business-glossary.html</loc>
+<loc>/business-glossary.html</loc>
 <lastmod>2016-11-28T19:30:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/iso20022.html</loc>
+<loc>/iso20022.html</loc>
 <lastmod>2016-11-26T19:30:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/rest-api.html</loc>
+<loc>/rest-api.html</loc>
 <lastmod>2016-11-24T19:30:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/semantic-web.html</loc>
+<loc>/semantic-web.html</loc>
 <lastmod>2016-10-27T19:30:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/data-modelling.html</loc>
+<loc>/data-modelling.html</loc>
 <lastmod>2016-09-05T19:30:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/info-hairball.html</loc>
+<loc>/info-hairball.html</loc>
 <lastmod>2016-07-07T19:30:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/digital-platforms.html</loc>
+<loc>/digital-platforms.html</loc>
 <lastmod>2016-06-08T19:30:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/enterprise-architecture.html</loc>
+<loc>/enterprise-architecture.html</loc>
 <lastmod>2016-06-05T19:30:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/digital-marketing.html</loc>
+<loc>/digital-marketing.html</loc>
 <lastmod>2015-06-18T19:30:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/info-strategy-dev.html</loc>
+<loc>/info-strategy-dev.html</loc>
 <lastmod>2015-06-02T19:30:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/category/cloud-architecture.html</loc>
-<lastmod>2020-09-14T19:30:00-00:01</lastmod>
+<loc>/category/cloud-architecture.html</loc>
+<lastmod>2020-09-21T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/category/data-architecture.html</loc>
+<loc>/category/data-architecture.html</loc>
 <lastmod>2016-11-30T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/category/enterprise-architecture.html</loc>
+<loc>/category/enterprise-architecture.html</loc>
 <lastmod>2016-06-05T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/category/solution-architecture.html</loc>
+<loc>/category/solution-architecture.html</loc>
 <lastmod>2018-09-01T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/cloud.html</loc>
+<loc>/tag/cloud.html</loc>
 <lastmod>2020-09-14T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/github-pages.html</loc>
+<loc>/tag/github-pages.html</loc>
+<lastmod>2020-09-21T19:30:00-00:01</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/aws.html</loc>
 <lastmod>2020-09-14T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/aws.html</loc>
+<loc>/tag/azure.html</loc>
 <lastmod>2020-09-14T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/azure.html</loc>
+<loc>/tag/gcp.html</loc>
 <lastmod>2020-09-14T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/gcp.html</loc>
-<lastmod>2020-09-14T19:30:00-00:01</lastmod>
+<loc>/tag/website.html</loc>
+<lastmod>2020-09-21T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/website.html</loc>
-<lastmod>2020-09-03T19:30:00-00:01</lastmod>
+<loc>/tag/python.html</loc>
+<lastmod>2020-09-21T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/python.html</loc>
-<lastmod>2020-09-03T19:30:00-00:01</lastmod>
+<loc>/tag/cms.html</loc>
+<lastmod>2020-09-21T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/cms.html</loc>
-<lastmod>2020-09-03T19:30:00-00:01</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://deytalytics.github.io/deyblog/tag/fintech.html</loc>
+<loc>/tag/fintech.html</loc>
 <lastmod>2018-09-01T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/alexa.html</loc>
+<loc>/tag/alexa.html</loc>
 <lastmod>2018-09-01T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/openbanking.html</loc>
+<loc>/tag/openbanking.html</loc>
 <lastmod>2018-09-01T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/data-standards.html</loc>
+<loc>/tag/data-standards.html</loc>
 <lastmod>2016-11-30T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/financial-services.html</loc>
+<loc>/tag/financial-services.html</loc>
 <lastmod>2016-11-30T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/business-glossary.html</loc>
+<loc>/tag/business-glossary.html</loc>
 <lastmod>2016-11-28T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/iso20022.html</loc>
+<loc>/tag/iso20022.html</loc>
 <lastmod>2016-11-26T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/data-integration.html</loc>
+<loc>/tag/data-integration.html</loc>
 <lastmod>2016-11-24T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/rest.html</loc>
+<loc>/tag/rest.html</loc>
 <lastmod>2016-11-24T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/api.html</loc>
+<loc>/tag/api.html</loc>
 <lastmod>2016-11-24T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/semantic-web.html</loc>
+<loc>/tag/semantic-web.html</loc>
 <lastmod>2016-10-27T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/rdf.html</loc>
+<loc>/tag/rdf.html</loc>
 <lastmod>2016-10-27T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/owl.html</loc>
+<loc>/tag/owl.html</loc>
 <lastmod>2016-10-27T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/web-30.html</loc>
+<loc>/tag/web-30.html</loc>
 <lastmod>2016-10-27T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/data-modelling.html</loc>
+<loc>/tag/data-modelling.html</loc>
 <lastmod>2016-09-05T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/data-vault.html</loc>
+<loc>/tag/data-vault.html</loc>
 <lastmod>2016-09-05T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/erwin.html</loc>
+<loc>/tag/erwin.html</loc>
 <lastmod>2016-09-05T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/powerdesigner.html</loc>
+<loc>/tag/powerdesigner.html</loc>
 <lastmod>2016-09-05T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/uml.html</loc>
+<loc>/tag/uml.html</loc>
 <lastmod>2016-09-05T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/relational.html</loc>
+<loc>/tag/relational.html</loc>
 <lastmod>2016-09-05T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/e-r.html</loc>
+<loc>/tag/e-r.html</loc>
 <lastmod>2016-09-05T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/data-architecture.html</loc>
+<loc>/tag/data-architecture.html</loc>
 <lastmod>2016-07-07T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/digital-transformation.html</loc>
+<loc>/tag/digital-transformation.html</loc>
 <lastmod>2016-06-08T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/business-benefits.html</loc>
+<loc>/tag/business-benefits.html</loc>
 <lastmod>2016-06-05T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/enterprise-architecture.html</loc>
+<loc>/tag/enterprise-architecture.html</loc>
 <lastmod>2016-06-05T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/digital-marketing.html</loc>
+<loc>/tag/digital-marketing.html</loc>
 <lastmod>2015-06-18T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/tag/strategy.html</loc>
+<loc>/tag/strategy.html</loc>
 <lastmod>2015-06-18T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://deytalytics.github.io/deyblog/author/deytalytics-ltd.html</loc>
-<lastmod>2020-09-14T19:30:00-00:01</lastmod>
+<loc>/author/deytalytics-ltd.html</loc>
+<lastmod>2020-09-21T19:30:00-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
