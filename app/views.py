@@ -49,7 +49,7 @@ def html(name):
     return app.send_static_file('output/'+name+'.html')
 
 @app.route('/sitemap.xml')
-def xml(name):
+def sitemap():
     print("Serving sitemap.xml")
     return app.send_static_file('output/sitemap.xml')
 
