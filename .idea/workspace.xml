@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91470348-25da-4c91-9a5c-feee92d784da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/static/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/static/output" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -69,6 +69,7 @@
       <recent name="C:\Users\james\OneDrive\Deytalytics\Software Development\deytaflaskv2\venv" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\static\output" />
       <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\static" />
       <recent name="C:\Users\JamesDey\PycharmProjects\deytaflaskv2\app\templates" />
       <recent name="C:\Users\james\OneDrive\Deytalytics\Software Development\deytaflaskv2\app\templates" />
