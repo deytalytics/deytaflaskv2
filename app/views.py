@@ -48,9 +48,9 @@ def author(name):
 def html(name):
     return app.send_static_file('output/'+name+'.html')
 
-@app.route('/<name>.xml')
+@app.route('/sitemap.xml')
 def xml(name):
-    return app.send_static_file('output/'+name+'.xml')
+    return app.send_static_file('output/sitemap.xml')
 
 @app.route('/theme/images/<name>')
 def themeimages(name):
@@ -87,10 +87,6 @@ def themecss(name):
 @app.route('/theme/font/<name>')
 def themefont(name):
     return app.send_static_file("output/theme/font/"+name)
-
-@app.route('/sitemap.xml')
-def sitemap():
-    return send_from_directory(app.static_folder, request.path[1:])
 
 @app.route('/getheaders', methods={'GET','POST','OPTIONS'})
 def getheaders():
