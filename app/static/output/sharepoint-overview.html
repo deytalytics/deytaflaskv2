@@ -2,9 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Deytalytics - rdf</title>
+    <title>Sharepoint overview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="James Dey">
+      <meta name="description" content="Covers some basic features of Microsoft Sharepoint" />
+    <meta property="og:type" content="article" />
+
+ <meta property="og:title" content="Sharepoint overview" /> <meta property="og:url" content="https://www.deytalytics.com/sharepoint-overview.html" /> <meta property="og:description" content="Covers some basic features of Microsoft Sharepoint" /> <meta property="og:image" content="https://d11wkw82a69pyn.cloudfront.net/wm-reply/siteassets/images/sharepoint-logo.jpg" /> <meta property="article:published_time" content="2020-09-25 11:24:06.025087+01:00" /> 
     <!-- Le styles -->
     <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
     <style type="text/css">
@@ -82,7 +86,7 @@
 						<i class="icon-folder-open icon-large"></i>Enterprise Architecture
 					</a>
                   </li>
-                  <li >
+                  <li class="active">
                     <a href="/category/solution-architecture.html">
 						<i class="icon-folder-open icon-large"></i>Solution Architecture
 					</a>
@@ -98,34 +102,92 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-        <div class="article">
-                <h1><a href="/semantic-web.html">What does the "Semantic Web" mean?</a></h1>
-                <div class="well small"><footer class="post-info">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Sharepoint overview">
+                                        Sharepoint overview
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2016-10-27T10:20:00+01:00">
-        <i class="icon-calendar"></i>Thu 27 October 2016
+<abbr class="published" title="2020-09-25T11:24:06.025087+01:00">
+        <i class="icon-calendar"></i>Fri 25 September 2020
 </abbr>
 <span class="label">By</span>
 <a href="/author/deytalytics-ltd.html"><i class="icon-user"></i>Deytalytics Ltd</a>
 <span class="label">Category</span>
-<a href="/category/data-architecture.html"><i class="icon-folder-open"></i>Data Architecture</a>.
+<a href="/category/solution-architecture.html"><i class="icon-folder-open"></i>Solution Architecture</a>.
 
 <span class="label">
-<a href="/pdf/semantic-web.pdf">PDF</a>
+<a href="/pdf/sharepoint-overview.pdf">PDF</a>
 </span>
 
 <span class="label">Tags</span>
-	<a href="/tag/semantic-web.html"><i class="icon-tag"></i>semantic web</a>
-	<a href="/tag/rdf.html"><i class="icon-tag"></i>rdf</a>
-	<a href="/tag/owl.html"><i class="icon-tag"></i>owl</a>
-	<a href="/tag/web-30.html"><i class="icon-tag"></i>web 3.0</a>
-</footer><!-- /.post-info --></div>
-                <div class="summary"><p>For a number of year's the concept of being able to strictly define and classify data in order to allow websites to be able to share data easily has been gaining ground. This concept is known as the "Semantic web". This post provides information about it and a basic description of the technologies used.</p>
-                        <a class="btn primary xsmall" href="/semantic-web.html">more ...</a>
+	<a href="/tag/sharepoint.html"><i class="icon-tag"></i>sharepoint</a>
+	<a href="/tag/tips.html"><i class="icon-tag"></i>tips</a>
+</footer><!-- /.post-info -->                </div>
+                <p><img alt="Sharepoint cover image" src="https://d11wkw82a69pyn.cloudfront.net/wm-reply/siteassets/images/sharepoint-logo.jpg"></p>
+<h1>Sharepoint</h1>
+<p>Sharepoint is a Microsoft Document Management System (DMS) popular with medium to large organisations as it integrates reasonably well with the Office Suite</p>
+<p>Sharepoint allows you to create and store files but how the files are rendered depends on what you select</p>
+<p>You have the following library types that you can create and which are explained in the section below:-</p>
+<ul>
+<li>Document Library</li>
+<li>Page Library</li>
+<li>List</li>
+<li>Events List</li>
+</ul>
+<p>The Sitepoint URL is like this:-</p>
+<p>\<company>.sharepoint.com/sites/\<company sharepoint site>/\<folder type>/\<content></p>
+<p>You can view your entire site's contents by clicking on the settings icon in the menubar and choosing "Site Contents"</p>
+<h2>Document Library</h2>
+<p>This is the main place to store folders &amp; files in Sharepoint. This allows you to create and store Excel, Word, Powerpoint, Visio or OneNote files. You can also create a link to files stored in other libraries. For this type, it will only render the files that you are allowed to create. You can store other files, but you'll only be allowed to download them
+If you have Admin rights, you can change a standard document library to be:-</p>
+<ul>
+<li>Picture Library - displays thumbnails as tiles</li>
+<li>Site Assets - This allows the execution of the file as per it's type e.g. HTML files will be rendered rather than downloaded (Note: Javascript is restricted, however)</li>
+</ul>
+<h2>Page Libarary</h2>
+<p>This allows you to create Wiki style pages only. </p>
+<p>You can not store other file types in this folder type. Another notable issue with Site Pages is that you're restricted to creating them on Sharepoint, so can't work offline and upload content.</p>
+<p>Within a Site page, you can add in a lot of different web part sections. I've highlighted the most commonly used ones below:-
+* Image - Any picture e.g your banner picture at the top
+* Text - Text including headings, subheadings etc.
+* Link - A hyperlink to any web page (internal or external)
+* Embed - allows you to embed a web page or YouTube video so that it's displayed on the site page, rather than you needing to click through (Note: javascript is restricted for security reasons which is somewhat limiting)
+* Highlighted content - Shows pictorial links to other site pages you wish to highlight
+* Code Snippet - This allows you to display code in a variety of languages. It does not allow you to run code!
+* List - Allows you to embed a list/table
+* Markdown - Markdown is a language that allows you to do pretty much what Image, Text, Link, Code Snippet and Embed gives you. 
+It's commonly used by developers &amp; bloggers to produce documentation as you can markup text very simply. It's not as advanced as HTML, however. </p>
+<p>It's main advantage from the Sharepoint perspective is:-
+1. You're able to create content offline and add it to a Site Page
+2. You can dynamically generate content as a Markdown file e.g. create a table containing data</p>
+                </div><!-- /.entry-content -->
+                <div class="comments">
+                <h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "sharepoint-overview.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'https://deyblog.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
                 </div>
-        </div>
-        <hr />
+        </article>
 
+</section>
         </div><!--/span-->
 
         <div class="span3 well sidebar-nav" id="sidebar">
@@ -367,6 +429,8 @@
         <div class="container-fluid text-right">
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f51ef315bda6dfd"></script>
 <script type="text/javascript">
+var addthis_share = {
+ description: "<p>Covers some basic features of Microsoft Sharepoint</p>" , media: "https://d11wkw82a69pyn.cloudfront.net/wm-reply/siteassets/images/sharepoint-logo.jpg" }
 </script>
       </div>
       </div>

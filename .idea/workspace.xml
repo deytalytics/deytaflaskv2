@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91470348-25da-4c91-9a5c-feee92d784da" name="Default Changelist" comment="" />
+    <list default="true" id="91470348-25da-4c91-9a5c-feee92d784da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -288,6 +290,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added sitemap.xml" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="225" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600968474444">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="225" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/3840.0.1920.1080@0.0.1536.864" timestamp="1600968474444" />
     <state x="535" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600695072441">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

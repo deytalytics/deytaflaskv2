@@ -5,8 +5,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2020-09-24T17:41:19-00:00</lastmod>
+<lastmod>2020-09-25T14:30:16-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/data-visualisation-examples.html</loc>
+<lastmod>2020-09-25T14:28:31+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/sharepoint-overview.html</loc>
+<lastmod>2020-09-25T11:24:06+01:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -131,7 +145,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/solution-architecture.html</loc>
-<lastmod>2018-09-01T19:30:00-00:01</lastmod>
+<lastmod>2020-09-25T14:28:31-00:01</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/data-visualisation.html</loc>
+<lastmod>2020-09-25T14:28:31-00:01</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/sharepoint.html</loc>
+<lastmod>2020-09-25T11:24:06-00:01</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/tips.html</loc>
+<lastmod>2020-09-25T11:24:06-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -383,7 +418,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/deytalytics-ltd.html</loc>
-<lastmod>2020-09-21T19:30:00-00:01</lastmod>
+<lastmod>2020-09-25T11:24:06-00:01</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/author/james-dey.html</loc>
+<lastmod>2020-09-25T14:28:31-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
