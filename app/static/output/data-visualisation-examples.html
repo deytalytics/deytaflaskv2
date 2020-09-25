@@ -8,7 +8,7 @@
       <meta name="description" content="Discusses data visualisation methods & tools that you can use for your website development" />
     <meta property="og:type" content="article" />
 
- <meta property="og:title" content="Data Visualisation Examples" /> <meta property="og:url" content="https://www.deytalytics.com/data-visualisation-examples.html" /> <meta property="og:description" content="Discusses data visualisation methods & tools that you can use for your website development" /> <meta property="article:published_time" content="2020-09-25 14:35:33.180943+01:00" /> 
+ <meta property="og:title" content="Data Visualisation Examples" /> <meta property="og:url" content="https://www.deytalytics.com/data-visualisation-examples.html" /> <meta property="og:description" content="Discusses data visualisation methods & tools that you can use for your website development" /> <meta property="article:published_time" content="2020-09-25 15:12:15.125944+01:00" /> 
     <!-- Le styles -->
     <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
     <style type="text/css">
@@ -117,7 +117,7 @@
                 <div class="well">
 <footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2020-09-25T14:35:33.180943+01:00">
+<abbr class="published" title="2020-09-25T15:12:15.125944+01:00">
         <i class="icon-calendar"></i>Fri 25 September 2020
 </abbr>
 <span class="label">By</span>
@@ -152,8 +152,8 @@ This is an example of a data visualisation library (based on D3.js). With this, 
 <!-- Styles -->
 <style>
 #chartdiv {
-  width: 90%;
-  height: 70vh
+  width: 100%;
+  height: 500px;
 }
 
 </style>
@@ -171,45 +171,79 @@ am4core.ready(function() {
 am4core.useTheme(am4themes_animated);
 // Themes end
 
-var chart = am4core.create("chartdiv", am4charts.SankeyDiagram);
-chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+ // Create chart instance
+var chart = am4core.create("chartdiv", am4charts.XYChart);
 
+// Add data
+chart.data = [{
+  "year": 2005,
+  "income": 23.5,
+  "expenses": 18.1
+},{
+  "year": 2006,
+  "income": 26.2,
+  "expenses": 22.8
+},{
+  "year": 2007,
+  "income": 30.1,
+  "expenses": 23.9
+},{
+  "year": 2008,
+  "income": 29.5,
+  "expenses": 25.1
+},{
+  "year": 2009,
+  "income": 24.6,
+  "expenses": 25
+}];
 
-chart.data = [
-  { from: "System A", to: "System B",  value:1},
-  { from: "System B", to: "System C", value:1},
-  { from: "System D", to: "System C", value: 1},
-]
+// Create axes
+var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "year";
+categoryAxis.numberFormatter.numberFormat = "#";
+categoryAxis.renderer.inversed = true;
+categoryAxis.renderer.grid.template.location = 0;
+categoryAxis.renderer.cellStartLocation = 0.1;
+categoryAxis.renderer.cellEndLocation = 0.9;
 
-let hoverState = chart.links.template.states.create("hover");
-hoverState.properties.fillOpacity = 0.6;
+var  valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
+valueAxis.renderer.opposite = true;
 
+// Create series
+function createSeries(field, name) {
+  var series = chart.series.push(new am4charts.ColumnSeries());
+  series.dataFields.valueX = field;
+  series.dataFields.categoryY = "year";
+  series.name = name;
+  series.columns.template.tooltipText = "{name}: [bold]{valueX}[/]";
+  series.columns.template.height = am4core.percent(100);
+  series.sequencedInterpolation = true;
 
-chart.dataFields.fromName = "from";
-chart.dataFields.toName = "to";
-chart.dataFields.value = "value";
+  var valueLabel = series.bullets.push(new am4charts.LabelBullet());
+  valueLabel.label.text = "{valueX}";
+  valueLabel.label.horizontalCenter = "left";
+  valueLabel.label.dx = 10;
+  valueLabel.label.hideOversized = false;
+  valueLabel.label.truncate = false;
 
-// for right-most label to fit
-chart.paddingRight = 120;
+  var categoryLabel = series.bullets.push(new am4charts.LabelBullet());
+  categoryLabel.label.text = "{name}";
+  categoryLabel.label.horizontalCenter = "right";
+  categoryLabel.label.dx = -10;
+  categoryLabel.label.fill = am4core.color("#fff");
+  categoryLabel.label.hideOversized = false;
+  categoryLabel.label.truncate = false;
+}
 
-// make nodes draggable
-var nodeTemplate = chart.nodes.template;
-nodeTemplate.inert = true;
-nodeTemplate.showSystemTooltip = true;
-nodeTemplate.width = 20;
-nodeTemplate.height = 100;
-
-// make nodes draggable
-var nodeTemplate = chart.nodes.template;
-nodeTemplate.readerTitle = "Click to show/hide or drag to rearrange";
-nodeTemplate.showSystemTooltip = true;
-nodeTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer
+createSeries("income", "Income");
+createSeries("expenses", "Expenses");
 
 }); // end am4core.ready()
 </script>
 
 <!-- HTML -->
 <div id="chartdiv"></div>
+amCharts
 
 <h2>Creately</h2>
 This comes in 2 parts:-
@@ -288,192 +322,192 @@ var player = new CreatelyPlayer( "creately-container-kfi87fbr2", "kfi87fbr2-cG28
 </li>
 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-[<pelican.contents.Article object at 0x000002823418C888>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747732C08>]">
     <a href="/tag/data-visualisation.html">
         <i class="icon-tag icon-large"></i>data visualisation
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x000002823384EA48>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E74776B5C8>]">
     <a href="/tag/sharepoint.html">
         <i class="icon-tag icon-large"></i>sharepoint
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x000002823384EA48>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E74776B5C8>]">
     <a href="/tag/tips.html">
         <i class="icon-tag icon-large"></i>tips
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x00000282341555C8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747746E88>]">
     <a href="/tag/cloud.html">
         <i class="icon-tag icon-large"></i>cloud
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x00000282341555C8>, <pelican.contents.Article object at 0x000002823387F248>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747746E88>, <pelican.contents.Article object at 0x000001E74773CEC8>]">
     <a href="/tag/github-pages.html">
         <i class="icon-tag icon-large"></i>github pages
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x00000282341555C8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747746E88>]">
     <a href="/tag/aws.html">
         <i class="icon-tag icon-large"></i>aws
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x00000282341555C8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747746E88>]">
     <a href="/tag/azure.html">
         <i class="icon-tag icon-large"></i>azure
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x00000282341555C8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747746E88>]">
     <a href="/tag/gcp.html">
         <i class="icon-tag icon-large"></i>gcp
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x000002823387F248>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E74773CEC8>]">
     <a href="/tag/website.html">
         <i class="icon-tag icon-large"></i>website
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x000002823387F248>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E74773CEC8>]">
     <a href="/tag/python.html">
         <i class="icon-tag icon-large"></i>python
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x000002823387F248>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E74773CEC8>]">
     <a href="/tag/cms.html">
         <i class="icon-tag icon-large"></i>cms
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161888>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747739088>]">
     <a href="/tag/fintech.html">
         <i class="icon-tag icon-large"></i>fintech
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161888>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747739088>]">
     <a href="/tag/alexa.html">
         <i class="icon-tag icon-large"></i>alexa
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161888>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747739088>]">
     <a href="/tag/openbanking.html">
         <i class="icon-tag icon-large"></i>openbanking
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234163408>, <pelican.contents.Article object at 0x0000028234161E88>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747730308>, <pelican.contents.Article object at 0x000001E747746FC8>]">
     <a href="/tag/data-standards.html">
         <i class="icon-tag icon-large"></i>data standards
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234163408>, <pelican.contents.Article object at 0x0000028234161E88>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747730308>, <pelican.contents.Article object at 0x000001E747746FC8>]">
     <a href="/tag/financial-services.html">
         <i class="icon-tag icon-large"></i>financial services
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x000002823414EE48>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E74772D0C8>]">
     <a href="/tag/business-glossary.html">
         <i class="icon-tag icon-large"></i>business glossary
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161E88>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747746FC8>]">
     <a href="/tag/iso20022.html">
         <i class="icon-tag icon-large"></i>iso20022
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x00000282338887C8>, <pelican.contents.Article object at 0x00000282338A5DC8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E746E0B708>, <pelican.contents.Article object at 0x000001E746E37508>]">
     <a href="/tag/data-integration.html">
         <i class="icon-tag icon-large"></i>data integration
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x00000282338887C8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E746E0B708>]">
     <a href="/tag/rest.html">
         <i class="icon-tag icon-large"></i>REST
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x00000282338887C8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E746E0B708>]">
     <a href="/tag/api.html">
         <i class="icon-tag icon-large"></i>API
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234165308>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E746E2F748>]">
     <a href="/tag/semantic-web.html">
         <i class="icon-tag icon-large"></i>semantic web
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234165308>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E746E2F748>]">
     <a href="/tag/rdf.html">
         <i class="icon-tag icon-large"></i>rdf
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234165308>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E746E2F748>]">
     <a href="/tag/owl.html">
         <i class="icon-tag icon-large"></i>owl
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234165308>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E746E2F748>]">
     <a href="/tag/web-30.html">
         <i class="icon-tag icon-large"></i>web 3.0
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161CC8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E7477324C8>]">
     <a href="/tag/data-modelling.html">
         <i class="icon-tag icon-large"></i>data modelling
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161CC8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E7477324C8>]">
     <a href="/tag/data-vault.html">
         <i class="icon-tag icon-large"></i>data vault
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161CC8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E7477324C8>]">
     <a href="/tag/erwin.html">
         <i class="icon-tag icon-large"></i>erwin
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161CC8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E7477324C8>]">
     <a href="/tag/powerdesigner.html">
         <i class="icon-tag icon-large"></i>powerdesigner
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161CC8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E7477324C8>]">
     <a href="/tag/uml.html">
         <i class="icon-tag icon-large"></i>uml
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161CC8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E7477324C8>]">
     <a href="/tag/relational.html">
         <i class="icon-tag icon-large"></i>relational
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161CC8>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E7477324C8>]">
     <a href="/tag/e-r.html">
         <i class="icon-tag icon-large"></i>e-r
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x00000282338A5DC8>, <pelican.contents.Article object at 0x000002823416EF08>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E746E37508>, <pelican.contents.Article object at 0x000001E747751048>]">
     <a href="/tag/data-architecture.html">
         <i class="icon-tag icon-large"></i>data architecture
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x000002823416A048>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747730D48>]">
     <a href="/tag/digital-transformation.html">
         <i class="icon-tag icon-large"></i>digital transformation
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161588>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747732308>]">
     <a href="/tag/business-benefits.html">
         <i class="icon-tag icon-large"></i>business benefits
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x0000028234161588>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747732308>]">
     <a href="/tag/enterprise-architecture.html">
         <i class="icon-tag icon-large"></i>enterprise architecture
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x000002823418C608>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747745108>]">
     <a href="/tag/digital-marketing.html">
         <i class="icon-tag icon-large"></i>digital marketing
     </a>
 </li>
-<li class="tag-[<pelican.contents.Article object at 0x000002823418C608>, <pelican.contents.Article object at 0x000002823416EF08>]">
+<li class="tag-[<pelican.contents.Article object at 0x000001E747745108>, <pelican.contents.Article object at 0x000001E747751048>]">
     <a href="/tag/strategy.html">
         <i class="icon-tag icon-large"></i>strategy
     </a>
