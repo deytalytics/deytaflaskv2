@@ -27,7 +27,7 @@ endobj
 <<
 /Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 14 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
-/FormXob.78143883d4241fb1365e82fb364ec19f 4 0 R
+/FormXob.c21bd2b4056e6a7c1a1b0294df044a44 4 0 R
 >>
 >> /Rotate 0 /Trans <<
 
@@ -52,7 +52,7 @@ endobj
 endobj
 8 0 obj
 <<
-/Author () /CreationDate (D:20200925151553+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20200925151553+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20200925211625+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20200925211625+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (How to develop an Information Strategy) /Trapped /False
 >>
 endobj
@@ -126,7 +126,7 @@ q
 q
 q
 467.8898 0 0 268.1317 0 2.03675 cm
-/FormXob.78143883d4241fb1365e82fb364ec19f Do
+/FormXob.c21bd2b4056e6a7c1a1b0294df044a44 Do
 Q
 .492188 w
 BT 1 0 0 1 0 3.08675 Tm 268.3942 TL 467.8898 0 Td /F1 5.25 Tf 6.3 TL  T* -467.8898 0 Td ET
@@ -574,7 +574,7 @@ xref
 trailer
 <<
 /ID 
-[<b11fd2308f520f7de55d4e3164a00e0d><b11fd2308f520f7de55d4e3164a00e0d>]
+[<87292f35969ffee93cbc04117b7a03bf><87292f35969ffee93cbc04117b7a03bf>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 8 0 R
