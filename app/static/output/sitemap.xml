@@ -5,14 +5,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2020-09-26T09:25:26-00:00</lastmod>
+<lastmod>2020-09-26T09:37:27-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/data-visualisation-examples.html</loc>
-<lastmod>2020-09-26T09:24:52+01:00</lastmod>
+<lastmod>2020-09-26T09:36:52+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -145,14 +145,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/solution-architecture.html</loc>
-<lastmod>2020-09-26T09:24:52-00:01</lastmod>
+<lastmod>2020-09-26T09:36:52-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tag/data-visualisation.html</loc>
-<lastmod>2020-09-26T09:24:52-00:01</lastmod>
+<lastmod>2020-09-26T09:36:52-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -425,7 +425,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/james-dey.html</loc>
-<lastmod>2020-09-26T09:24:52-00:01</lastmod>
+<lastmod>2020-09-26T09:36:52-00:01</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
