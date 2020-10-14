@@ -27,7 +27,7 @@ endobj
 <<
 /Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
-/FormXob.304fd3619b8d198429e0591258da0f4d 4 0 R
+/FormXob.273d24b7ee14eeada9a5206800e723c8 4 0 R
 >>
 >> /Rotate 0 /Trans <<
 
@@ -42,7 +42,7 @@ endobj
 endobj
 7 0 obj
 <<
-/Author () /CreationDate (D:20200926113033+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20200926113033+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20201014173216+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20201014173216+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Sharepoint overview) /Trapped /False
 >>
 endobj
@@ -73,7 +73,7 @@ endobj
 endobj
 13 0 obj
 <<
-/Length 6740
+/Length 8882
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -90,7 +90,7 @@ q
 q
 q
 467.8898 0 0 181.4362 0 2.03675 cm
-/FormXob.304fd3619b8d198429e0591258da0f4d Do
+/FormXob.273d24b7ee14eeada9a5206800e723c8 Do
 Q
 .492188 w
 BT 1 0 0 1 0 3.08675 Tm 181.6987 TL 467.8898 0 Td /F1 5.25 Tf 6.3 TL  T* -467.8898 0 Td ET
@@ -330,34 +330,154 @@ q
 Q
 Q
 q
-1 0 0 1 62.69291 210.487 cm
+1 0 0 1 62.69291 249.862 cm
 q
 1 0 0 1 1 -1 cm
 q
 .492188 w
-.492188 w
-.492188 w
-.492188 w
-.492188 w
-.492188 w
-BT 1 0 0 1 0 45.4805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Within a Site page, you can add in a lot of different web part sections. I've highlighted the most commonly used ones below:- * Image - Any picture e.g your banner picture at the top * Text - Text) Tj T* (including headings, subheadings etc. * Link - A hyperlink to any web page \(internal or external\) * Embed - allows you to embed a web page or YouTube video so that it's displayed on the site page,) Tj T* (rather than you needing to click through \(Note: javascript is restricted for security reasons which is somewhat limiting\) * Highlighted content - Shows pictorial links to other site pages you wish to highlight) Tj T* (* Code Snippet - This allows you to display code in a variety of languages. It does not allow you to run code! * List - Allows you to embed a list/table * Markdown - Markdown is a language that allows) Tj T* (you to do pretty much what Image, Text, Link, Code Snippet and Embed gives you. It's commonly used by developers & bloggers to produce documentation as you can markup text very simply. It's not) Tj T* (as advanced as HTML, however.) Tj T* ET
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Within a Site page, you can add in a lot of different web part sections. I've highlighted the most commonly used ones below:-) Tj T* ET
 Q
 Q
 q
 Q
 Q
 q
-1 0 0 1 62.69291 187.487 cm
+1 0 0 1 62.69291 234.737 cm
 q
 1 0 0 1 1 -1 cm
 q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
 .492188 w
-.492188 w
-BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (It's main advantage from the Sharepoint perspective is:- 1. You're able to create content offline and add it to a Site Page 2. You can dynamically generate content as a Markdown file e.g. create a table) Tj T* (containing data) Tj T* ET
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Image - Any picture e.g your banner picture at the top) Tj T* ET
 Q
 Q
 q
 Q
+Q
+q
+1 0 0 1 62.69291 224.862 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Text - Text including headings, subheadings etc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 214.987 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Link - A hyperlink to any web page \(internal or external\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 197.237 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 13.9805 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+.492188 w
+BT 1 0 0 1 7.875 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Embed - allows you to embed a web page or YouTube video so that it's displayed on the site page, rather than you needing to click through \(Note: javascript is restricted for security reasons which is) Tj T* (somewhat limiting\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 187.362 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Highlighted content - Shows pictorial links to other site pages you wish to highlight) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 177.487 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Code Snippet - This allows you to display code in a variety of languages. It does not allow you to run code!) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 167.612 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (List - Allows you to embed a list/table) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 149.862 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 13.9805 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+.492188 w
+BT 1 0 0 1 7.875 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Markdown - Markdown is a language that allows you to do pretty much what Image, Text, Link, Code Snippet and Embed gives you. It's commonly used by developers & bloggers to produce) Tj T* (documentation as you can markup text very simply. It's not as advanced as HTML, however. It's main advantage from the Sharepoint perspective is:-) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 139.987 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (1.) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (You're able to create content offline and add it to a Site Page) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 130.112 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (2.) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (You can dynamically generate content as a Markdown file e.g. create a table containing data) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 130.112 cm
+Q
+q
+1 0 0 1 62.69291 130.112 cm
 Q
  
 endstream
@@ -388,12 +508,12 @@ xref
 0000030464 00000 n 
 0000030557 00000 n 
 0000030617 00000 n 
-0000037409 00000 n 
-0000037450 00000 n 
+0000039551 00000 n 
+0000039592 00000 n 
 trailer
 <<
 /ID 
-[<20bc99f9f7f2705788dd8998dfe89583><20bc99f9f7f2705788dd8998dfe89583>]
+[<64fb4d02264e62ede60d584df9a53bb1><64fb4d02264e62ede60d584df9a53bb1>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 7 0 R
@@ -401,5 +521,5 @@ trailer
 /Size 16
 >>
 startxref
-37484
+39626
 %%EOF
